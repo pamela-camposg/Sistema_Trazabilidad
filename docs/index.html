@@ -8,90 +8,84 @@
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --petroleo:#032224;
-  --petroleo-cl:#0A4A44;
-  --lima:#D4FF00;
-  --lima-osc:#A8CC00;
-  --verde:#0A6B52;
-  --gris-txt:#5C6663;
-  --gris-bd:#E2E7E4;
-  --gris-bg:#F5F7F4;
-  --naranja:#E88B00;
-  --blanco:#fff;
+  --petroleo:#032224; --petroleo-cl:#0A4A44; --lima:#D4FF00; --lima-osc:#A8CC00;
+  --verde:#0A6B52; --naranja:#E88B00; --gris-txt:#5C6663; --gris-bd:#E2E7E4;
+  --gris-bg:#F5F7F4; --blanco:#fff;
 }
 *{margin:0;padding:0;box-sizing:border-box}
 body{font-family:'Inter',system-ui,sans-serif;background:var(--gris-bg);color:var(--petroleo);line-height:1.5}
 
-/* ---------- CABECERA ---------- */
-.topbar{
-  background:var(--blanco);
-  border-bottom:5px solid var(--lima);
-  padding:1rem 1.75rem .85rem;
-  display:flex;align-items:center;justify-content:space-between;
-  gap:1.25rem;flex-wrap:wrap;
-}
+.topbar{background:var(--blanco);border-bottom:5px solid var(--lima);padding:1rem 1.75rem .85rem;
+  display:flex;align-items:center;justify-content:space-between;gap:1.25rem;flex-wrap:wrap}
 .brand{display:flex;align-items:center;gap:1.1rem}
 .brand img{height:34px;width:auto;display:block}
-.brand .fallback{
-  font-weight:700;font-size:1.5rem;letter-spacing:-.03em;color:var(--petroleo);display:none;
-}
+.brand .fallback{font-weight:700;font-size:1.5rem;letter-spacing:-.03em;display:none}
 .brand-sep{width:1px;height:36px;background:var(--gris-bd)}
-.brand-title{
-  font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.02rem;
-  line-height:1.12;letter-spacing:.07em;text-transform:uppercase;color:var(--petroleo);
-}
+.brand-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.02rem;
+  line-height:1.12;letter-spacing:.07em;text-transform:uppercase}
 .brand-title span{display:block;font-weight:500;color:var(--gris-txt);letter-spacing:.1em;font-size:.85rem}
 .topbar-date{font-family:'IBM Plex Mono',monospace;font-size:.82rem;font-weight:600;color:var(--gris-txt)}
 
-.wrap{max-width:1360px;margin:0 auto;padding:1.75rem 1.25rem 3rem}
+.wrap{max-width:1400px;margin:0 auto;padding:1.75rem 1.25rem 3rem}
+.alerta{background:#FFF6E6;border:1px solid #F3DCAE;border-left:4px solid var(--naranja);
+  color:#7A4B00;padding:.9rem 1.1rem;border-radius:6px;margin-bottom:1.5rem;font-size:.9rem}
+.alerta code{background:rgba(0,0,0,.06);padding:.05rem .3rem;border-radius:3px}
 
-.alerta{
-  background:#FFF6E6;border:1px solid #F3DCAE;border-left:4px solid var(--naranja);
-  color:#7A4B00;padding:.9rem 1.1rem;border-radius:6px;margin-bottom:1.5rem;font-size:.9rem;
-}
-.alerta code{background:rgba(0,0,0,.06);padding:.05rem .3rem;border-radius:3px;font-size:.85em}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.1rem;margin-bottom:1.1rem}
+.kpi{background:var(--blanco);border:1px solid var(--gris-bd);border-top:4px solid var(--lima);
+  border-radius:6px;padding:1.05rem 1.15rem 1.15rem}
+.kpi.ing{border-top-color:var(--verde)} .kpi.sal{border-top-color:var(--naranja)}
+.kpi.ret{border-top-color:var(--petroleo)}
+.kpi h3{font-family:'Barlow Condensed',sans-serif;font-size:.83rem;font-weight:600;letter-spacing:.1em;
+  text-transform:uppercase;color:var(--gris-txt);margin-bottom:.5rem}
+.kpi .val{font-family:'IBM Plex Mono',monospace;font-size:1.85rem;font-weight:600;letter-spacing:-.02em;line-height:1.05}
+.kpi .val small{font-size:.95rem;font-weight:500;color:var(--gris-txt);margin-left:.15rem}
+.kpi .sub{font-size:.77rem;color:var(--gris-txt);margin-top:.3rem}
+.pill{display:inline-block;padding:.12rem .55rem;border-radius:99px;font-family:'Barlow Condensed',sans-serif;
+  font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-top:.35rem}
+.pill.ok{background:#EAF7E1;color:var(--verde)} .pill.old{background:#FFF4E5;color:#8A5600}
 
-/* ---------- KPI ---------- */
-.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:1.1rem;margin-bottom:1.75rem}
-.kpi{background:var(--blanco);border:1px solid var(--gris-bd);border-top:4px solid var(--lima);border-radius:6px;padding:1.1rem 1.2rem 1.2rem}
-.kpi.p{border-top-color:var(--petroleo)}
-.kpi.n{border-top-color:var(--naranja)}
-.kpi h3{font-family:'Barlow Condensed',sans-serif;font-size:.85rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gris-txt);margin-bottom:.55rem}
-.kpi .val{font-family:'IBM Plex Mono',monospace;font-size:2rem;font-weight:600;letter-spacing:-.02em;line-height:1.05}
-.kpi .val small{font-size:1rem;font-weight:500;color:var(--gris-txt);margin-left:.15rem}
-.kpi .sub{font-size:.78rem;color:var(--gris-txt);margin-top:.35rem}
-.pill{display:inline-block;padding:.15rem .6rem;border-radius:99px;font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-top:.4rem}
-.pill.ok{background:#EAF7E1;color:var(--verde)}
-.pill.old{background:#FFF4E5;color:#8A5600}
+.nota{background:var(--blanco);border:1px solid var(--gris-bd);border-left:4px solid var(--lima);
+  border-radius:6px;padding:.75rem 1.1rem;margin-bottom:1.6rem;font-size:.82rem;color:var(--gris-txt)}
+.nota b{color:var(--petroleo)}
 
-/* ---------- PANELES ---------- */
-.panels{display:grid;grid-template-columns:repeat(auto-fit,minmax(440px,1fr));gap:1.4rem;margin-bottom:1.4rem}
+.panels{display:grid;gap:1.4rem;margin-bottom:1.4rem}
+.p2{grid-template-columns:repeat(auto-fit,minmax(430px,1fr))}
 .card{background:var(--blanco);border:1px solid var(--gris-bd);border-radius:6px;overflow:hidden}
-.card-hd{padding:.85rem 1.2rem;border-bottom:1px solid var(--gris-bd);display:flex;align-items:center;justify-content:space-between;gap:.75rem}
-.card-hd h2{font-family:'Barlow Condensed',sans-serif;font-size:1.1rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase}
-.card-hd .tag{font-family:'IBM Plex Mono',monospace;font-size:.72rem;color:var(--gris-txt)}
-.card-bd{padding:1.1rem 1.2rem 1.3rem}
-.chart{position:relative;height:330px}
+.card-hd{padding:.8rem 1.15rem;border-bottom:1px solid var(--gris-bd);display:flex;
+  align-items:center;justify-content:space-between;gap:.75rem;flex-wrap:wrap}
+.card-hd h2{font-family:'Barlow Condensed',sans-serif;font-size:1.08rem;font-weight:700;
+  letter-spacing:.05em;text-transform:uppercase}
+.card-hd .tag{font-family:'IBM Plex Mono',monospace;font-size:.71rem;color:var(--gris-txt)}
+.card-bd{padding:1.05rem 1.15rem 1.25rem}
+.chart{position:relative;height:340px}
+.chart.alto{height:430px}
 
-/* ---------- TABLAS ---------- */
-table{width:100%;border-collapse:collapse;font-size:.9rem}
-thead th{font-family:'Barlow Condensed',sans-serif;font-size:.82rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--gris-txt);text-align:left;padding:.55rem .5rem;border-bottom:2px solid var(--lima)}
+.filtros{display:flex;gap:.3rem}
+.filtros button{font-family:'Barlow Condensed',sans-serif;font-size:.78rem;font-weight:600;
+  letter-spacing:.06em;text-transform:uppercase;padding:.25rem .7rem;border:1px solid var(--gris-bd);
+  background:var(--blanco);color:var(--gris-txt);border-radius:99px;cursor:pointer;transition:.15s}
+.filtros button:hover{border-color:var(--lima-osc)}
+.filtros button.on{background:var(--petroleo);border-color:var(--petroleo);color:var(--lima)}
+
+table{width:100%;border-collapse:collapse;font-size:.89rem}
+thead th{font-family:'Barlow Condensed',sans-serif;font-size:.81rem;font-weight:600;letter-spacing:.08em;
+  text-transform:uppercase;color:var(--gris-txt);text-align:left;padding:.5rem .45rem;border-bottom:2px solid var(--lima)}
 thead th.r,tbody td.r{text-align:right}
-tbody td{padding:.6rem .5rem;border-bottom:1px solid var(--gris-bd)}
+tbody td{padding:.55rem .45rem;border-bottom:1px solid var(--gris-bd)}
 tbody tr:last-child td{border-bottom:none}
 tbody tr:hover{background:#FBFDF6}
-.num{font-family:'IBM Plex Mono',monospace;font-weight:600;color:var(--petroleo)}
-.nombre{font-weight:500}
-.rank{font-family:'IBM Plex Mono',monospace;font-size:.78rem;color:var(--gris-txt);width:2rem}
+.num{font-family:'IBM Plex Mono',monospace;font-weight:600}
+.rank{font-family:'IBM Plex Mono',monospace;font-size:.76rem;color:var(--gris-txt);width:1.9rem}
 
-.foot{border-top:4px solid var(--lima);background:var(--blanco);border-radius:6px;padding:1rem 1.2rem;font-size:.82rem;color:var(--gris-txt);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.foot{border-top:4px solid var(--lima);background:var(--blanco);border-radius:6px;padding:1rem 1.15rem;
+  font-size:.81rem;color:var(--gris-txt);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
 .foot strong{color:var(--petroleo);font-family:'IBM Plex Mono',monospace}
 
 @media(max-width:900px){
-  .panels{grid-template-columns:1fr}
-  .chart{height:280px}
-  .kpi .val{font-size:1.6rem}
-  .brand img{height:26px}
+  .p2{grid-template-columns:1fr}
+  .chart{height:290px} .chart.alto{height:380px}
+  .kpi .val{font-size:1.5rem} .brand img{height:26px}
 }
 </style>
 </head>
@@ -103,8 +97,7 @@ tbody tr:hover{background:#FBFDF6}
     <span class="fallback" id="fb">ambipar</span>
     <span class="brand-sep"></span>
     <span class="brand-title">Panel de trazabilidad de residuos
-      <span>Ambipar Chile · Inteligencia Circular</span>
-    </span>
+      <span>Ambipar Chile · Inteligencia Circular</span></span>
   </div>
   <span class="topbar-date" id="hoy">—</span>
 </div>
@@ -113,73 +106,84 @@ tbody tr:hover{background:#FBFDF6}
   <div id="alerta"></div>
 
   <div class="kpis">
-    <div class="kpi">
-      <h3>Total procesado</h3>
-      <div class="val" id="k-kg">—</div>
-      <div class="sub">Toneladas registradas</div>
+    <div class="kpi ing"><h3>Ingresos a planta</h3><div class="val" id="k-ing">—</div><div class="sub" id="k-ing-mov">—</div></div>
+    <div class="kpi sal"><h3>Salidas de planta</h3><div class="val" id="k-sal">—</div><div class="sub" id="k-sal-mov">—</div></div>
+    <div class="kpi ret"><h3>Retiros / traslados BO</h3><div class="val" id="k-ret">—</div><div class="sub" id="k-ret-mov">—</div></div>
+    <div class="kpi"><h3>Plantas / BO activas</h3><div class="val" id="k-plantas">—</div><div class="sub" id="k-zonas">—</div></div>
+    <div class="kpi"><h3>Última carga</h3><div class="val" id="k-fecha" style="font-size:1.05rem">—</div>
+      <span class="pill ok" id="k-pill">—</span></div>
+  </div>
+
+  <div class="nota">
+    <b>Ingreso</b>: material recibido en planta (hoja INGRESOS) · <b>Salida</b>: material despachado
+    a destinatario final (hoja SALIDAS) · <b>Retiro BO</b>: retiros y traslados desde cliente hacia destino.
+    Los flujos se muestran separados porque el mismo material entra y luego sale de planta: sumarlos lo contaría dos veces.
+  </div>
+
+  <div class="panels p2">
+    <div class="card">
+      <div class="card-hd"><h2>Toneladas por planta / base operacional</h2><span class="tag">por flujo</span></div>
+      <div class="card-bd"><div class="chart alto"><canvas id="c-plantas"></canvas></div></div>
     </div>
-    <div class="kpi p">
-      <h3>Movimientos</h3>
-      <div class="val" id="k-mov">—</div>
-      <div class="sub">Registros de pesaje</div>
-    </div>
-    <div class="kpi n">
-      <h3>Plantas / BO activas</h3>
-      <div class="val" id="k-plantas">—</div>
-      <div class="sub">Fuentes consolidadas</div>
-    </div>
-    <div class="kpi p">
-      <h3>Última carga</h3>
-      <div class="val" id="k-fecha" style="font-size:1.15rem">—</div>
-      <span class="pill ok" id="k-pill">—</span>
+    <div class="card">
+      <div class="card-hd"><h2>Evolución mensual</h2><span class="tag">toneladas</span></div>
+      <div class="card-bd"><div class="chart alto"><canvas id="c-meses"></canvas></div></div>
     </div>
   </div>
 
-  <div class="panels">
+  <div class="panels p2">
     <div class="card">
-      <div class="card-hd"><h2>Kg por planta / base operacional</h2><span class="tag">toneladas</span></div>
-      <div class="card-bd"><div class="chart"><canvas id="c-plantas"></canvas></div></div>
-    </div>
-    <div class="card">
-      <div class="card-hd"><h2>Distribución por tipo de residuo</h2><span class="tag">top 10 · toneladas</span></div>
+      <div class="card-hd">
+        <h2>Tipo de residuo</h2>
+        <div class="filtros" id="f-tipo">
+          <button data-f="todos" class="on">Todos</button>
+          <button data-f="ingreso">Ingreso</button>
+          <button data-f="salida">Salida</button>
+          <button data-f="retiro">Retiro</button>
+        </div>
+      </div>
       <div class="card-bd"><div class="chart"><canvas id="c-tipos"></canvas></div></div>
     </div>
+    <div class="card">
+      <div class="card-hd"><h2>Distribución por zona</h2><span class="tag">toneladas</span></div>
+      <div class="card-bd"><div class="chart"><canvas id="c-zonas"></canvas></div></div>
+    </div>
   </div>
 
-  <div class="panels">
+  <div class="panels p2">
     <div class="card">
-      <div class="card-hd"><h2>Destinos más frecuentes</h2><span class="tag">top 8</span></div>
-      <div class="card-bd">
-        <table>
-          <thead><tr><th class="rank">#</th><th>Destino</th><th class="r">Movim.</th><th class="r">Toneladas</th></tr></thead>
-          <tbody id="t-destinos"><tr><td colspan="4">Cargando…</td></tr></tbody>
-        </table>
-      </div>
+      <div class="card-hd"><h2>Destinos más relevantes</h2><span class="tag">salidas + retiros</span></div>
+      <div class="card-bd"><table>
+        <thead><tr><th class="rank">#</th><th>Destino</th><th class="r">Movim.</th><th class="r">Ton.</th></tr></thead>
+        <tbody id="t-destinos"><tr><td colspan="4">Cargando…</td></tr></tbody></table></div>
     </div>
     <div class="card">
-      <div class="card-hd"><h2>Clientes de mayor volumen</h2><span class="tag">top 8</span></div>
-      <div class="card-bd">
-        <table>
-          <thead><tr><th class="rank">#</th><th>Cliente</th><th class="r">Toneladas</th></tr></thead>
-          <tbody id="t-clientes"><tr><td colspan="3">Cargando…</td></tr></tbody>
-        </table>
-      </div>
+      <div class="card-hd"><h2>Clientes de mayor volumen</h2><span class="tag">ingresos + retiros</span></div>
+      <div class="card-bd"><table>
+        <thead><tr><th class="rank">#</th><th>Cliente</th><th class="r">Movim.</th><th class="r">Ton.</th></tr></thead>
+        <tbody id="t-clientes"><tr><td colspan="4">Cargando…</td></tr></tbody></table></div>
     </div>
   </div>
 
   <div class="foot">
-    <span>Dato más reciente: <strong id="f-dato">—</strong></span>
+    <span>Rango de datos: <strong id="f-rango">—</strong></span>
     <span>Registros consolidados: <strong id="f-reg">—</strong></span>
     <span>Ambipar Chile · Trazabilidad</span>
   </div>
 </div>
 
 <script>
-const PALETA=['#032224','#D4FF00','#0A6B52','#E88B00','#0A4A44','#A8CC00','#4C8C7A','#C99700','#7FB800','#2E5D57'];
+const C_ING='#0A6B52', C_SAL='#E88B00', C_RET='#032224', C_LIMA='#D4FF00';
+const PALETA=['#032224','#D4FF00','#0A6B52','#E88B00','#0A4A44','#A8CC00','#4C8C7A','#C99700','#7FB800','#2E5D57','#8FA300','#145C4B'];
 const RUTAS=['data/kpis_trazabilidad.json','kpis_trazabilidad.json','../data/kpis_trazabilidad.json'];
-const T=n=>(n/1000).toLocaleString('es-CL',{maximumFractionDigits:1});
-const N=n=>n.toLocaleString('es-CL');
+const MESES=['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
 
+const T=n=>(n/1000).toLocaleString('es-CL',{maximumFractionDigits:1});
+const N=n=>(n||0).toLocaleString('es-CL');
+const fmtMes=m=>{const [a,me]=m.split('-');return MESES[+me-1]+' '+a.slice(2)};
+const fecha=s=>s?new Date(s+'T00:00:00').toLocaleDateString('es-CL'):'—';
+
+let DATA=null, chartTipos=null;
 document.getElementById('hoy').textContent=new Date().toLocaleDateString('es-CL',{day:'2-digit',month:'2-digit',year:'numeric'});
 
 async function cargar(){
@@ -188,58 +192,124 @@ async function cargar(){
       const res=await fetch(r,{cache:'no-store'});
       if(!res.ok) continue;
       const d=await res.json();
-      if(d&&typeof d.total_kg!=='undefined'){pintar(d);return;}
+      if(d&&d.flujos){DATA=d;pintar(d);return;}
     }catch(e){}
   }
   document.getElementById('alerta').innerHTML=
     '<div class="alerta"><strong>No se encontró el archivo de datos.</strong> '+
-    'El archivo <code>kpis_trazabilidad.json</code> debe estar en <code>docs/data/</code>.</div>';
+    'Debe existir <code>docs/data/kpis_trazabilidad.json</code> generado con <code>extraer_kpis.py</code>.</div>';
 }
 
 function pintar(d){
-  document.getElementById('k-kg').innerHTML=T(d.total_kg)+' <small>t</small>';
-  document.getElementById('k-mov').textContent=N(d.total_movimientos);
+  const fl=d.flujos||{};
+  const set=(id,v)=>document.getElementById(id).innerHTML=v;
+
+  set('k-ing', T((fl['Ingreso']||{}).kg||0)+' <small>t</small>');
+  set('k-sal', T((fl['Salida']||{}).kg||0)+' <small>t</small>');
+  set('k-ret', T((fl['Retiro BO']||{}).kg||0)+' <small>t</small>');
+  document.getElementById('k-ing-mov').textContent=N((fl['Ingreso']||{}).movimientos)+' movimientos';
+  document.getElementById('k-sal-mov').textContent=N((fl['Salida']||{}).movimientos)+' movimientos';
+  document.getElementById('k-ret-mov').textContent=N((fl['Retiro BO']||{}).movimientos)+' movimientos';
+
   document.getElementById('k-plantas').textContent=Object.keys(d.plantas||{}).length;
+  document.getElementById('k-zonas').textContent=Object.keys(d.zonas||{}).length+' zonas';
 
   const f=new Date(d.actualizado);
   document.getElementById('k-fecha').textContent=
-    f.toLocaleDateString('es-CL',{day:'2-digit',month:'short',year:'numeric'})+' · '+
+    f.toLocaleDateString('es-CL',{day:'2-digit',month:'short'})+' · '+
     f.toLocaleTimeString('es-CL',{hour:'2-digit',minute:'2-digit'});
-  const horas=Math.floor((Date.now()-f)/36e5);
-  const pill=document.getElementById('k-pill');
-  if(horas<26){pill.className='pill ok';pill.textContent='Vigente';}
-  else{pill.className='pill old';pill.textContent='Hace '+Math.floor(horas/24)+' d';}
+  const hrs=Math.floor((Date.now()-f)/36e5), pill=document.getElementById('k-pill');
+  if(hrs<26){pill.className='pill ok';pill.textContent='Vigente';}
+  else{pill.className='pill old';pill.textContent='Hace '+Math.floor(hrs/24)+' d';}
 
-  if(d.ultima_dato) document.getElementById('f-dato').textContent=new Date(d.ultima_dato).toLocaleDateString('es-CL');
-  document.getElementById('f-reg').textContent=N(d.registros_totales||d.total_movimientos);
+  document.getElementById('f-rango').textContent=fecha(d.primer_dato)+' → '+fecha(d.ultima_dato);
+  document.getElementById('f-reg').textContent=N(d.registros_totales);
 
-  const pl=Object.entries(d.plantas||{}).sort((a,b)=>b[1].kg-a[1].kg);
+  // ── Plantas: barras apiladas por flujo
+  const pl=Object.entries(d.plantas||{}).sort((a,b)=>b[1].kg_total-a[1].kg_total);
   new Chart(document.getElementById('c-plantas'),{
     type:'bar',
-    data:{labels:pl.map(p=>p[0]),datasets:[{data:pl.map(p=>p[1].kg/1000),backgroundColor:'#032224',hoverBackgroundColor:'#D4FF00',borderRadius:3,barThickness:22}]},
+    data:{labels:pl.map(p=>p[0]),datasets:[
+      {label:'Ingreso',data:pl.map(p=>(p[1].kg_ingreso||0)/1000),backgroundColor:C_ING,borderRadius:2},
+      {label:'Salida', data:pl.map(p=>(p[1].kg_salida ||0)/1000),backgroundColor:C_SAL,borderRadius:2},
+      {label:'Retiro BO',data:pl.map(p=>(p[1].kg_retiro||0)/1000),backgroundColor:C_RET,borderRadius:2}]},
     options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
-      plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>c.parsed.x.toLocaleString('es-CL',{maximumFractionDigits:1})+' t'}}},
-      scales:{x:{beginAtZero:true,grid:{color:'#EFF2EC'},ticks:{font:{family:'IBM Plex Mono',size:11},callback:v=>v.toLocaleString('es-CL')+' t'}},
-              y:{grid:{display:false},ticks:{font:{family:'Barlow Condensed',size:13,weight:'600'}}}}}
+      plugins:{legend:{position:'top',labels:{boxWidth:11,font:{family:'Inter',size:11}}},
+        tooltip:{callbacks:{label:c=>c.dataset.label+': '+c.parsed.x.toLocaleString('es-CL',{maximumFractionDigits:1})+' t'}}},
+      scales:{x:{stacked:true,beginAtZero:true,grid:{color:'#EFF2EC'},
+                 ticks:{font:{family:'IBM Plex Mono',size:10},callback:v=>v.toLocaleString('es-CL')}},
+              y:{stacked:true,grid:{display:false},ticks:{font:{family:'Barlow Condensed',size:12,weight:'600'}}}}}
   });
 
-  const tp=Object.entries(d.por_tipo||{}).filter(t=>t[0]&&t[0]!=='nan').sort((a,b)=>b[1].kg-a[1].kg).slice(0,10);
-  new Chart(document.getElementById('c-tipos'),{
-    type:'doughnut',
-    data:{labels:tp.map(t=>t[0]),datasets:[{data:tp.map(t=>t[1].kg/1000),backgroundColor:PALETA,borderColor:'#fff',borderWidth:2}]},
-    options:{responsive:true,maintainAspectRatio:false,cutout:'55%',
-      plugins:{legend:{position:'right',labels:{boxWidth:11,font:{family:'Inter',size:11},padding:8}},
-               tooltip:{callbacks:{label:c=>c.label+': '+c.parsed.toLocaleString('es-CL',{maximumFractionDigits:1})+' t'}}}}
+  // ── Evolución mensual
+  const ms=Object.keys(d.por_mes||{}).sort();
+  new Chart(document.getElementById('c-meses'),{
+    type:'bar',
+    data:{labels:ms.map(fmtMes),datasets:[
+      {label:'Ingreso',data:ms.map(m=>(d.por_mes[m].kg_ingreso||0)/1000),backgroundColor:C_ING,borderRadius:2},
+      {label:'Salida', data:ms.map(m=>(d.por_mes[m].kg_salida ||0)/1000),backgroundColor:C_SAL,borderRadius:2},
+      {label:'Retiro BO',data:ms.map(m=>(d.por_mes[m].kg_retiro||0)/1000),backgroundColor:C_RET,borderRadius:2}]},
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{position:'top',labels:{boxWidth:11,font:{family:'Inter',size:11}}},
+        tooltip:{callbacks:{label:c=>c.dataset.label+': '+c.parsed.y.toLocaleString('es-CL',{maximumFractionDigits:1})+' t'}}},
+      scales:{x:{stacked:true,grid:{display:false},ticks:{font:{family:'Barlow Condensed',size:12,weight:'600'}}},
+              y:{stacked:true,beginAtZero:true,grid:{color:'#EFF2EC'},
+                 ticks:{font:{family:'IBM Plex Mono',size:10},callback:v=>v.toLocaleString('es-CL')+' t'}}}}
   });
 
-  document.getElementById('t-destinos').innerHTML=(d.destinos_frecuentes||[])
-    .filter(x=>x.destino&&x.destino!=='nan').slice(0,8)
-    .map((x,i)=>`<tr><td class="rank">${i+1}</td><td class="nombre">${x.destino}</td><td class="r num">${N(x.frecuencia)}</td><td class="r num">${T(x.kg_total)}</td></tr>`).join('');
+  // ── Zonas
+  const zn=Object.entries(d.zonas||{}).sort((a,b)=>b[1].kg-a[1].kg);
+  new Chart(document.getElementById('c-zonas'),{
+    type:'bar',
+    data:{labels:zn.map(z=>z[0].replace('ZONA ','')),
+          datasets:[{data:zn.map(z=>z[1].kg/1000),backgroundColor:[C_RET,C_ING,C_LIMA,C_SAL],borderRadius:3,barThickness:44}]},
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{display:false},
+        tooltip:{callbacks:{label:c=>c.parsed.y.toLocaleString('es-CL',{maximumFractionDigits:1})+' t'}}},
+      scales:{x:{grid:{display:false},ticks:{font:{family:'Barlow Condensed',size:13,weight:'600'}}},
+              y:{beginAtZero:true,grid:{color:'#EFF2EC'},
+                 ticks:{font:{family:'IBM Plex Mono',size:10},callback:v=>v.toLocaleString('es-CL')+' t'}}}}
+  });
 
-  document.getElementById('t-clientes').innerHTML=(d.clientes_grandes||[])
-    .filter(x=>x.cliente&&x.cliente!=='nan').slice(0,8)
-    .map((x,i)=>`<tr><td class="rank">${i+1}</td><td class="nombre">${x.cliente}</td><td class="r num">${T(x.kg)}</td></tr>`).join('');
+  dibujarTipos('todos');
+
+  // ── Tablas
+  document.getElementById('t-destinos').innerHTML=(d.destinos||[]).slice(0,10)
+    .map((x,i)=>`<tr><td class="rank">${i+1}</td><td>${x.destino}</td>
+      <td class="r num">${N(x.movimientos)}</td><td class="r num">${T(x.kg)}</td></tr>`).join('')
+    || '<tr><td colspan="4">Sin datos</td></tr>';
+
+  document.getElementById('t-clientes').innerHTML=(d.clientes||[]).slice(0,10)
+    .map((x,i)=>`<tr><td class="rank">${i+1}</td><td>${x.cliente}</td>
+      <td class="r num">${N(x.movimientos)}</td><td class="r num">${T(x.kg)}</td></tr>`).join('')
+    || '<tr><td colspan="4">Sin datos</td></tr>';
 }
+
+function dibujarTipos(filtro){
+  const campo = filtro==='todos' ? 'kg' : 'kg_'+filtro;
+  const tp=Object.entries(DATA.por_tipo||{})
+    .map(([k,v])=>[k, v[campo]||0])
+    .filter(t=>t[1]>0)
+    .sort((a,b)=>b[1]-a[1]).slice(0,12);
+
+  if(chartTipos) chartTipos.destroy();
+  chartTipos=new Chart(document.getElementById('c-tipos'),{
+    type:'doughnut',
+    data:{labels:tp.map(t=>t[0]),datasets:[{data:tp.map(t=>t[1]/1000),
+      backgroundColor:PALETA,borderColor:'#fff',borderWidth:2}]},
+    options:{responsive:true,maintainAspectRatio:false,cutout:'54%',
+      plugins:{legend:{position:'right',labels:{boxWidth:10,font:{family:'Inter',size:10},padding:6}},
+        tooltip:{callbacks:{label:c=>c.label+': '+c.parsed.toLocaleString('es-CL',{maximumFractionDigits:1})+' t'}}}}
+  });
+}
+
+document.getElementById('f-tipo').addEventListener('click',e=>{
+  const b=e.target.closest('button'); if(!b||!DATA) return;
+  document.querySelectorAll('#f-tipo button').forEach(x=>x.classList.remove('on'));
+  b.classList.add('on');
+  dibujarTipos(b.dataset.f);
+});
+
 cargar();
 </script>
 </body>
