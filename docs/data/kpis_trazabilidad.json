@@ -1,0 +1,343 @@
+{
+  "total_kg": 13069984.9,
+  "total_movimientos": 11156,
+  "plantas": {
+    "BO CHILOÉ": {
+      "kg": 126508.8,
+      "movimientos": 29
+    },
+    "BO IQUIQUE": {
+      "kg": 74660.0,
+      "movimientos": 37
+    },
+    "BO SAN BERNARDO": {
+      "kg": 12856246.1,
+      "movimientos": 11081
+    },
+    "BO VALPARAÍSO": {
+      "kg": 12570.0,
+      "movimientos": 9
+    }
+  },
+  "por_tipo": {
+    "ASIMILABLE A DOMICILIARIO": {
+      "kg": 9419209.4,
+      "movimientos": 8008
+    },
+    "BALDES ENTEROS": {
+      "kg": 755.0,
+      "movimientos": 22
+    },
+    "BANDEJAS ENTERAS": {
+      "kg": 43.3,
+      "movimientos": 11
+    },
+    "BIDONES ENTEROS SIN PROCESAR": {
+      "kg": 4773.0,
+      "movimientos": 112
+    },
+    "BIDONES TRITURADOS": {
+      "kg": 28.8,
+      "movimientos": 1
+    },
+    "BLANCO": {
+      "kg": 2449.1,
+      "movimientos": 34
+    },
+    "BOTELLA COLOR": {
+      "kg": 98.0,
+      "movimientos": 8
+    },
+    "BOTELLA TRANSPARENTE": {
+      "kg": 7928.6,
+      "movimientos": 161
+    },
+    "CARTÓN CORRUGADO": {
+      "kg": 212067.9,
+      "movimientos": 441
+    },
+    "CARTÓN PARA LÍQUIDOS": {
+      "kg": 9607.9,
+      "movimientos": 136
+    },
+    "CHATARRA": {
+      "kg": 27961.8,
+      "movimientos": 21
+    },
+    "ELECTRÓNICOS": {
+      "kg": 709.9,
+      "movimientos": 5
+    },
+    "ENVASES HDPE": {
+      "kg": 5337.4,
+      "movimientos": 72
+    },
+    "EPS GRANEL": {
+      "kg": 697.7,
+      "movimientos": 58
+    },
+    "EPS SIN PROCESAR": {
+      "kg": 872.5,
+      "movimientos": 49
+    },
+    "ESCOMBROS": {
+      "kg": 256379.3,
+      "movimientos": 149
+    },
+    "FILM": {
+      "kg": 4569.0,
+      "movimientos": 32
+    },
+    "FÁRMACOS": {
+      "kg": 2420.0,
+      "movimientos": 1
+    },
+    "HOJALATA": {
+      "kg": 138.2,
+      "movimientos": 4
+    },
+    "INDUSTRIAL": {
+      "kg": 1072550.0,
+      "movimientos": 548
+    },
+    "INVENTARIO": {
+      "kg": 10225.0,
+      "movimientos": 4
+    },
+    "LATAS": {
+      "kg": 3264.6,
+      "movimientos": 102
+    },
+    "LATAS DE AEROSOLES": {
+      "kg": 29.0,
+      "movimientos": 1
+    },
+    "LODOS CONTAMINADOS": {
+      "kg": 18390.0,
+      "movimientos": 1
+    },
+    "MADERA": {
+      "kg": 44274.3,
+      "movimientos": 30
+    },
+    "MANGUERA RIEGO ENTERA": {
+      "kg": 20.0,
+      "movimientos": 1
+    },
+    "METALES": {
+      "kg": 692.0,
+      "movimientos": 21
+    },
+    "MEZCLA DE ENVASES Y EMBALAJES": {
+      "kg": 15968.1,
+      "movimientos": 31
+    },
+    "MEZCLA DE PAPEL Y CARTÓN": {
+      "kg": 441.0,
+      "movimientos": 6
+    },
+    "MEZCLA DE PLÁSTICOS": {
+      "kg": 69112.2,
+      "movimientos": 63
+    },
+    "NEUMÁTICOS FUERA DE USO": {
+      "kg": 3200.0,
+      "movimientos": 1
+    },
+    "OTRAS MADERAS": {
+      "kg": 1050.0,
+      "movimientos": 2
+    },
+    "PALLETS ENTEROS": {
+      "kg": 3330.0,
+      "movimientos": 6
+    },
+    "PAPEL Y CARTÓN": {
+      "kg": 440.0,
+      "movimientos": 5
+    },
+    "PE EXPANDIDO": {
+      "kg": 2170.0,
+      "movimientos": 1
+    },
+    "PEBD COLOR": {
+      "kg": 11643.8,
+      "movimientos": 89
+    },
+    "PLÁSTICOS": {
+      "kg": 6775.3,
+      "movimientos": 38
+    },
+    "PP RÍGIDO ENTERO": {
+      "kg": 8194.2,
+      "movimientos": 133
+    },
+    "RAFIA BLANCA": {
+      "kg": 873.0,
+      "movimientos": 12
+    },
+    "RAFIA COLOR": {
+      "kg": 129.0,
+      "movimientos": 2
+    },
+    "RESIDUOS NO VALORIZABLES": {
+      "kg": 24.0,
+      "movimientos": 1
+    },
+    "RESIDUOS ORGÁNICOS": {
+      "kg": 159910.0,
+      "movimientos": 132
+    },
+    "ROPA": {
+      "kg": 172.0,
+      "movimientos": 1
+    },
+    "STRETCH FILM": {
+      "kg": 54451.0,
+      "movimientos": 241
+    },
+    "SÓLIDOS CONTAMINADOS": {
+      "kg": 1584290.0,
+      "movimientos": 129
+    },
+    "TEXTIL": {
+      "kg": 1442.0,
+      "movimientos": 4
+    },
+    "VIDRIO": {
+      "kg": 40345.6,
+      "movimientos": 103
+    },
+    "ZUNCHO PET": {
+      "kg": 2.0,
+      "movimientos": 1
+    },
+    "ZUNCHO PP": {
+      "kg": 67.0,
+      "movimientos": 1
+    },
+    "nan": {
+      "kg": 463.0,
+      "movimientos": 121
+    }
+  },
+  "destinos_frecuentes": [
+    {
+      "destino": "GERSA",
+      "frecuencia": 3066,
+      "kg_total": 1723242.0
+    },
+    {
+      "destino": "RELLENO SANTA MARTA",
+      "frecuencia": 2405,
+      "kg_total": 4169259.0
+    },
+    {
+      "destino": "STA. MARTA",
+      "frecuencia": 1848,
+      "kg_total": 3430.0
+    },
+    {
+      "destino": "GIRI",
+      "frecuencia": 1625,
+      "kg_total": 634162.3
+    },
+    {
+      "destino": "KDM",
+      "frecuencia": 830,
+      "kg_total": 4036110.0
+    },
+    {
+      "destino": "ECOFIBRAS SAN BERNARDO",
+      "frecuencia": 353,
+      "kg_total": 26813.0
+    },
+    {
+      "destino": "REINSA MAIPÚ",
+      "frecuencia": 203,
+      "kg_total": 132039.0
+    },
+    {
+      "destino": "GREENREC",
+      "frecuencia": 154,
+      "kg_total": 259528.8
+    },
+    {
+      "destino": "nan",
+      "frecuencia": 150,
+      "kg_total": 0.0
+    },
+    {
+      "destino": "HIDRONOR",
+      "frecuencia": 131,
+      "kg_total": 1613570.0
+    }
+  ],
+  "clientes_grandes": [
+    {
+      "cliente": "DESARROLLOS E INVERSIONES INTERNACIONALES SPA",
+      "kg": 4434882.1
+    },
+    {
+      "cliente": "ANGLO AMERICAN SUR S.A",
+      "kg": 1575150.0
+    },
+    {
+      "cliente": "SERVICIOS AVO II SPA",
+      "kg": 1310769.0
+    },
+    {
+      "cliente": "GARIBALDI S.A",
+      "kg": 488400.0
+    },
+    {
+      "cliente": "IDEAL S.A",
+      "kg": 356046.0
+    },
+    {
+      "cliente": "SOCIEDAD CONCESIONARIA AUTOPISTA SAN ANTONIO-SANTIAGO S.A",
+      "kg": 231880.0
+    },
+    {
+      "cliente": "IMAL SPA",
+      "kg": 230370.0
+    },
+    {
+      "cliente": "INMOBILIARIA RECONQUISTA S.A",
+      "kg": 225475.0
+    },
+    {
+      "cliente": "ALL4LABELS SANTIAGO SPA",
+      "kg": 193950.0
+    },
+    {
+      "cliente": "INDUSTRIAL Y MINERIA LOS ESTEROS LTDA",
+      "kg": 192460.2
+    }
+  ],
+  "por_bo": {
+    "BO CHILOÉ": {
+      "kg_total": 126508.8,
+      "clientes_unicos": 2,
+      "movimientos": 29
+    },
+    "BO IQUIQUE": {
+      "kg_total": 74660.0,
+      "clientes_unicos": 5,
+      "movimientos": 37
+    },
+    "BO SAN BERNARDO": {
+      "kg_total": 12856246.1,
+      "clientes_unicos": 171,
+      "movimientos": 11081
+    },
+    "BO VALPARAÍSO": {
+      "kg_total": 12570.0,
+      "clientes_unicos": 4,
+      "movimientos": 9
+    }
+  },
+  "ultima_dato": "2026-07-29T00:00:00",
+  "actualizado": "2026-07-29T21:16:43.140503",
+  "registros_totales": 11156
+}
