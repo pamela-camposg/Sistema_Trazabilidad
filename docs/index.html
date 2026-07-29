@@ -3,211 +3,95 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Panel de Trazabilidad · Ambipar</title>
+<title>Panel de Trazabilidad · Ambipar Chile</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
 <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
 <style>
 :root{
-  --lima:#C8E600;
-  --lima-osc:#B2CC00;
-  --verde:#00693E;
-  --verde-cl:#00A05A;
-  --negro:#111111;
-  --gris-txt:#5A5F5C;
-  --gris-bd:#E3E6E1;
-  --gris-bg:#F4F6F2;
+  --petroleo:#032224;
+  --petroleo-cl:#0A4A44;
+  --lima:#D4FF00;
+  --lima-osc:#A8CC00;
+  --verde:#0A6B52;
+  --gris-txt:#5C6663;
+  --gris-bd:#E2E7E4;
+  --gris-bg:#F5F7F4;
   --naranja:#E88B00;
   --blanco:#fff;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-body{
-  font-family:'Inter',system-ui,sans-serif;
-  background:var(--gris-bg);
-  color:var(--negro);
-  line-height:1.5;
-}
+body{font-family:'Inter',system-ui,sans-serif;background:var(--gris-bg);color:var(--petroleo);line-height:1.5}
 
-/* ---------- BARRA SUPERIOR ---------- */
+/* ---------- CABECERA ---------- */
 .topbar{
-  background:var(--lima);
-  padding:.9rem 1.75rem;
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:1rem;
-  flex-wrap:wrap;
+  background:var(--blanco);
+  border-bottom:5px solid var(--lima);
+  padding:1rem 1.75rem .85rem;
+  display:flex;align-items:center;justify-content:space-between;
+  gap:1.25rem;flex-wrap:wrap;
 }
-.brand{display:flex;align-items:center;gap:1rem}
-.logo{
-  font-family:'Inter',sans-serif;
-  font-weight:700;
-  font-size:1.6rem;
-  letter-spacing:-.03em;
-  color:var(--negro);
+.brand{display:flex;align-items:center;gap:1.1rem}
+.brand img{height:34px;width:auto;display:block}
+.brand .fallback{
+  font-weight:700;font-size:1.5rem;letter-spacing:-.03em;color:var(--petroleo);display:none;
 }
-.logo sup{font-size:.6rem;vertical-align:super;font-weight:600}
-.brand-sep{width:1px;height:34px;background:rgba(0,0,0,.35)}
+.brand-sep{width:1px;height:36px;background:var(--gris-bd)}
 .brand-title{
-  font-family:'Barlow Condensed',sans-serif;
-  font-weight:700;
-  font-size:1.05rem;
-  line-height:1.1;
-  letter-spacing:.06em;
-  text-transform:uppercase;
-  color:var(--negro);
+  font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.02rem;
+  line-height:1.12;letter-spacing:.07em;text-transform:uppercase;color:var(--petroleo);
 }
-.topbar-date{
-  font-family:'IBM Plex Mono',monospace;
-  font-size:.85rem;
-  font-weight:600;
-  color:var(--negro);
-}
+.brand-title span{display:block;font-weight:500;color:var(--gris-txt);letter-spacing:.1em;font-size:.85rem}
+.topbar-date{font-family:'IBM Plex Mono',monospace;font-size:.82rem;font-weight:600;color:var(--gris-txt)}
 
-/* ---------- LAYOUT ---------- */
 .wrap{max-width:1360px;margin:0 auto;padding:1.75rem 1.25rem 3rem}
 
 .alerta{
-  background:#FFF4E5;
-  border:1px solid #F5D9A8;
-  border-left:4px solid var(--naranja);
-  color:#7A4B00;
-  padding:.9rem 1.1rem;
-  border-radius:6px;
-  margin-bottom:1.5rem;
-  font-size:.9rem;
+  background:#FFF6E6;border:1px solid #F3DCAE;border-left:4px solid var(--naranja);
+  color:#7A4B00;padding:.9rem 1.1rem;border-radius:6px;margin-bottom:1.5rem;font-size:.9rem;
 }
+.alerta code{background:rgba(0,0,0,.06);padding:.05rem .3rem;border-radius:3px;font-size:.85em}
 
 /* ---------- KPI ---------- */
-.kpis{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(215px,1fr));
-  gap:1.1rem;
-  margin-bottom:1.75rem;
-}
-.kpi{
-  background:var(--blanco);
-  border:1px solid var(--gris-bd);
-  border-top:4px solid var(--lima);
-  border-radius:6px;
-  padding:1.1rem 1.2rem 1.2rem;
-}
-.kpi.v{border-top-color:var(--verde)}
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(215px,1fr));gap:1.1rem;margin-bottom:1.75rem}
+.kpi{background:var(--blanco);border:1px solid var(--gris-bd);border-top:4px solid var(--lima);border-radius:6px;padding:1.1rem 1.2rem 1.2rem}
+.kpi.p{border-top-color:var(--petroleo)}
 .kpi.n{border-top-color:var(--naranja)}
-.kpi h3{
-  font-family:'Barlow Condensed',sans-serif;
-  font-size:.85rem;
-  font-weight:600;
-  letter-spacing:.1em;
-  text-transform:uppercase;
-  color:var(--gris-txt);
-  margin-bottom:.55rem;
-}
-.kpi .val{
-  font-family:'IBM Plex Mono',monospace;
-  font-size:2rem;
-  font-weight:600;
-  letter-spacing:-.02em;
-  color:var(--negro);
-  line-height:1.05;
-}
+.kpi h3{font-family:'Barlow Condensed',sans-serif;font-size:.85rem;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--gris-txt);margin-bottom:.55rem}
+.kpi .val{font-family:'IBM Plex Mono',monospace;font-size:2rem;font-weight:600;letter-spacing:-.02em;line-height:1.05}
 .kpi .val small{font-size:1rem;font-weight:500;color:var(--gris-txt);margin-left:.15rem}
 .kpi .sub{font-size:.78rem;color:var(--gris-txt);margin-top:.35rem}
-
-.pill{
-  display:inline-block;
-  padding:.15rem .6rem;
-  border-radius:99px;
-  font-family:'Barlow Condensed',sans-serif;
-  font-size:.75rem;
-  font-weight:600;
-  letter-spacing:.08em;
-  text-transform:uppercase;
-  margin-top:.4rem;
-}
-.pill.ok{background:#E6F4EA;color:var(--verde)}
+.pill{display:inline-block;padding:.15rem .6rem;border-radius:99px;font-family:'Barlow Condensed',sans-serif;font-size:.75rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-top:.4rem}
+.pill.ok{background:#EAF7E1;color:var(--verde)}
 .pill.old{background:#FFF4E5;color:#8A5600}
 
 /* ---------- PANELES ---------- */
-.panels{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(440px,1fr));
-  gap:1.4rem;
-  margin-bottom:1.4rem;
-}
-.card{
-  background:var(--blanco);
-  border:1px solid var(--gris-bd);
-  border-radius:6px;
-  overflow:hidden;
-}
-.card-hd{
-  padding:.85rem 1.2rem;
-  border-bottom:1px solid var(--gris-bd);
-  display:flex;
-  align-items:center;
-  justify-content:space-between;
-  gap:.75rem;
-}
-.card-hd h2{
-  font-family:'Barlow Condensed',sans-serif;
-  font-size:1.1rem;
-  font-weight:700;
-  letter-spacing:.05em;
-  text-transform:uppercase;
-}
-.card-hd .tag{
-  font-family:'IBM Plex Mono',monospace;
-  font-size:.72rem;
-  color:var(--gris-txt);
-}
+.panels{display:grid;grid-template-columns:repeat(auto-fit,minmax(440px,1fr));gap:1.4rem;margin-bottom:1.4rem}
+.card{background:var(--blanco);border:1px solid var(--gris-bd);border-radius:6px;overflow:hidden}
+.card-hd{padding:.85rem 1.2rem;border-bottom:1px solid var(--gris-bd);display:flex;align-items:center;justify-content:space-between;gap:.75rem}
+.card-hd h2{font-family:'Barlow Condensed',sans-serif;font-size:1.1rem;font-weight:700;letter-spacing:.05em;text-transform:uppercase}
+.card-hd .tag{font-family:'IBM Plex Mono',monospace;font-size:.72rem;color:var(--gris-txt)}
 .card-bd{padding:1.1rem 1.2rem 1.3rem}
 .chart{position:relative;height:330px}
 
 /* ---------- TABLAS ---------- */
 table{width:100%;border-collapse:collapse;font-size:.9rem}
-thead th{
-  font-family:'Barlow Condensed',sans-serif;
-  font-size:.82rem;
-  font-weight:600;
-  letter-spacing:.08em;
-  text-transform:uppercase;
-  color:var(--gris-txt);
-  text-align:left;
-  padding:.55rem .5rem;
-  border-bottom:2px solid var(--lima);
-}
+thead th{font-family:'Barlow Condensed',sans-serif;font-size:.82rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;color:var(--gris-txt);text-align:left;padding:.55rem .5rem;border-bottom:2px solid var(--lima)}
 thead th.r,tbody td.r{text-align:right}
 tbody td{padding:.6rem .5rem;border-bottom:1px solid var(--gris-bd)}
 tbody tr:last-child td{border-bottom:none}
-tbody tr:hover{background:#FAFCF5}
-.num{font-family:'IBM Plex Mono',monospace;font-weight:600;color:var(--verde)}
+tbody tr:hover{background:#FBFDF6}
+.num{font-family:'IBM Plex Mono',monospace;font-weight:600;color:var(--petroleo)}
 .nombre{font-weight:500}
-.rank{
-  font-family:'IBM Plex Mono',monospace;
-  font-size:.78rem;
-  color:var(--gris-txt);
-  width:2rem;
-}
+.rank{font-family:'IBM Plex Mono',monospace;font-size:.78rem;color:var(--gris-txt);width:2rem}
 
-/* ---------- FOOT ---------- */
-.foot{
-  border-top:3px solid var(--lima);
-  background:var(--blanco);
-  border-radius:6px;
-  padding:1rem 1.2rem;
-  font-size:.82rem;
-  color:var(--gris-txt);
-  display:flex;
-  justify-content:space-between;
-  gap:1rem;
-  flex-wrap:wrap;
-}
-.foot strong{color:var(--negro);font-family:'IBM Plex Mono',monospace}
+.foot{border-top:4px solid var(--lima);background:var(--blanco);border-radius:6px;padding:1rem 1.2rem;font-size:.82rem;color:var(--gris-txt);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.foot strong{color:var(--petroleo);font-family:'IBM Plex Mono',monospace}
 
 @media(max-width:900px){
   .panels{grid-template-columns:1fr}
   .chart{height:280px}
   .kpi .val{font-size:1.6rem}
+  .brand img{height:26px}
 }
 </style>
 </head>
@@ -215,9 +99,12 @@ tbody tr:hover{background:#FAFCF5}
 
 <div class="topbar">
   <div class="brand">
-    <span class="logo">ambipar<sup>®</sup></span>
+    <img src="ambipar-logo.png" alt="Ambipar" onerror="this.style.display='none';document.getElementById('fb').style.display='block'">
+    <span class="fallback" id="fb">ambipar</span>
     <span class="brand-sep"></span>
-    <span class="brand-title">Panel de trazabilidad<br>de residuos · Chile</span>
+    <span class="brand-title">Panel de trazabilidad de residuos
+      <span>Ambipar Chile · Inteligencia Circular</span>
+    </span>
   </div>
   <span class="topbar-date" id="hoy">—</span>
 </div>
@@ -231,7 +118,7 @@ tbody tr:hover{background:#FAFCF5}
       <div class="val" id="k-kg">—</div>
       <div class="sub">Toneladas registradas</div>
     </div>
-    <div class="kpi v">
+    <div class="kpi p">
       <h3>Movimientos</h3>
       <div class="val" id="k-mov">—</div>
       <div class="sub">Registros de pesaje</div>
@@ -241,7 +128,7 @@ tbody tr:hover{background:#FAFCF5}
       <div class="val" id="k-plantas">—</div>
       <div class="sub">Fuentes consolidadas</div>
     </div>
-    <div class="kpi v">
+    <div class="kpi p">
       <h3>Última carga</h3>
       <div class="val" id="k-fecha" style="font-size:1.15rem">—</div>
       <span class="pill ok" id="k-pill">—</span>
@@ -250,27 +137,18 @@ tbody tr:hover{background:#FAFCF5}
 
   <div class="panels">
     <div class="card">
-      <div class="card-hd">
-        <h2>Kg por planta / base operacional</h2>
-        <span class="tag">toneladas</span>
-      </div>
+      <div class="card-hd"><h2>Kg por planta / base operacional</h2><span class="tag">toneladas</span></div>
       <div class="card-bd"><div class="chart"><canvas id="c-plantas"></canvas></div></div>
     </div>
     <div class="card">
-      <div class="card-hd">
-        <h2>Distribución por tipo de residuo</h2>
-        <span class="tag">top 10 · toneladas</span>
-      </div>
+      <div class="card-hd"><h2>Distribución por tipo de residuo</h2><span class="tag">top 10 · toneladas</span></div>
       <div class="card-bd"><div class="chart"><canvas id="c-tipos"></canvas></div></div>
     </div>
   </div>
 
   <div class="panels">
     <div class="card">
-      <div class="card-hd">
-        <h2>Destinos más frecuentes</h2>
-        <span class="tag">top 8</span>
-      </div>
+      <div class="card-hd"><h2>Destinos más frecuentes</h2><span class="tag">top 8</span></div>
       <div class="card-bd">
         <table>
           <thead><tr><th class="rank">#</th><th>Destino</th><th class="r">Movim.</th><th class="r">Toneladas</th></tr></thead>
@@ -279,10 +157,7 @@ tbody tr:hover{background:#FAFCF5}
       </div>
     </div>
     <div class="card">
-      <div class="card-hd">
-        <h2>Clientes de mayor volumen</h2>
-        <span class="tag">top 8</span>
-      </div>
+      <div class="card-hd"><h2>Clientes de mayor volumen</h2><span class="tag">top 8</span></div>
       <div class="card-bd">
         <table>
           <thead><tr><th class="rank">#</th><th>Cliente</th><th class="r">Toneladas</th></tr></thead>
@@ -295,14 +170,13 @@ tbody tr:hover{background:#FAFCF5}
   <div class="foot">
     <span>Dato más reciente: <strong id="f-dato">—</strong></span>
     <span>Registros consolidados: <strong id="f-reg">—</strong></span>
-    <span>Actualización automática diaria · Ambipar Chile</span>
+    <span>Ambipar Chile · Trazabilidad</span>
   </div>
 </div>
 
 <script>
-const PALETA=['#00693E','#C8E600','#00A05A','#E88B00','#7FB800','#046C4E','#A8CC00','#D4A017','#5A8F00','#8CC63F'];
+const PALETA=['#032224','#D4FF00','#0A6B52','#E88B00','#0A4A44','#A8CC00','#4C8C7A','#C99700','#7FB800','#2E5D57'];
 const RUTAS=['data/kpis_trazabilidad.json','kpis_trazabilidad.json','../data/kpis_trazabilidad.json'];
-
 const T=n=>(n/1000).toLocaleString('es-CL',{maximumFractionDigits:1});
 const N=n=>n.toLocaleString('es-CL');
 
@@ -314,13 +188,12 @@ async function cargar(){
       const res=await fetch(r,{cache:'no-store'});
       if(!res.ok) continue;
       const d=await res.json();
-      if(d && typeof d.total_kg!=='undefined'){pintar(d);return;}
-    }catch(e){/* siguiente ruta */}
+      if(d&&typeof d.total_kg!=='undefined'){pintar(d);return;}
+    }catch(e){}
   }
   document.getElementById('alerta').innerHTML=
     '<div class="alerta"><strong>No se encontró el archivo de datos.</strong> '+
-    'El archivo <code>kpis_trazabilidad.json</code> debe estar en <code>docs/data/</code> '+
-    'dentro del repositorio (GitHub Pages solo publica la carpeta <code>docs</code>).</div>';
+    'El archivo <code>kpis_trazabilidad.json</code> debe estar en <code>docs/data/</code>.</div>';
 }
 
 function pintar(d){
@@ -340,44 +213,33 @@ function pintar(d){
   if(d.ultima_dato) document.getElementById('f-dato').textContent=new Date(d.ultima_dato).toLocaleDateString('es-CL');
   document.getElementById('f-reg').textContent=N(d.registros_totales||d.total_movimientos);
 
-  // Plantas
   const pl=Object.entries(d.plantas||{}).sort((a,b)=>b[1].kg-a[1].kg);
   new Chart(document.getElementById('c-plantas'),{
     type:'bar',
-    data:{labels:pl.map(p=>p[0]),datasets:[{data:pl.map(p=>p[1].kg/1000),backgroundColor:'#00693E',hoverBackgroundColor:'#C8E600',borderRadius:3,barThickness:22}]},
+    data:{labels:pl.map(p=>p[0]),datasets:[{data:pl.map(p=>p[1].kg/1000),backgroundColor:'#032224',hoverBackgroundColor:'#D4FF00',borderRadius:3,barThickness:22}]},
     options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
       plugins:{legend:{display:false},tooltip:{callbacks:{label:c=>c.parsed.x.toLocaleString('es-CL',{maximumFractionDigits:1})+' t'}}},
-      scales:{
-        x:{beginAtZero:true,grid:{color:'#EFF2EC'},ticks:{font:{family:'IBM Plex Mono',size:11},callback:v=>v.toLocaleString('es-CL')+' t'}},
-        y:{grid:{display:false},ticks:{font:{family:'Barlow Condensed',size:13,weight:'600'}}}
-      }}
+      scales:{x:{beginAtZero:true,grid:{color:'#EFF2EC'},ticks:{font:{family:'IBM Plex Mono',size:11},callback:v=>v.toLocaleString('es-CL')+' t'}},
+              y:{grid:{display:false},ticks:{font:{family:'Barlow Condensed',size:13,weight:'600'}}}}}
   });
 
-  // Tipos
   const tp=Object.entries(d.por_tipo||{}).filter(t=>t[0]&&t[0]!=='nan').sort((a,b)=>b[1].kg-a[1].kg).slice(0,10);
   new Chart(document.getElementById('c-tipos'),{
     type:'doughnut',
     data:{labels:tp.map(t=>t[0]),datasets:[{data:tp.map(t=>t[1].kg/1000),backgroundColor:PALETA,borderColor:'#fff',borderWidth:2}]},
     options:{responsive:true,maintainAspectRatio:false,cutout:'55%',
-      plugins:{
-        legend:{position:'right',labels:{boxWidth:11,font:{family:'Inter',size:11},padding:8}},
-        tooltip:{callbacks:{label:c=>c.label+': '+c.parsed.toLocaleString('es-CL',{maximumFractionDigits:1})+' t'}}
-      }}
+      plugins:{legend:{position:'right',labels:{boxWidth:11,font:{family:'Inter',size:11},padding:8}},
+               tooltip:{callbacks:{label:c=>c.label+': '+c.parsed.toLocaleString('es-CL',{maximumFractionDigits:1})+' t'}}}}
   });
 
-  // Destinos
   document.getElementById('t-destinos').innerHTML=(d.destinos_frecuentes||[])
     .filter(x=>x.destino&&x.destino!=='nan').slice(0,8)
-    .map((x,i)=>`<tr><td class="rank">${i+1}</td><td class="nombre">${x.destino}</td>
-      <td class="r num">${N(x.frecuencia)}</td><td class="r num">${T(x.kg_total)}</td></tr>`).join('');
+    .map((x,i)=>`<tr><td class="rank">${i+1}</td><td class="nombre">${x.destino}</td><td class="r num">${N(x.frecuencia)}</td><td class="r num">${T(x.kg_total)}</td></tr>`).join('');
 
-  // Clientes
   document.getElementById('t-clientes').innerHTML=(d.clientes_grandes||[])
     .filter(x=>x.cliente&&x.cliente!=='nan').slice(0,8)
-    .map((x,i)=>`<tr><td class="rank">${i+1}</td><td class="nombre">${x.cliente}</td>
-      <td class="r num">${T(x.kg)}</td></tr>`).join('');
+    .map((x,i)=>`<tr><td class="rank">${i+1}</td><td class="nombre">${x.cliente}</td><td class="r num">${T(x.kg)}</td></tr>`).join('');
 }
-
 cargar();
 </script>
 </body>
