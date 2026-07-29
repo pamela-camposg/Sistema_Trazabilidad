@@ -1,0 +1,551 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Panel de Trazabilidad - Ambipar Chile</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #2563eb;
+            --primary-light: #3b82f6;
+            --success: #10b981;
+            --danger: #ef4444;
+            --warning: #f59e0b;
+            --bg: #f9fafb;
+            --border: #e5e7eb;
+            --text: #1f2937;
+            --text-light: #6b7280;
+            --card-bg: #ffffff;
+            --shadow: 0 4px 6px rgba(0, 0, 0, 0.07);
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+                'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+                sans-serif;
+            background: var(--bg);
+            color: var(--text);
+            line-height: 1.5;
+        }
+
+        header {
+            background: linear-gradient(135deg, var(--primary) 0%, var(--primary-light) 100%);
+            color: white;
+            padding: 2rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+        }
+
+        header h1 {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        header p {
+            opacity: 0.9;
+            font-size: 0.95rem;
+        }
+
+        .container {
+            max-width: 1400px;
+            margin: 0 auto;
+            padding: 0 1rem;
+        }
+
+        .grid-kpis {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-bottom: 2rem;
+        }
+
+        .kpi-card {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            box-shadow: var(--shadow);
+            border-left: 4px solid var(--primary);
+        }
+
+        .kpi-card h3 {
+            color: var(--text-light);
+            font-size: 0.875rem;
+            text-transform: uppercase;
+            font-weight: 600;
+            margin-bottom: 0.5rem;
+        }
+
+        .kpi-value {
+            font-size: 1.875rem;
+            font-weight: 700;
+            color: var(--text);
+            margin-bottom: 0.25rem;
+        }
+
+        .kpi-unit {
+            color: var(--text-light);
+            font-size: 0.875rem;
+        }
+
+        .kpi-card.success {
+            border-left-color: var(--success);
+        }
+
+        .kpi-card.warning {
+            border-left-color: var(--warning);
+        }
+
+        .grid-charts {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .chart-container {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            box-shadow: var(--shadow);
+        }
+
+        .chart-container h2 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: var(--text);
+        }
+
+        .chart-wrapper {
+            position: relative;
+            height: 350px;
+        }
+
+        .grid-tables {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(500px, 1fr));
+            gap: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .table-container {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            box-shadow: var(--shadow);
+        }
+
+        .table-container h2 {
+            font-size: 1.25rem;
+            margin-bottom: 1rem;
+            color: var(--text);
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            font-size: 0.95rem;
+        }
+
+        thead {
+            background: var(--bg);
+            border-bottom: 2px solid var(--border);
+        }
+
+        th {
+            padding: 0.75rem;
+            text-align: left;
+            font-weight: 600;
+            color: var(--text-light);
+        }
+
+        td {
+            padding: 0.75rem;
+            border-bottom: 1px solid var(--border);
+        }
+
+        tbody tr:hover {
+            background: var(--bg);
+        }
+
+        .value-numeric {
+            font-family: 'Monaco', 'Courier New', monospace;
+            font-weight: 600;
+            color: var(--primary);
+        }
+
+        .footer {
+            background: var(--card-bg);
+            padding: 1.5rem;
+            border-radius: 0.75rem;
+            box-shadow: var(--shadow);
+            margin-bottom: 2rem;
+            text-align: center;
+            color: var(--text-light);
+            font-size: 0.875rem;
+        }
+
+        .loading {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 400px;
+        }
+
+        .spinner {
+            border: 4px solid var(--border);
+            border-top: 4px solid var(--primary);
+            border-radius: 50%;
+            width: 40px;
+            height: 40px;
+            animation: spin 1s linear infinite;
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        .error {
+            background: #fee2e2;
+            border: 1px solid #fecaca;
+            color: #991b1b;
+            padding: 1rem;
+            border-radius: 0.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .status-badge {
+            display: inline-block;
+            padding: 0.25rem 0.75rem;
+            border-radius: 9999px;
+            font-size: 0.75rem;
+            font-weight: 600;
+            text-transform: uppercase;
+        }
+
+        .status-fresh {
+            background: #d1fae5;
+            color: #065f46;
+        }
+
+        .status-stale {
+            background: #fef3c7;
+            color: #92400e;
+        }
+
+        @media (max-width: 768px) {
+            .grid-charts,
+            .grid-tables {
+                grid-template-columns: 1fr;
+            }
+
+            header h1 {
+                font-size: 1.5rem;
+            }
+
+            .kpi-value {
+                font-size: 1.5rem;
+            }
+
+            .chart-wrapper {
+                height: 250px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>🌍 Panel de Trazabilidad de Residuos</h1>
+            <p>Ambipar Chile - Seguimiento en tiempo real</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <div id="error-container"></div>
+
+        <!-- KPIs de resumen -->
+        <div class="grid-kpis">
+            <div class="kpi-card">
+                <h3>Total Procesado</h3>
+                <div class="kpi-value" id="total-kg">—</div>
+                <div class="kpi-unit">Kilogramos</div>
+            </div>
+            <div class="kpi-card success">
+                <h3>Movimientos</h3>
+                <div class="kpi-value" id="total-movimientos">—</div>
+                <div class="kpi-unit">Transacciones registradas</div>
+            </div>
+            <div class="kpi-card warning">
+                <h3>Plantas Activas</h3>
+                <div class="kpi-value" id="plantas-activas">—</div>
+                <div class="kpi-unit">Bases operacionales</div>
+            </div>
+            <div class="kpi-card">
+                <h3>Última actualización</h3>
+                <div class="kpi-value" id="ultima-actualizacion">—</div>
+                <div class="kpi-unit"><span id="status-badge" class="status-badge">—</span></div>
+            </div>
+        </div>
+
+        <!-- Gráficos -->
+        <div class="grid-charts">
+            <div class="chart-container">
+                <h2>Kg por Planta</h2>
+                <div class="chart-wrapper">
+                    <canvas id="chartPlantas"></canvas>
+                </div>
+            </div>
+
+            <div class="chart-container">
+                <h2>Distribución por Tipo de Residuo (Top 10)</h2>
+                <div class="chart-wrapper">
+                    <canvas id="chartTipos"></canvas>
+                </div>
+            </div>
+        </div>
+
+        <!-- Tablas -->
+        <div class="grid-tables">
+            <div class="table-container">
+                <h2>Destinos Más Frecuentes</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Destino</th>
+                            <th>Frecuencia</th>
+                            <th>Kg Total</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla-destinos">
+                        <tr><td colspan="3" style="text-align: center;">Cargando...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="table-container">
+                <h2>Clientes con Mayor Volumen</h2>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Cliente</th>
+                            <th>Kg Procesados</th>
+                        </tr>
+                    </thead>
+                    <tbody id="tabla-clientes">
+                        <tr><td colspan="2" style="text-align: center;">Cargando...</td></tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+
+        <!-- Footer -->
+        <div class="footer">
+            <p>
+                Datos actualizados: <strong id="fecha-datos">—</strong> | 
+                Total de registros: <strong id="total-registros">—</strong>
+            </p>
+        </div>
+    </div>
+
+    <script>
+        // Configuración de colores para gráficos
+        const COLORS = [
+            '#3b82f6', '#10b981', '#f59e0b', '#ef4444', '#8b5cf6',
+            '#ec4899', '#14b8a6', '#f97316', '#06b6d4', '#84cc16'
+        ];
+
+        let chartPlantas, chartTipos;
+
+        async function cargarDatos() {
+            try {
+                // Intentar cargar desde URL pública (GitHub Pages)
+                // Si lo necesitas cambiar, reemplaza esta URL
+                const response = await fetch('kpis_trazabilidad.json');
+                if (!response.ok) throw new Error('No se pudo cargar el archivo de datos');
+                
+                const data = await response.json();
+                mostrarDatos(data);
+            } catch (error) {
+                console.error('Error cargando datos:', error);
+                mostrarError(`No se pudieron cargar los datos: ${error.message}`);
+            }
+        }
+
+        function mostrarDatos(data) {
+            // KPIs principales
+            document.getElementById('total-kg').textContent = 
+                (data.total_kg / 1000).toLocaleString('es-CL', { maximumFractionDigits: 0 }) + ' T';
+            
+            document.getElementById('total-movimientos').textContent = 
+                data.total_movimientos.toLocaleString('es-CL');
+            
+            const plantasActivas = Object.keys(data.plantas).length;
+            document.getElementById('plantas-activas').textContent = plantasActivas;
+
+            // Última actualización
+            const fecha = new Date(data.actualizado);
+            const ahora = new Date();
+            const diff = Math.floor((ahora - fecha) / 1000 / 60); // minutos
+            
+            document.getElementById('ultima-actualizacion').textContent = 
+                fecha.toLocaleString('es-CL', { 
+                    year: 'numeric', 
+                    month: 'short', 
+                    day: 'numeric',
+                    hour: '2-digit',
+                    minute: '2-digit'
+                });
+
+            // Status badge
+            let statusClass = 'status-fresh';
+            let statusText = 'Actualizado';
+            if (diff > 60) {
+                statusClass = 'status-stale';
+                statusText = `Hace ${diff} min`;
+            }
+            const badge = document.getElementById('status-badge');
+            badge.className = `status-badge ${statusClass}`;
+            badge.textContent = statusText;
+
+            // Fecha de datos
+            document.getElementById('fecha-datos').textContent = 
+                new Date(data.ultima_dato).toLocaleDateString('es-CL');
+            document.getElementById('total-registros').textContent = 
+                data.registros_totales.toLocaleString('es-CL');
+
+            // Gráfico de plantas
+            crearGraficoplantas(data.plantas);
+
+            // Gráfico de tipos (Top 10)
+            const tiposTop = Object.entries(data.por_tipo)
+                .sort((a, b) => b[1].kg - a[1].kg)
+                .slice(0, 10);
+            crearGraficoTipos(tiposTop);
+
+            // Tablas
+            llenarTablaDestinos(data.destinos_frecuentes);
+            llenarTablaClientes(data.clientes_grandes);
+        }
+
+        function crearGraficoplantas(plantas) {
+            const ctx = document.getElementById('chartPlantas').getContext('2d');
+            
+            if (chartPlantas) chartPlantas.destroy();
+
+            const labels = Object.keys(plantas);
+            const kg = Object.values(plantas).map(p => p.kg / 1000); // Convertir a toneladas
+
+            chartPlantas = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Kilogramos (miles)',
+                        data: kg,
+                        backgroundColor: COLORS.slice(0, labels.length),
+                        borderRadius: 6,
+                        borderWidth: 0
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    indexAxis: 'y',
+                    plugins: {
+                        legend: { display: false }
+                    },
+                    scales: {
+                        x: {
+                            beginAtZero: true,
+                            ticks: {
+                                callback: function(value) {
+                                    return (value / 1000).toFixed(0) + 'T';
+                                }
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function crearGraficoTipos(tipos) {
+            const ctx = document.getElementById('chartTipos').getContext('2d');
+            
+            if (chartTipos) chartTipos.destroy();
+
+            const labels = tipos.map(t => t[0]);
+            const kg = tipos.map(t => t[1].kg / 1000);
+
+            chartTipos = new Chart(ctx, {
+                type: 'doughnut',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        data: kg,
+                        backgroundColor: COLORS,
+                        borderColor: '#fff',
+                        borderWidth: 2
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: {
+                            position: 'right',
+                            labels: {
+                                font: { size: 11 },
+                                padding: 10
+                            }
+                        }
+                    }
+                }
+            });
+        }
+
+        function llenarTablaDestinos(destinos) {
+            const tbody = document.getElementById('tabla-destinos');
+            tbody.innerHTML = destinos
+                .filter(d => d.destino !== 'nan')
+                .slice(0, 8)
+                .map(d => `
+                    <tr>
+                        <td>${d.destino}</td>
+                        <td class="value-numeric">${d.frecuencia}</td>
+                        <td class="value-numeric">${(d.kg_total / 1000).toLocaleString('es-CL', { maximumFractionDigits: 1 })} T</td>
+                    </tr>
+                `)
+                .join('');
+        }
+
+        function llenarTablaClientes(clientes) {
+            const tbody = document.getElementById('tabla-clientes');
+            tbody.innerHTML = clientes
+                .slice(0, 8)
+                .map(c => `
+                    <tr>
+                        <td>${c.cliente}</td>
+                        <td class="value-numeric">${(c.kg / 1000).toLocaleString('es-CL', { maximumFractionDigits: 1 })} T</td>
+                    </tr>
+                `)
+                .join('');
+        }
+
+        function mostrarError(mensaje) {
+            const container = document.getElementById('error-container');
+            container.innerHTML = `<div class="error">${mensaje}</div>`;
+        }
+
+        // Cargar datos al iniciar
+        cargarDatos();
+    </script>
+</body>
+</html>
