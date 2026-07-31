@@ -5,87 +5,131 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Panel de Trazabilidad · Ambipar Chile</title>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/3.9.1/chart.min.js"></script>
-<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700&family=Inter:wght@400;500;600;700&family=IBM+Plex+Mono:wght@500;600&display=swap" rel="stylesheet">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
 <style>
 :root{
-  --petroleo:#032224; --petroleo-cl:#0A4A44; --lima:#D4FF00; --lima-osc:#A8CC00;
-  --verde:#0A6B52; --naranja:#E88B00; --gris-txt:#5C6663; --gris-bd:#E2E7E4;
-  --gris-bg:#F5F7F4; --blanco:#fff;
+  --lima:#D4FF00; --lima-sv:#E9FF66;
+  --ing:#00A878; --sal:#F5A623; --ret:#7CB518;
+  --txt:#24302E; --txt2:#66716E; --bd:#E4E9E5; --bg:#F6F8F5; --blanco:#fff;
 }
 *{margin:0;padding:0;box-sizing:border-box}
-body{font-family:'Inter',system-ui,sans-serif;background:var(--gris-bg);color:var(--petroleo);line-height:1.5}
+body{font-family:'Inter',system-ui,-apple-system,sans-serif;background:var(--bg);
+  color:var(--txt);line-height:1.5;-webkit-text-size-adjust:100%}
+.num{font-variant-numeric:tabular-nums}
 
-.topbar{background:var(--blanco);border-bottom:5px solid var(--lima);padding:1rem 1.75rem .85rem;
-  display:flex;align-items:center;justify-content:space-between;gap:1.25rem;flex-wrap:wrap}
-.brand{display:flex;align-items:center;gap:1.1rem}
-.brand img{height:34px;width:auto;display:block}
-.brand .fallback{font-weight:700;font-size:1.5rem;letter-spacing:-.03em;display:none}
-.brand-sep{width:1px;height:36px;background:var(--gris-bd)}
-.brand-title{font-family:'Barlow Condensed',sans-serif;font-weight:700;font-size:1.02rem;
-  line-height:1.12;letter-spacing:.07em;text-transform:uppercase}
-.brand-title span{display:block;font-weight:500;color:var(--gris-txt);letter-spacing:.1em;font-size:.85rem}
-.topbar-date{font-family:'IBM Plex Mono',monospace;font-size:.82rem;font-weight:600;color:var(--gris-txt)}
+/* ── BANNER ── */
+.topbar{background:var(--lima);padding:.9rem 1.5rem;display:flex;align-items:center;
+  justify-content:space-between;gap:1rem;flex-wrap:wrap}
+.brand{display:flex;align-items:center;gap:.9rem;min-width:0}
+.brand img{height:30px;width:auto;display:block}
+.brand .fb{font-weight:700;font-size:1.4rem;letter-spacing:-.03em;display:none}
+.brand-sep{width:1px;height:32px;background:rgba(36,48,46,.25);flex-shrink:0}
+.brand-title{font-weight:700;font-size:.95rem;line-height:1.25;letter-spacing:.01em}
+.brand-title span{display:block;font-weight:500;font-size:.78rem;color:rgba(36,48,46,.7)}
+.topbar-date{font-size:.8rem;font-weight:600;color:rgba(36,48,46,.75)}
 
-.wrap{max-width:1400px;margin:0 auto;padding:1.75rem 1.25rem 3rem}
-.alerta{background:#FFF6E6;border:1px solid #F3DCAE;border-left:4px solid var(--naranja);
-  color:#7A4B00;padding:.9rem 1.1rem;border-radius:6px;margin-bottom:1.5rem;font-size:.9rem}
-.alerta code{background:rgba(0,0,0,.06);padding:.05rem .3rem;border-radius:3px}
+.wrap{max-width:1400px;margin:0 auto;padding:1.4rem 1rem 3rem}
+.alerta{background:#FFF8E8;border:1px solid #F2DFB0;border-left:4px solid var(--sal);
+  color:#7A5200;padding:.85rem 1rem;border-radius:8px;margin-bottom:1.25rem;font-size:.88rem}
+.alerta code{background:rgba(0,0,0,.05);padding:.05rem .3rem;border-radius:3px;font-size:.9em}
 
-.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:1.1rem;margin-bottom:1.1rem}
-.kpi{background:var(--blanco);border:1px solid var(--gris-bd);border-top:4px solid var(--lima);
-  border-radius:6px;padding:1.05rem 1.15rem 1.15rem}
-.kpi.ing{border-top-color:var(--verde)} .kpi.sal{border-top-color:var(--naranja)}
-.kpi.ret{border-top-color:var(--petroleo)}
-.kpi h3{font-family:'Barlow Condensed',sans-serif;font-size:.83rem;font-weight:600;letter-spacing:.1em;
-  text-transform:uppercase;color:var(--gris-txt);margin-bottom:.5rem}
-.kpi .val{font-family:'IBM Plex Mono',monospace;font-size:1.85rem;font-weight:600;letter-spacing:-.02em;line-height:1.05}
-.kpi .val small{font-size:.95rem;font-weight:500;color:var(--gris-txt);margin-left:.15rem}
-.kpi .sub{font-size:.77rem;color:var(--gris-txt);margin-top:.3rem}
-.pill{display:inline-block;padding:.12rem .55rem;border-radius:99px;font-family:'Barlow Condensed',sans-serif;
-  font-size:.72rem;font-weight:600;letter-spacing:.08em;text-transform:uppercase;margin-top:.35rem}
-.pill.ok{background:#EAF7E1;color:var(--verde)} .pill.old{background:#FFF4E5;color:#8A5600}
+/* ── FILTROS ── */
+.barra-filtros{background:var(--blanco);border:1px solid var(--bd);border-radius:8px;
+  padding:.85rem 1rem;margin-bottom:1.25rem;display:flex;align-items:center;
+  gap:1rem;flex-wrap:wrap}
+.campo{display:flex;align-items:center;gap:.45rem}
+.campo label{font-size:.78rem;font-weight:600;color:var(--txt2);text-transform:uppercase;
+  letter-spacing:.05em}
+select{font-family:inherit;font-size:.88rem;font-weight:500;color:var(--txt);
+  padding:.4rem 1.9rem .4rem .65rem;border:1px solid var(--bd);border-radius:6px;
+  background:var(--blanco);cursor:pointer;
+  appearance:none;-webkit-appearance:none;
+  background-image:url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='11' height='7' viewBox='0 0 11 7'><path d='M1 1l4.5 4.5L10 1' stroke='%2366716E' stroke-width='1.6' fill='none' stroke-linecap='round'/></svg>");
+  background-repeat:no-repeat;background-position:right .6rem center}
+select:focus{outline:2px solid var(--lima);outline-offset:1px}
+.resumen-filtro{font-size:.82rem;color:var(--txt2);margin-left:auto}
+.resumen-filtro b{color:var(--txt);font-weight:600}
 
-.nota{background:var(--blanco);border:1px solid var(--gris-bd);border-left:4px solid var(--lima);
-  border-radius:6px;padding:.75rem 1.1rem;margin-bottom:1.6rem;font-size:.82rem;color:var(--gris-txt)}
-.nota b{color:var(--petroleo)}
+/* ── KPI ── */
+.kpis{display:grid;grid-template-columns:repeat(auto-fit,minmax(185px,1fr));
+  gap:.9rem;margin-bottom:1.25rem}
+.kpi{background:var(--blanco);border:1px solid var(--bd);border-top:4px solid var(--lima);
+  border-radius:8px;padding:.95rem 1rem 1rem}
+.kpi.a{border-top-color:var(--ing)} .kpi.b{border-top-color:var(--sal)}
+.kpi.c{border-top-color:var(--ret)}
+.kpi h3{font-size:.76rem;font-weight:600;letter-spacing:.06em;text-transform:uppercase;
+  color:var(--txt2);margin-bottom:.45rem}
+.kpi .val{font-size:1.7rem;font-weight:700;letter-spacing:-.02em;line-height:1.1;
+  font-variant-numeric:tabular-nums}
+.kpi .val small{font-size:.9rem;font-weight:500;color:var(--txt2);margin-left:.1rem}
+.kpi .sub{font-size:.76rem;color:var(--txt2);margin-top:.25rem;font-variant-numeric:tabular-nums}
+.pill{display:inline-block;padding:.1rem .5rem;border-radius:99px;font-size:.7rem;
+  font-weight:600;letter-spacing:.04em;text-transform:uppercase;margin-top:.3rem}
+.pill.ok{background:#E3F6EC;color:#0A7A55} .pill.old{background:#FFF3DE;color:#8A5A00}
 
-.panels{display:grid;gap:1.4rem;margin-bottom:1.4rem}
-.p2{grid-template-columns:repeat(auto-fit,minmax(430px,1fr))}
-.card{background:var(--blanco);border:1px solid var(--gris-bd);border-radius:6px;overflow:hidden}
-.card-hd{padding:.8rem 1.15rem;border-bottom:1px solid var(--gris-bd);display:flex;
-  align-items:center;justify-content:space-between;gap:.75rem;flex-wrap:wrap}
-.card-hd h2{font-family:'Barlow Condensed',sans-serif;font-size:1.08rem;font-weight:700;
-  letter-spacing:.05em;text-transform:uppercase}
-.card-hd .tag{font-family:'IBM Plex Mono',monospace;font-size:.71rem;color:var(--gris-txt)}
-.card-bd{padding:1.05rem 1.15rem 1.25rem}
-.chart{position:relative;height:340px}
-.chart.alto{height:430px}
+/* ── PANELES ── */
+.panels{display:grid;gap:1.1rem;margin-bottom:1.1rem}
+.p2{grid-template-columns:repeat(auto-fit,minmax(420px,1fr))}
+.card{background:var(--blanco);border:1px solid var(--bd);border-radius:8px;overflow:hidden}
+.card-hd{padding:.75rem 1rem;border-bottom:1px solid var(--bd);display:flex;
+  align-items:center;justify-content:space-between;gap:.6rem;flex-wrap:wrap}
+.card-hd h2{font-size:.95rem;font-weight:700;letter-spacing:.01em}
+.card-hd .tag{font-size:.74rem;color:var(--txt2)}
+.card-bd{padding:.95rem 1rem 1.1rem}
+.chart{position:relative;height:330px}
+.chart.alto{height:420px}
 
-.filtros{display:flex;gap:.3rem}
-.filtros button{font-family:'Barlow Condensed',sans-serif;font-size:.78rem;font-weight:600;
-  letter-spacing:.06em;text-transform:uppercase;padding:.25rem .7rem;border:1px solid var(--gris-bd);
-  background:var(--blanco);color:var(--gris-txt);border-radius:99px;cursor:pointer;transition:.15s}
-.filtros button:hover{border-color:var(--lima-osc)}
-.filtros button.on{background:var(--petroleo);border-color:var(--petroleo);color:var(--lima)}
+.chips{display:flex;gap:.25rem;flex-wrap:wrap}
+.chips button{font-family:inherit;font-size:.76rem;font-weight:600;padding:.24rem .65rem;
+  border:1px solid var(--bd);background:var(--blanco);color:var(--txt2);
+  border-radius:99px;cursor:pointer;transition:.15s}
+.chips button:hover{border-color:var(--ret);color:var(--txt)}
+.chips button.on{background:var(--lima);border-color:var(--lima);color:var(--txt)}
 
-table{width:100%;border-collapse:collapse;font-size:.89rem}
-thead th{font-family:'Barlow Condensed',sans-serif;font-size:.81rem;font-weight:600;letter-spacing:.08em;
-  text-transform:uppercase;color:var(--gris-txt);text-align:left;padding:.5rem .45rem;border-bottom:2px solid var(--lima)}
+/* ── TABLAS ── */
+.tabla-wrap{overflow-x:auto;-webkit-overflow-scrolling:touch}
+table{width:100%;border-collapse:collapse;font-size:.86rem}
+thead th{font-size:.74rem;font-weight:600;letter-spacing:.05em;text-transform:uppercase;
+  color:var(--txt2);text-align:left;padding:.45rem .4rem;border-bottom:2px solid var(--lima);
+  white-space:nowrap}
 thead th.r,tbody td.r{text-align:right}
-tbody td{padding:.55rem .45rem;border-bottom:1px solid var(--gris-bd)}
+tbody td{padding:.5rem .4rem;border-bottom:1px solid var(--bd)}
 tbody tr:last-child td{border-bottom:none}
-tbody tr:hover{background:#FBFDF6}
-.num{font-family:'IBM Plex Mono',monospace;font-weight:600}
-.rank{font-family:'IBM Plex Mono',monospace;font-size:.76rem;color:var(--gris-txt);width:1.9rem}
+tbody tr:hover{background:#FCFDF7}
+td.n{font-variant-numeric:tabular-nums;font-weight:600;white-space:nowrap}
+td.rk{font-size:.76rem;color:var(--txt2);width:1.8rem;font-variant-numeric:tabular-nums}
+td.nm{min-width:150px}
+.badge{display:inline-block;padding:.08rem .45rem;border-radius:99px;font-size:.7rem;font-weight:600}
+.badge.ok{background:#E3F6EC;color:#0A7A55}
+.badge.no{background:#FFF3DE;color:#8A5A00}
+.badge.err{background:#FDE8E8;color:#A02222}
 
-.foot{border-top:4px solid var(--lima);background:var(--blanco);border-radius:6px;padding:1rem 1.15rem;
-  font-size:.81rem;color:var(--gris-txt);display:flex;justify-content:space-between;gap:1rem;flex-wrap:wrap}
-.foot strong{color:var(--petroleo);font-family:'IBM Plex Mono',monospace}
+.foot{border-top:4px solid var(--lima);background:var(--blanco);border-radius:8px;
+  padding:.9rem 1rem;font-size:.8rem;color:var(--txt2);display:flex;
+  justify-content:space-between;gap:.8rem;flex-wrap:wrap}
+.foot strong{color:var(--txt);font-variant-numeric:tabular-nums}
 
-@media(max-width:900px){
-  .p2{grid-template-columns:1fr}
-  .chart{height:290px} .chart.alto{height:380px}
-  .kpi .val{font-size:1.5rem} .brand img{height:26px}
+/* ── MÓVIL ── */
+@media(max-width:900px){ .p2{grid-template-columns:1fr} }
+@media(max-width:640px){
+  .topbar{padding:.75rem 1rem}
+  .brand img{height:24px} .brand-sep{display:none}
+  .brand-title{font-size:.85rem} .brand-title span{font-size:.72rem}
+  .topbar-date{display:none}
+  .wrap{padding:1rem .7rem 2.5rem}
+  .barra-filtros{padding:.7rem .8rem;gap:.6rem}
+  .campo{flex:1 1 45%;min-width:130px}
+  .campo select{width:100%}
+  .resumen-filtro{margin-left:0;flex-basis:100%;order:9}
+  .kpis{grid-template-columns:repeat(2,1fr);gap:.6rem}
+  .kpi{padding:.75rem .8rem .8rem}
+  .kpi .val{font-size:1.3rem} .kpi h3{font-size:.7rem}
+  .kpi:last-child{grid-column:span 2}
+  .card-bd{padding:.8rem .7rem .9rem}
+  .chart{height:270px} .chart.alto{height:400px}
+  .card-hd h2{font-size:.88rem}
+  table{font-size:.8rem}
+  .ocultar-movil{display:none}
 }
 </style>
 </head>
@@ -94,7 +138,7 @@ tbody tr:hover{background:#FBFDF6}
 <div class="topbar">
   <div class="brand">
     <img src="ambipar-logo.png" alt="Ambipar" onerror="this.style.display='none';document.getElementById('fb').style.display='block'">
-    <span class="fallback" id="fb">ambipar</span>
+    <span class="fb" id="fb">ambipar</span>
     <span class="brand-sep"></span>
     <span class="brand-title">Panel de trazabilidad de residuos
       <span>Ambipar Chile · Inteligencia Circular</span></span>
@@ -105,19 +149,24 @@ tbody tr:hover{background:#FBFDF6}
 <div class="wrap">
   <div id="alerta"></div>
 
-  <div class="kpis">
-    <div class="kpi ing"><h3>Ingresos a planta</h3><div class="val" id="k-ing">—</div><div class="sub" id="k-ing-mov">—</div></div>
-    <div class="kpi sal"><h3>Salidas de planta</h3><div class="val" id="k-sal">—</div><div class="sub" id="k-sal-mov">—</div></div>
-    <div class="kpi ret"><h3>Retiros / traslados BO</h3><div class="val" id="k-ret">—</div><div class="sub" id="k-ret-mov">—</div></div>
-    <div class="kpi"><h3>Plantas / BO activas</h3><div class="val" id="k-plantas">—</div><div class="sub" id="k-zonas">—</div></div>
-    <div class="kpi"><h3>Última carga</h3><div class="val" id="k-fecha" style="font-size:1.05rem">—</div>
-      <span class="pill ok" id="k-pill">—</span></div>
+  <div class="barra-filtros">
+    <div class="campo">
+      <label for="s-anio">Año</label>
+      <select id="s-anio"></select>
+    </div>
+    <div class="campo">
+      <label for="s-mes">Mes</label>
+      <select id="s-mes"></select>
+    </div>
+    <span class="resumen-filtro" id="resumen">—</span>
   </div>
 
-  <div class="nota">
-    <b>Ingreso</b>: material recibido en planta (hoja INGRESOS) · <b>Salida</b>: material despachado
-    a destinatario final (hoja SALIDAS) · <b>Retiro BO</b>: retiros y traslados desde cliente hacia destino.
-    Los flujos se muestran separados porque el mismo material entra y luego sale de planta: sumarlos lo contaría dos veces.
+  <div class="kpis">
+    <div class="kpi a"><h3>Ingresos a planta</h3><div class="val" id="k-ing">—</div><div class="sub" id="k-ing-m">—</div></div>
+    <div class="kpi b"><h3>Salidas de planta</h3><div class="val" id="k-sal">—</div><div class="sub" id="k-sal-m">—</div></div>
+    <div class="kpi c"><h3>Retiros / traslados BO</h3><div class="val" id="k-ret">—</div><div class="sub" id="k-ret-m">—</div></div>
+    <div class="kpi"><h3>Plantas / BO con datos</h3><div class="val" id="k-pl">—</div><div class="sub" id="k-zn">—</div></div>
+    <div class="kpi"><h3>Última carga</h3><div class="val" id="k-fh" style="font-size:1rem">—</div><span class="pill ok" id="k-pi">—</span></div>
   </div>
 
   <div class="panels p2">
@@ -126,7 +175,7 @@ tbody tr:hover{background:#FBFDF6}
       <div class="card-bd"><div class="chart alto"><canvas id="c-plantas"></canvas></div></div>
     </div>
     <div class="card">
-      <div class="card-hd"><h2>Evolución mensual</h2><span class="tag">toneladas</span></div>
+      <div class="card-hd"><h2>Evolución mensual</h2><span class="tag" id="tag-meses">toneladas</span></div>
       <div class="card-bd"><div class="chart alto"><canvas id="c-meses"></canvas></div></div>
     </div>
   </div>
@@ -135,7 +184,7 @@ tbody tr:hover{background:#FBFDF6}
     <div class="card">
       <div class="card-hd">
         <h2>Tipo de residuo</h2>
-        <div class="filtros" id="f-tipo">
+        <div class="chips" id="f-tipo">
           <button data-f="todos" class="on">Todos</button>
           <button data-f="ingreso">Ingreso</button>
           <button data-f="salida">Salida</button>
@@ -153,15 +202,44 @@ tbody tr:hover{background:#FBFDF6}
   <div class="panels p2">
     <div class="card">
       <div class="card-hd"><h2>Destinos más relevantes</h2><span class="tag">salidas + retiros</span></div>
-      <div class="card-bd"><table>
-        <thead><tr><th class="rank">#</th><th>Destino</th><th class="r">Movim.</th><th class="r">Ton.</th></tr></thead>
-        <tbody id="t-destinos"><tr><td colspan="4">Cargando…</td></tr></tbody></table></div>
+      <div class="card-bd"><div class="tabla-wrap"><table>
+        <thead><tr><th class="rk">#</th><th>Destino</th>
+          <th class="r ocultar-movil">Movim.</th><th class="r">Ton.</th></tr></thead>
+        <tbody id="t-dest"></tbody></table></div></div>
     </div>
     <div class="card">
       <div class="card-hd"><h2>Clientes de mayor volumen</h2><span class="tag">ingresos + retiros</span></div>
-      <div class="card-bd"><table>
-        <thead><tr><th class="rank">#</th><th>Cliente</th><th class="r">Movim.</th><th class="r">Ton.</th></tr></thead>
-        <tbody id="t-clientes"><tr><td colspan="4">Cargando…</td></tr></tbody></table></div>
+      <div class="card-bd"><div class="tabla-wrap"><table>
+        <thead><tr><th class="rk">#</th><th>Cliente</th>
+          <th class="r ocultar-movil">Movim.</th><th class="r">Ton.</th></tr></thead>
+        <tbody id="t-cli"></tbody></table></div></div>
+    </div>
+  </div>
+
+  <div class="panels" id="box-ie" style="display:none">
+    <div class="card">
+      <div class="card-hd"><h2>Movimientos hacia plantas propias (no duplicados)</h2>
+        <span class="tag" id="tag-ie">—</span></div>
+      <div class="card-bd">
+        <p style="font-size:.82rem;color:var(--txt2);margin-bottom:.7rem">
+          Cuando una BO o una planta mueve residuo hacia otra planta de Ambipar, el kilo
+          se cuenta solo en el Ingreso de la planta que recibe, donde está el ticket de
+          pesaje real. Estas filas del lado que envía quedan fuera del total.</p>
+        <div class="tabla-wrap"><table>
+          <thead><tr><th>Origen</th><th>Destino</th>
+            <th class="r ocultar-movil">Movim.</th><th class="r">Ton.</th></tr></thead>
+          <tbody id="t-ie"></tbody></table></div>
+      </div>
+    </div>
+  </div>
+
+  <div class="panels">
+    <div class="card">
+      <div class="card-hd"><h2>Bases de datos consideradas</h2><span class="tag" id="tag-fuentes">—</span></div>
+      <div class="card-bd"><div class="tabla-wrap"><table>
+        <thead><tr><th>Base</th><th class="ocultar-movil">Zona</th>
+          <th class="ocultar-movil">Hojas leídas</th><th class="r">Registros</th><th>Estado</th></tr></thead>
+        <tbody id="t-fuentes"></tbody></table></div></div>
     </div>
   </div>
 
@@ -173,142 +251,270 @@ tbody tr:hover{background:#FBFDF6}
 </div>
 
 <script>
-const C_ING='#0A6B52', C_SAL='#E88B00', C_RET='#032224', C_LIMA='#D4FF00';
-const PALETA=['#032224','#D4FF00','#0A6B52','#E88B00','#0A4A44','#A8CC00','#4C8C7A','#C99700','#7FB800','#2E5D57','#8FA300','#145C4B'];
+const C={ing:'#00A878',sal:'#F5A623',ret:'#7CB518'};
+const PALETA=['#00A878','#7CB518','#D4FF00','#F5A623','#4DB6AC','#A3D900',
+              '#57C4AD','#FFC94D','#8FD14F','#26B99A','#C6E600','#F2A65A'];
 const RUTAS=['data/kpis_trazabilidad.json','kpis_trazabilidad.json','../data/kpis_trazabilidad.json'];
-const MESES=['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
+const MES_NOM=['enero','febrero','marzo','abril','mayo','junio','julio',
+               'agosto','septiembre','octubre','noviembre','diciembre'];
+const MES_AB=['ene','feb','mar','abr','may','jun','jul','ago','sep','oct','nov','dic'];
 
 const T=n=>(n/1000).toLocaleString('es-CL',{maximumFractionDigits:1});
 const N=n=>(n||0).toLocaleString('es-CL');
-const fmtMes=m=>{const [a,me]=m.split('-');return MESES[+me-1]+' '+a.slice(2)};
-const fecha=s=>s?new Date(s+'T00:00:00').toLocaleDateString('es-CL'):'—';
+const eje=v=>v>=1000?(v/1000).toLocaleString('es-CL',{maximumFractionDigits:1})+'k'
+                     :v.toLocaleString('es-CL',{maximumFractionDigits:0});
+const etiqMes=m=>{const[a,me]=m.split('-');return MES_AB[+me-1]+' '+a.slice(2)};
+const fFecha=s=>s?new Date(s+'T00:00:00').toLocaleDateString('es-CL'):'—';
+const FUENTE={family:'Inter',size:11};
 
-let DATA=null, chartTipos=null;
-document.getElementById('hoy').textContent=new Date().toLocaleDateString('es-CL',{day:'2-digit',month:'2-digit',year:'numeric'});
+let DATA=null, charts={}, filtroTipo='todos';
 
+document.getElementById('hoy').textContent=
+  new Date().toLocaleDateString('es-CL',{day:'2-digit',month:'2-digit',year:'numeric'});
+
+/* ══ CARGA ══ */
 async function cargar(){
   for(const r of RUTAS){
     try{
       const res=await fetch(r,{cache:'no-store'});
       if(!res.ok) continue;
       const d=await res.json();
-      if(d&&d.flujos){DATA=d;pintar(d);return;}
+      if(d&&d.periodos){DATA=d;iniciar();return;}
     }catch(e){}
   }
-  document.getElementById('alerta').innerHTML=
-    '<div class="alerta"><strong>No se encontró el archivo de datos.</strong> '+
-    'Debe existir <code>docs/data/kpis_trazabilidad.json</code> generado con <code>extraer_kpis.py</code>.</div>';
+  document.getElementById('alerta').innerHTML='<div class="alerta">'+
+    '<strong>No se encontró el archivo de datos.</strong> Debe existir '+
+    '<code>docs/data/kpis_trazabilidad.json</code> con la estructura por períodos.</div>';
 }
 
-function pintar(d){
-  const fl=d.flujos||{};
+/* ══ FILTROS ══ */
+function periodosValidos(){
+  return Object.keys(DATA.periodos).filter(k=>/^\d{4}-\d{2}$/.test(k)).sort();
+}
+
+function iniciar(){
+  const per=periodosValidos();
+  const anios=[...new Set(per.map(p=>p.slice(0,4)))].sort();
+
+  const sa=document.getElementById('s-anio');
+  sa.innerHTML='<option value="todos">Todos</option>'+
+    anios.map(a=>`<option value="${a}">${a}</option>`).join('');
+  sa.value = anios.length ? anios[anios.length-1] : 'todos';
+
+  sa.addEventListener('change',()=>{poblarMeses();actualizar()});
+  document.getElementById('s-mes').addEventListener('change',actualizar);
+  document.getElementById('f-tipo').addEventListener('click',e=>{
+    const b=e.target.closest('button'); if(!b) return;
+    document.querySelectorAll('#f-tipo button').forEach(x=>x.classList.remove('on'));
+    b.classList.add('on'); filtroTipo=b.dataset.f; pintarTipos();
+  });
+
+  poblarMeses();
+  pintarFuentes();
+  pintarInterempresa();
+  document.getElementById('f-rango').textContent=fFecha(DATA.primer_dato)+' → '+fFecha(DATA.ultima_dato);
+  document.getElementById('f-reg').textContent=N(DATA.registros_totales);
+  actualizar();
+}
+
+function poblarMeses(){
+  const anio=document.getElementById('s-anio').value;
+  const meses=[...new Set(periodosValidos()
+    .filter(p=>anio==='todos'||p.startsWith(anio))
+    .map(p=>p.slice(5,7)))].sort();
+  const sm=document.getElementById('s-mes');
+  sm.innerHTML='<option value="todos">Todos</option>'+
+    meses.map(m=>`<option value="${m}">${MES_NOM[+m-1]}</option>`).join('');
+  sm.value='todos';
+}
+
+function seleccion(){
+  const anio=document.getElementById('s-anio').value;
+  const mes=document.getElementById('s-mes').value;
+  return periodosValidos().filter(p=>
+    (anio==='todos'||p.startsWith(anio)) && (mes==='todos'||p.slice(5,7)===mes));
+}
+
+/* ══ AGREGACIÓN ══ */
+function sumar(claves){
+  const o={flujos:{},plantas:{},tipos:{},destinos:{},clientes:{},mov:0};
+  const acum=(dest,k,campo,v)=>{dest[k]=dest[k]||{};dest[k][campo]=(dest[k][campo]||0)+v};
+
+  claves.forEach(k=>{
+    const p=DATA.periodos[k]; if(!p) return;
+    for(const[f,d]of Object.entries(p.flujos||{})){
+      acum(o.flujos,f,'kg',d.kg); acum(o.flujos,f,'mov',d.mov); o.mov+=d.mov;
+    }
+    for(const[pl,d]of Object.entries(p.plantas||{}))
+      for(const[c,v]of Object.entries(d)) acum(o.plantas,pl,c,v);
+    for(const[t,d]of Object.entries(p.tipos||{}))
+      for(const[c,v]of Object.entries(d)) acum(o.tipos,t,c,v);
+    for(const[x,d]of Object.entries(p.destinos||{})){
+      acum(o.destinos,x,'kg',d.kg); acum(o.destinos,x,'mov',d.mov);
+    }
+    for(const[x,d]of Object.entries(p.clientes||{})){
+      acum(o.clientes,x,'kg',d.kg); acum(o.clientes,x,'mov',d.mov);
+    }
+  });
+  return o;
+}
+
+/* ══ RENDER ══ */
+function actualizar(){
+  const claves=seleccion();
+  const A=sumar(claves);
+  window.AGG=A;
+
+  const anio=document.getElementById('s-anio').value;
+  const mes=document.getElementById('s-mes').value;
+  const txt=(mes==='todos'?'todos los meses':MES_NOM[+mes-1])+' · '+
+            (anio==='todos'?'todos los años':anio);
+  document.getElementById('resumen').innerHTML=
+    `Mostrando <b>${txt}</b> · ${N(A.mov)} movimientos`;
+
+  const g=f=>(A.flujos[f]||{});
   const set=(id,v)=>document.getElementById(id).innerHTML=v;
+  set('k-ing',T(g('Ingreso').kg||0)+' <small>t</small>');
+  set('k-sal',T(g('Salida').kg||0)+' <small>t</small>');
+  set('k-ret',T(g('Retiro BO').kg||0)+' <small>t</small>');
+  document.getElementById('k-ing-m').textContent=N(g('Ingreso').mov)+' movim.';
+  document.getElementById('k-sal-m').textContent=N(g('Salida').mov)+' movim.';
+  document.getElementById('k-ret-m').textContent=N(g('Retiro BO').mov)+' movim.';
 
-  set('k-ing', T((fl['Ingreso']||{}).kg||0)+' <small>t</small>');
-  set('k-sal', T((fl['Salida']||{}).kg||0)+' <small>t</small>');
-  set('k-ret', T((fl['Retiro BO']||{}).kg||0)+' <small>t</small>');
-  document.getElementById('k-ing-mov').textContent=N((fl['Ingreso']||{}).movimientos)+' movimientos';
-  document.getElementById('k-sal-mov').textContent=N((fl['Salida']||{}).movimientos)+' movimientos';
-  document.getElementById('k-ret-mov').textContent=N((fl['Retiro BO']||{}).movimientos)+' movimientos';
+  const plantas=Object.keys(A.plantas);
+  document.getElementById('k-pl').textContent=plantas.length;
+  const zonas=new Set(plantas.map(p=>DATA.zona_de_planta[p]||'—'));
+  document.getElementById('k-zn').textContent=zonas.size+' zonas';
 
-  document.getElementById('k-plantas').textContent=Object.keys(d.plantas||{}).length;
-  document.getElementById('k-zonas').textContent=Object.keys(d.zonas||{}).length+' zonas';
-
-  const f=new Date(d.actualizado);
-  document.getElementById('k-fecha').textContent=
+  const f=new Date(DATA.actualizado);
+  document.getElementById('k-fh').textContent=
     f.toLocaleDateString('es-CL',{day:'2-digit',month:'short'})+' · '+
     f.toLocaleTimeString('es-CL',{hour:'2-digit',minute:'2-digit'});
-  const hrs=Math.floor((Date.now()-f)/36e5), pill=document.getElementById('k-pill');
-  if(hrs<26){pill.className='pill ok';pill.textContent='Vigente';}
-  else{pill.className='pill old';pill.textContent='Hace '+Math.floor(hrs/24)+' d';}
+  const hrs=(Date.now()-f)/36e5, pi=document.getElementById('k-pi');
+  if(hrs<26){pi.className='pill ok';pi.textContent='Vigente';}
+  else{pi.className='pill old';pi.textContent='Hace '+Math.floor(hrs/24)+' d';}
 
-  document.getElementById('f-rango').textContent=fecha(d.primer_dato)+' → '+fecha(d.ultima_dato);
-  document.getElementById('f-reg').textContent=N(d.registros_totales);
-
-  // ── Plantas: barras apiladas por flujo
-  const pl=Object.entries(d.plantas||{}).sort((a,b)=>b[1].kg_total-a[1].kg_total);
-  new Chart(document.getElementById('c-plantas'),{
-    type:'bar',
-    data:{labels:pl.map(p=>p[0]),datasets:[
-      {label:'Ingreso',data:pl.map(p=>(p[1].kg_ingreso||0)/1000),backgroundColor:C_ING,borderRadius:2},
-      {label:'Salida', data:pl.map(p=>(p[1].kg_salida ||0)/1000),backgroundColor:C_SAL,borderRadius:2},
-      {label:'Retiro BO',data:pl.map(p=>(p[1].kg_retiro||0)/1000),backgroundColor:C_RET,borderRadius:2}]},
-    options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
-      plugins:{legend:{position:'top',labels:{boxWidth:11,font:{family:'Inter',size:11}}},
-        tooltip:{callbacks:{label:c=>c.dataset.label+': '+c.parsed.x.toLocaleString('es-CL',{maximumFractionDigits:1})+' t'}}},
-      scales:{x:{stacked:true,beginAtZero:true,grid:{color:'#EFF2EC'},
-                 ticks:{font:{family:'IBM Plex Mono',size:10},callback:v=>v.toLocaleString('es-CL')}},
-              y:{stacked:true,grid:{display:false},ticks:{font:{family:'Barlow Condensed',size:12,weight:'600'}}}}}
-  });
-
-  // ── Evolución mensual
-  const ms=Object.keys(d.por_mes||{}).sort();
-  new Chart(document.getElementById('c-meses'),{
-    type:'bar',
-    data:{labels:ms.map(fmtMes),datasets:[
-      {label:'Ingreso',data:ms.map(m=>(d.por_mes[m].kg_ingreso||0)/1000),backgroundColor:C_ING,borderRadius:2},
-      {label:'Salida', data:ms.map(m=>(d.por_mes[m].kg_salida ||0)/1000),backgroundColor:C_SAL,borderRadius:2},
-      {label:'Retiro BO',data:ms.map(m=>(d.por_mes[m].kg_retiro||0)/1000),backgroundColor:C_RET,borderRadius:2}]},
-    options:{responsive:true,maintainAspectRatio:false,
-      plugins:{legend:{position:'top',labels:{boxWidth:11,font:{family:'Inter',size:11}}},
-        tooltip:{callbacks:{label:c=>c.dataset.label+': '+c.parsed.y.toLocaleString('es-CL',{maximumFractionDigits:1})+' t'}}},
-      scales:{x:{stacked:true,grid:{display:false},ticks:{font:{family:'Barlow Condensed',size:12,weight:'600'}}},
-              y:{stacked:true,beginAtZero:true,grid:{color:'#EFF2EC'},
-                 ticks:{font:{family:'IBM Plex Mono',size:10},callback:v=>v.toLocaleString('es-CL')+' t'}}}}
-  });
-
-  // ── Zonas
-  const zn=Object.entries(d.zonas||{}).sort((a,b)=>b[1].kg-a[1].kg);
-  new Chart(document.getElementById('c-zonas'),{
-    type:'bar',
-    data:{labels:zn.map(z=>z[0].replace('ZONA ','')),
-          datasets:[{data:zn.map(z=>z[1].kg/1000),backgroundColor:[C_RET,C_ING,C_LIMA,C_SAL],borderRadius:3,barThickness:44}]},
-    options:{responsive:true,maintainAspectRatio:false,
-      plugins:{legend:{display:false},
-        tooltip:{callbacks:{label:c=>c.parsed.y.toLocaleString('es-CL',{maximumFractionDigits:1})+' t'}}},
-      scales:{x:{grid:{display:false},ticks:{font:{family:'Barlow Condensed',size:13,weight:'600'}}},
-              y:{beginAtZero:true,grid:{color:'#EFF2EC'},
-                 ticks:{font:{family:'IBM Plex Mono',size:10},callback:v=>v.toLocaleString('es-CL')+' t'}}}}
-  });
-
-  dibujarTipos('todos');
-
-  // ── Tablas
-  document.getElementById('t-destinos').innerHTML=(d.destinos||[]).slice(0,10)
-    .map((x,i)=>`<tr><td class="rank">${i+1}</td><td>${x.destino}</td>
-      <td class="r num">${N(x.movimientos)}</td><td class="r num">${T(x.kg)}</td></tr>`).join('')
-    || '<tr><td colspan="4">Sin datos</td></tr>';
-
-  document.getElementById('t-clientes').innerHTML=(d.clientes||[]).slice(0,10)
-    .map((x,i)=>`<tr><td class="rank">${i+1}</td><td>${x.cliente}</td>
-      <td class="r num">${N(x.movimientos)}</td><td class="r num">${T(x.kg)}</td></tr>`).join('')
-    || '<tr><td colspan="4">Sin datos</td></tr>';
+  pintarPlantas(A); pintarMeses(); pintarTipos(); pintarZonas(A);
+  pintarTabla('t-dest',A.destinos,'destino'); pintarTabla('t-cli',A.clientes,'cliente');
 }
 
-function dibujarTipos(filtro){
-  const campo = filtro==='todos' ? 'kg' : 'kg_'+filtro;
-  const tp=Object.entries(DATA.por_tipo||{})
-    .map(([k,v])=>[k, v[campo]||0])
-    .filter(t=>t[1]>0)
-    .sort((a,b)=>b[1]-a[1]).slice(0,12);
+function dibujar(id,cfg){ if(charts[id])charts[id].destroy();
+  charts[id]=new Chart(document.getElementById(id),cfg); }
 
-  if(chartTipos) chartTipos.destroy();
-  chartTipos=new Chart(document.getElementById('c-tipos'),{
-    type:'doughnut',
+const ejeY={grid:{color:'#EEF2EB'},border:{display:false},
+  ticks:{font:FUENTE,color:'#66716E',padding:6,callback:eje}};
+const ejeX={grid:{display:false},border:{display:false},
+  ticks:{font:FUENTE,color:'#66716E'}};
+const leyenda={position:'top',align:'start',
+  labels:{boxWidth:10,boxHeight:10,font:FUENTE,color:'#24302E',padding:12,usePointStyle:true,pointStyle:'rectRounded'}};
+const tipTon=c=>c.dataset.label+': '+
+  (c.parsed.x!==undefined&&c.parsed.x!==null?c.parsed.x:c.parsed.y)
+   .toLocaleString('es-CL',{maximumFractionDigits:1})+' t';
+
+function pintarPlantas(A){
+  const pl=Object.entries(A.plantas)
+    .map(([n,d])=>[n,(d.ingreso||0)+(d.salida||0)+(d.retiro||0),d])
+    .sort((a,b)=>b[1]-a[1]);
+  dibujar('c-plantas',{type:'bar',
+    data:{labels:pl.map(p=>p[0]),datasets:[
+      {label:'Ingreso',data:pl.map(p=>(p[2].ingreso||0)/1000),backgroundColor:C.ing,borderRadius:3},
+      {label:'Salida', data:pl.map(p=>(p[2].salida ||0)/1000),backgroundColor:C.sal,borderRadius:3},
+      {label:'Retiro BO',data:pl.map(p=>(p[2].retiro||0)/1000),backgroundColor:C.ret,borderRadius:3}]},
+    options:{indexAxis:'y',responsive:true,maintainAspectRatio:false,
+      plugins:{legend:leyenda,tooltip:{callbacks:{label:tipTon}}},
+      scales:{x:{stacked:true,beginAtZero:true,...ejeY},
+              y:{stacked:true,...ejeX,ticks:{...ejeX.ticks,font:{family:'Inter',size:11,weight:'500'}}}}}});
+}
+
+function pintarMeses(){
+  const anio=document.getElementById('s-anio').value;
+  const ms=periodosValidos().filter(p=>anio==='todos'||p.startsWith(anio));
+  document.getElementById('tag-meses').textContent=
+    anio==='todos'?'toneladas · histórico':'toneladas · '+anio;
+  const kg=(m,f)=>((DATA.periodos[m].flujos||{})[f]||{}).kg||0;
+  dibujar('c-meses',{type:'bar',
+    data:{labels:ms.map(etiqMes),datasets:[
+      {label:'Ingreso',data:ms.map(m=>kg(m,'Ingreso')/1000),backgroundColor:C.ing,borderRadius:3},
+      {label:'Salida', data:ms.map(m=>kg(m,'Salida')/1000),backgroundColor:C.sal,borderRadius:3},
+      {label:'Retiro BO',data:ms.map(m=>kg(m,'Retiro BO')/1000),backgroundColor:C.ret,borderRadius:3}]},
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:leyenda,tooltip:{callbacks:{label:tipTon}}},
+      scales:{x:{stacked:true,...ejeX},y:{stacked:true,beginAtZero:true,...ejeY}}}});
+}
+
+function pintarTipos(){
+  const A=window.AGG; if(!A) return;
+  const tp=Object.entries(A.tipos).map(([k,d])=>{
+      const v = filtroTipo==='todos'
+        ? (d.ingreso||0)+(d.salida||0)+(d.retiro||0)
+        : (d[filtroTipo]||0);
+      return [k,v];
+    }).filter(t=>t[1]>0).sort((a,b)=>b[1]-a[1]).slice(0,12);
+
+  if(!tp.length){ if(charts['c-tipos'])charts['c-tipos'].destroy(); return; }
+  dibujar('c-tipos',{type:'doughnut',
     data:{labels:tp.map(t=>t[0]),datasets:[{data:tp.map(t=>t[1]/1000),
       backgroundColor:PALETA,borderColor:'#fff',borderWidth:2}]},
-    options:{responsive:true,maintainAspectRatio:false,cutout:'54%',
-      plugins:{legend:{position:'right',labels:{boxWidth:10,font:{family:'Inter',size:10},padding:6}},
-        tooltip:{callbacks:{label:c=>c.label+': '+c.parsed.toLocaleString('es-CL',{maximumFractionDigits:1})+' t'}}}}
-  });
+    options:{responsive:true,maintainAspectRatio:false,cutout:'52%',
+      plugins:{legend:{position:'right',labels:{boxWidth:9,boxHeight:9,font:{family:'Inter',size:10},
+        color:'#24302E',padding:6,usePointStyle:true,pointStyle:'circle'}},
+        tooltip:{callbacks:{label:c=>c.label+': '+
+          c.parsed.toLocaleString('es-CL',{maximumFractionDigits:1})+' t'}}}}});
 }
 
-document.getElementById('f-tipo').addEventListener('click',e=>{
-  const b=e.target.closest('button'); if(!b||!DATA) return;
-  document.querySelectorAll('#f-tipo button').forEach(x=>x.classList.remove('on'));
-  b.classList.add('on');
-  dibujarTipos(b.dataset.f);
-});
+function pintarZonas(A){
+  const z={};
+  for(const[pl,d]of Object.entries(A.plantas)){
+    const zn=(DATA.zona_de_planta[pl]||'—').replace('ZONA ','');
+    z[zn]=(z[zn]||0)+(d.ingreso||0)+(d.salida||0)+(d.retiro||0);
+  }
+  const zs=Object.entries(z).sort((a,b)=>b[1]-a[1]);
+  dibujar('c-zonas',{type:'bar',
+    data:{labels:zs.map(x=>x[0]),datasets:[{label:'Total',data:zs.map(x=>x[1]/1000),
+      backgroundColor:[C.ing,C.ret,'#D4FF00',C.sal],borderRadius:4,maxBarThickness:60}]},
+    options:{responsive:true,maintainAspectRatio:false,
+      plugins:{legend:{display:false},tooltip:{callbacks:{label:tipTon}}},
+      scales:{x:{...ejeX,ticks:{...ejeX.ticks,font:{family:'Inter',size:12,weight:'600'}}},
+              y:{beginAtZero:true,...ejeY}}}});
+}
+
+function pintarTabla(id,obj,campo){
+  const filas=Object.entries(obj).sort((a,b)=>b[1].kg-a[1].kg).slice(0,10);
+  document.getElementById(id).innerHTML = filas.length
+    ? filas.map(([nombre,d],i)=>`<tr><td class="rk">${i+1}</td><td class="nm">${nombre}</td>
+        <td class="r n ocultar-movil">${N(d.mov)}</td><td class="r n">${T(d.kg)}</td></tr>`).join('')
+    : '<tr><td colspan="4" style="color:#66716E">Sin datos para el período</td></tr>';
+}
+
+function pintarInterempresa(){
+  const ie=DATA.interempresa;
+  if(!ie||!ie.movimientos) return;
+  document.getElementById('box-ie').style.display='grid';
+  document.getElementById('tag-ie').textContent=
+    N(ie.movimientos)+' movim. · '+T(ie.kg)+' t fuera del total';
+  document.getElementById('t-ie').innerHTML=(ie.detalle||[])
+    .map(d=>`<tr><td class="nm">${d.origen}</td><td class="nm">${d.destino}</td>
+      <td class="r n ocultar-movil">${N(d.mov)}</td><td class="r n">${T(d.kg)}</td></tr>`).join('');
+}
+
+function pintarFuentes(){
+  const fu=DATA.fuentes||[];
+  const conDatos=fu.filter(f=>f.estado==='ok').length;
+  document.getElementById('tag-fuentes').textContent=conDatos+' de '+fu.length+' con datos';
+  document.getElementById('t-fuentes').innerHTML=fu
+    .sort((a,b)=>b.registros-a.registros)
+    .map(f=>{
+      const cls=f.estado==='ok'?'ok':(f.estado.startsWith('error')?'err':'no');
+      const hojas=(f.hojas||[]).map(h=>h.hoja+' ('+h.flujo.split(' ')[0]+')').join(', ')||'—';
+      const av=(f.avisos||[]).length
+        ? `<div style="font-size:.74rem;color:#8A5A00;margin-top:.15rem">${f.avisos.join(' · ')}</div>` : '';
+      return `<tr><td class="nm">${f.planta}${av}</td>
+        <td class="ocultar-movil">${(f.zona||'—').replace('ZONA ','')}</td>
+        <td class="ocultar-movil" style="font-size:.8rem;color:#66716E">${hojas}</td>
+        <td class="r n">${N(f.registros)}</td>
+        <td><span class="badge ${cls}">${f.estado==='ok'?'incluida':f.estado}</span></td></tr>`;
+    }).join('');
+}
 
 cargar();
 </script>
