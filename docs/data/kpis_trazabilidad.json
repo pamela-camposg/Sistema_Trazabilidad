@@ -1,1041 +1,5813 @@
 {
-  "flujos": {
+ "actualizado": "2026-07-31T15:08:41",
+ "registros_totales": 22278,
+ "periodos": {
+  "2025-09": {
+   "flujos": {
     "Ingreso": {
-      "kg": 3937227.03,
-      "movimientos": 9531
+     "kg": 8160.0,
+     "mov": 14
+    }
+   },
+   "plantas": {
+    "Ecofibras Coronel": {
+     "mov": 14,
+     "ingreso": 8160.0
+    }
+   },
+   "tipos": {
+    "MIX RESIMPLE": {
+     "ingreso": 8160.0
+    }
+   },
+   "destinos": {},
+   "clientes": {
+    "RESIMPLE": {
+     "kg": 8160.0,
+     "mov": 14
+    }
+   }
+  },
+  "2025-10": {
+   "flujos": {
+    "Ingreso": {
+     "kg": 247038.0,
+     "mov": 329
     },
     "Retiro BO": {
-      "kg": 15570098.01,
-      "movimientos": 11334
+     "kg": 1756791.0,
+     "mov": 632
     },
     "Salida": {
-      "kg": 3246877.0,
-      "movimientos": 451
+     "kg": 191736.0,
+     "mov": 36
     }
-  },
-  "plantas": {
-    "BO Chillán": {
-      "kg_total": 39730.0,
-      "movimientos": 65,
-      "zona": "ZONA SUR",
-      "contrapartes": 4,
-      "kg_retiro": 39730.0,
-      "mov_retiro": 65
-    },
-    "BO Chiloé": {
-      "kg_total": 126508.8,
-      "movimientos": 29,
-      "zona": "ZONA SUR",
-      "contrapartes": 2,
-      "kg_retiro": 126508.8,
-      "mov_retiro": 29
-    },
-    "BO Iquique": {
-      "kg_total": 74660.0,
-      "movimientos": 37,
-      "zona": "ZONA NORTE",
-      "contrapartes": 5,
-      "kg_retiro": 74660.0,
-      "mov_retiro": 37
-    },
+   },
+   "plantas": {
     "BO San Bernardo": {
-      "kg_total": 12856246.1,
-      "movimientos": 6997,
-      "zona": "ZONA CENTRO",
-      "contrapartes": 141,
-      "kg_retiro": 12856246.1,
-      "mov_retiro": 6997
-    },
-    "BO Trapen": {
-      "kg_total": 227356.11,
-      "movimientos": 73,
-      "zona": "ZONA SUR",
-      "contrapartes": 8,
-      "kg_retiro": 227356.11,
-      "mov_retiro": 73
-    },
-    "BO Valparaíso": {
-      "kg_total": 12570.0,
-      "movimientos": 9,
-      "zona": "ZONA CENTRO",
-      "contrapartes": 4,
-      "kg_retiro": 12570.0,
-      "mov_retiro": 9
+     "mov": 527,
+     "retiro": 1477301.0
     },
     "Ecofibras Coronel": {
-      "kg_total": 1383890.0,
-      "movimientos": 3647,
-      "zona": "ZONA SUR",
-      "contrapartes": 30,
-      "kg_ingreso": 881549.0,
-      "mov_ingreso": 3610,
-      "kg_salida": 502341.0,
-      "mov_salida": 37
-    },
-    "Ecofibras Planta Trapen": {
-      "kg_total": 357797.18,
-      "movimientos": 336,
-      "zona": "ZONA SUR",
-      "contrapartes": 24,
-      "kg_ingreso": 273437.18,
-      "mov_ingreso": 332,
-      "kg_salida": 84360.0,
-      "mov_salida": 4
+     "mov": 26,
+     "ingreso": 15870.0
     },
     "Ecofibras San Bernardo": {
-      "kg_total": 3514651.91,
-      "movimientos": 3153,
-      "zona": "ZONA CENTRO",
-      "contrapartes": 56,
-      "kg_ingreso": 1753947.91,
-      "mov_ingreso": 2830,
-      "kg_salida": 1760704.0,
-      "mov_salida": 323
-    },
-    "Ecofibras San Joaquin": {
-      "kg_total": 1892002.94,
-      "movimientos": 2568,
-      "zona": "ZONA SUR",
-      "contrapartes": 56,
-      "kg_ingreso": 993234.94,
-      "mov_ingreso": 2483,
-      "kg_salida": 898768.0,
-      "mov_salida": 85
-    },
-    "IRAR Arica": {
-      "kg_total": 1584.0,
-      "movimientos": 1,
-      "zona": "ZONA NORTE",
-      "contrapartes": 1,
-      "kg_ingreso": 1584.0,
-      "mov_ingreso": 1
+     "mov": 339,
+     "ingreso": 231168.0,
+     "salida": 191736.0
     },
     "Proveedores": {
-      "kg_total": 1789218.5,
-      "movimientos": 756,
-      "zona": "ZONA CENTRO",
-      "contrapartes": 3,
-      "kg_retiro": 1789218.5,
-      "mov_retiro": 756
-    },
-    "Recynor": {
-      "kg_total": 34178.0,
-      "movimientos": 277,
-      "zona": "ZONA NORTE",
-      "contrapartes": 43,
-      "kg_ingreso": 33474.0,
-      "mov_ingreso": 275,
-      "kg_salida": 704.0,
-      "mov_salida": 2
-    },
-    "Temuco": {
-      "kg_total": 6872.0,
-      "movimientos": 53,
-      "zona": "ZONA SUR",
-      "contrapartes": 3,
-      "kg_retiro": 6872.0,
-      "mov_retiro": 53
-    },
-    "Tradicionales": {
-      "kg_total": 436936.5,
-      "movimientos": 3315,
-      "zona": "ZONA CENTRO",
-      "contrapartes": 51,
-      "kg_retiro": 436936.5,
-      "mov_retiro": 3315
+     "mov": 105,
+     "retiro": 279490.0
     }
-  },
-  "por_tipo": {
+   },
+   "tipos": {
     "ASIMILABLE A DOMICILIARIO": {
-      "kg": 10543306.5,
-      "movimientos": 4670,
-      "kg_ingreso": 59921.79,
-      "kg_retiro": 10384699.71,
-      "kg_salida": 98685.0
-    },
-    "BALDES ENTEROS": {
-      "kg": 755.0,
-      "movimientos": 22,
-      "kg_retiro": 755.0
+     "ingreso": 5947.0,
+     "retiro": 1408880.0,
+     "salida": 3500.0
     },
     "BANDEJA NEGRA": {
-      "kg": 4732.0,
-      "movimientos": 30,
-      "kg_ingreso": 4732.0
+     "ingreso": 306.0
     },
     "BANDEJAS ENTERAS": {
-      "kg": 15791.6,
-      "movimientos": 205,
-      "kg_ingreso": 7907.3,
-      "kg_retiro": 43.3,
-      "kg_salida": 7841.0
+     "ingreso": 155.0,
+     "salida": 3790.0
     },
     "BIDONES ENTEROS SIN PROCESAR": {
-      "kg": 52068.86,
-      "movimientos": 712,
-      "kg_ingreso": 41811.86,
-      "kg_retiro": 4773.0,
-      "kg_salida": 5484.0
-    },
-    "BIDONES TRITURADOS": {
-      "kg": 65146.8,
-      "movimientos": 47,
-      "kg_ingreso": 30517.0,
-      "kg_retiro": 28.8,
-      "kg_salida": 34601.0
-    },
-    "BINS": {
-      "kg": 159.0,
-      "movimientos": 2,
-      "kg_ingreso": 159.0
+     "ingreso": 3.0
     },
     "BLANCO": {
-      "kg": 50124.9,
-      "movimientos": 120,
-      "kg_ingreso": 17661.8,
-      "kg_retiro": 2449.1,
-      "kg_salida": 30014.0
+     "ingreso": 590.0,
+     "retiro": 390.0
     },
     "BOTAS": {
-      "kg": 25788.45,
-      "movimientos": 15,
-      "kg_ingreso": 11672.45,
-      "kg_salida": 14116.0
-    },
-    "BOTELLA COLOR": {
-      "kg": 12651.4,
-      "movimientos": 129,
-      "kg_ingreso": 6717.4,
-      "kg_retiro": 148.0,
-      "kg_salida": 5786.0
+     "ingreso": 7646.0,
+     "salida": 906.0
     },
     "BOTELLA TRANSPARENTE": {
-      "kg": 40077.2,
-      "movimientos": 445,
-      "kg_ingreso": 11829.6,
-      "kg_retiro": 7928.6,
-      "kg_salida": 20319.0
-    },
-    "BOYAS ENTERAS": {
-      "kg": 35344.0,
-      "movimientos": 15,
-      "kg_ingreso": 35344.0
-    },
-    "CABOS ENTEROS (PTO MONTT)": {
-      "kg": 19967.1,
-      "movimientos": 17,
-      "kg_ingreso": 1348.1,
-      "kg_salida": 18619.0
-    },
-    "CABOS TRITURADOS": {
-      "kg": 1135.0,
-      "movimientos": 2,
-      "kg_salida": 1135.0
+     "ingreso": 223.0
     },
     "CARRETE ENTERO": {
-      "kg": 5434.0,
-      "movimientos": 159,
-      "kg_ingreso": 2967.0,
-      "kg_salida": 2467.0
-    },
-    "CARRETE MOLIDO": {
-      "kg": 15.0,
-      "movimientos": 1,
-      "kg_ingreso": 15.0
+     "ingreso": 394.0
     },
     "CARTÓN CORRUGADO": {
-      "kg": 1949014.74,
-      "movimientos": 2527,
-      "kg_ingreso": 444555.84,
-      "kg_retiro": 1178462.9,
-      "kg_salida": 325996.0
+     "ingreso": 27348.0,
+     "retiro": 125908.0,
+     "salida": 21026.0
     },
     "CARTÓN PARA LÍQUIDOS": {
-      "kg": 30836.29,
-      "movimientos": 1033,
-      "kg_ingreso": 10292.39,
-      "kg_retiro": 9607.9,
-      "kg_salida": 10936.0
+     "ingreso": 635.0
     },
     "CHATARRA": {
-      "kg": 37953.8,
-      "movimientos": 242,
-      "kg_ingreso": 2642.0,
-      "kg_retiro": 30821.8,
-      "kg_salida": 4490.0
+     "retiro": 3700.0
     },
     "CLAMSHELL ENTERO": {
-      "kg": 3.0,
-      "movimientos": 1,
-      "kg_ingreso": 3.0
-    },
-    "CON CERA": {
-      "kg": 233.0,
-      "movimientos": 35,
-      "kg_ingreso": 233.0
+     "ingreso": 3.0
     },
     "CONO ENTERO": {
-      "kg": 12305.76,
-      "movimientos": 17,
-      "kg_ingreso": 7493.76,
-      "kg_salida": 4812.0
-    },
-    "CONO ENTERO SIN PROCESAR": {
-      "kg": 6639.53,
-      "movimientos": 5,
-      "kg_ingreso": 2539.53,
-      "kg_salida": 4100.0
+     "ingreso": 884.0,
+     "salida": 1040.0
     },
     "CRISTAL ENTERO ANILLO": {
-      "kg": 4878.0,
-      "movimientos": 4,
-      "kg_ingreso": 4828.0,
-      "kg_salida": 50.0
-    },
-    "CRISTAL MOLIDO": {
-      "kg": 50.0,
-      "movimientos": 1,
-      "kg_salida": 50.0
+     "ingreso": 1776.0
     },
     "DESPUNTES": {
-      "kg": 23080.0,
-      "movimientos": 16,
-      "kg_ingreso": 6080.0,
-      "kg_salida": 17000.0
-    },
-    "DÚPLEX": {
-      "kg": 5941.0,
-      "movimientos": 1,
-      "kg_salida": 5941.0
-    },
-    "ELECTRÓNICOS": {
-      "kg": 709.9,
-      "movimientos": 5,
-      "kg_retiro": 709.9
-    },
-    "ENVASES HDPE": {
-      "kg": 5343.4,
-      "movimientos": 74,
-      "kg_retiro": 5343.4
+     "salida": 1460.0
     },
     "EPS BLOQUE": {
-      "kg": 559212.8,
-      "movimientos": 30,
-      "kg_ingreso": 212668.8,
-      "kg_salida": 346544.0
+     "ingreso": 27441.0,
+     "salida": 27500.0
     },
     "EPS GRANEL": {
-      "kg": 1794.7,
-      "movimientos": 69,
-      "kg_ingreso": 1097.0,
-      "kg_retiro": 697.7
-    },
-    "EPS SIN PROCESAR": {
-      "kg": 333266.38,
-      "movimientos": 587,
-      "kg_ingreso": 315783.08,
-      "kg_retiro": 1013.3,
-      "kg_salida": 16470.0
+     "ingreso": 1089.0
     },
     "EPS TORTA": {
-      "kg": 41256.0,
-      "movimientos": 17,
-      "kg_ingreso": 26501.0,
-      "kg_salida": 14755.0
-    },
-    "EPS TORTA COLOR": {
-      "kg": 381.0,
-      "movimientos": 1,
-      "kg_ingreso": 381.0
+     "ingreso": 14136.0
     },
     "ESCOMBROS": {
-      "kg": 268144.3,
-      "movimientos": 153,
-      "kg_retiro": 268144.3
+     "retiro": 43253.0
     },
     "ESQUINERO": {
-      "kg": 17335.0,
-      "movimientos": 23,
-      "kg_ingreso": 8656.0,
-      "kg_salida": 8679.0
-    },
-    "FILM": {
-      "kg": 5242.0,
-      "movimientos": 46,
-      "kg_ingreso": 673.0,
-      "kg_retiro": 4569.0
-    },
-    "FILM PESCADO": {
-      "kg": 126021.7,
-      "movimientos": 145,
-      "kg_ingreso": 101448.7,
-      "kg_salida": 24573.0
-    },
-    "FLOTADORES ENTEROS": {
-      "kg": 2295.0,
-      "movimientos": 3,
-      "kg_ingreso": 2295.0
-    },
-    "FLOTADORES LAMINADOS": {
-      "kg": 6086.0,
-      "movimientos": 2,
-      "kg_ingreso": 196.0,
-      "kg_salida": 5890.0
-    },
-    "FLOTADORES TRITURADOS": {
-      "kg": 86195.0,
-      "movimientos": 5,
-      "kg_ingreso": 51600.0,
-      "kg_salida": 34595.0
-    },
-    "FÁRMACOS": {
-      "kg": 2420.0,
-      "movimientos": 1,
-      "kg_retiro": 2420.0
-    },
-    "GANCHO ROPA": {
-      "kg": 3931.0,
-      "movimientos": 2,
-      "kg_salida": 3931.0
+     "ingreso": 2109.0,
+     "salida": 2309.0
     },
     "GARRAFÓN ENTERO": {
-      "kg": 92323.0,
-      "movimientos": 65,
-      "kg_ingreso": 34965.0,
-      "kg_salida": 57358.0
-    },
-    "HOJALATA": {
-      "kg": 56605.2,
-      "movimientos": 83,
-      "kg_ingreso": 22238.0,
-      "kg_retiro": 138.2,
-      "kg_salida": 34229.0
-    },
-    "INDUSTRIAL": {
-      "kg": 1152920.0,
-      "movimientos": 539,
-      "kg_retiro": 1152920.0
-    },
-    "INVENTARIO": {
-      "kg": 10225.0,
-      "movimientos": 4,
-      "kg_retiro": 10225.0
-    },
-    "LAMAS": {
-      "kg": 5568.0,
-      "movimientos": 5,
-      "kg_ingreso": 1562.0,
-      "kg_salida": 4006.0
+     "ingreso": 485.0
     },
     "LATAS": {
-      "kg": 5578.3,
-      "movimientos": 378,
-      "kg_ingreso": 2011.7,
-      "kg_retiro": 3264.6,
-      "kg_salida": 302.0
-    },
-    "LATAS DE AEROSOLES": {
-      "kg": 233.0,
-      "movimientos": 7,
-      "kg_ingreso": 204.0,
-      "kg_retiro": 29.0
-    },
-    "LODOS CONTAMINADOS": {
-      "kg": 18390.0,
-      "movimientos": 1,
-      "kg_retiro": 18390.0
-    },
-    "MADERA": {
-      "kg": 103727.3,
-      "movimientos": 75,
-      "kg_ingreso": 33484.0,
-      "kg_retiro": 70243.3
-    },
-    "MANGUERA RIEGO ENTERA": {
-      "kg": 20.0,
-      "movimientos": 1,
-      "kg_retiro": 20.0
-    },
-    "MAXISACOS": {
-      "kg": 1020.0,
-      "movimientos": 1,
-      "kg_ingreso": 1020.0
-    },
-    "METALES": {
-      "kg": 10695.6,
-      "movimientos": 42,
-      "kg_ingreso": 10003.6,
-      "kg_retiro": 692.0
-    },
-    "MEZCLA DE ENVASES Y EMBALAJES": {
-      "kg": 20272.1,
-      "movimientos": 77,
-      "kg_ingreso": 4304.0,
-      "kg_retiro": 15968.1
-    },
-    "MEZCLA DE METALES": {
-      "kg": 3660.0,
-      "movimientos": 1,
-      "kg_ingreso": 3660.0
-    },
-    "MEZCLA DE PAPEL Y CARTÓN": {
-      "kg": 8395.0,
-      "movimientos": 15,
-      "kg_ingreso": 5083.0,
-      "kg_retiro": 441.0,
-      "kg_salida": 2871.0
-    },
-    "MEZCLA DE PLÁSTICOS": {
-      "kg": 70716.2,
-      "movimientos": 65,
-      "kg_ingreso": 1604.0,
-      "kg_retiro": 69112.2
+     "ingreso": 76.0
     },
     "MIX RESIMPLE": {
-      "kg": 701438.3,
-      "movimientos": 738,
-      "kg_ingreso": 390023.3,
-      "kg_salida": 311415.0
-    },
-    "MULTICAPA": {
-      "kg": 291.0,
-      "movimientos": 181,
-      "kg_ingreso": 291.0
+     "ingreso": 15870.0
     },
     "NEUMÁTICOS FUERA DE USO": {
-      "kg": 31823.0,
-      "movimientos": 6,
-      "kg_ingreso": 18199.0,
-      "kg_retiro": 3200.0,
-      "kg_salida": 10424.0
-    },
-    "OTRAS MADERAS": {
-      "kg": 8942.0,
-      "movimientos": 19,
-      "kg_ingreso": 7892.0,
-      "kg_retiro": 1050.0
+     "retiro": 3200.0
     },
     "PAI BANDEJAS ENTERAS": {
-      "kg": 41031.0,
-      "movimientos": 61,
-      "kg_ingreso": 34031.0,
-      "kg_salida": 7000.0
-    },
-    "PAI DESCARTE": {
-      "kg": 2595.0,
-      "movimientos": 41,
-      "kg_ingreso": 2595.0
+     "ingreso": 6240.0
     },
     "PAI ESTRELLA": {
-      "kg": 298974.0,
-      "movimientos": 280,
-      "kg_ingreso": 223549.0,
-      "kg_salida": 75425.0
-    },
-    "PAI ESTRELLA NESTLÉ RECUPAC": {
-      "kg": 6240.0,
-      "movimientos": 5,
-      "kg_ingreso": 6240.0
+     "ingreso": 27413.0
     },
     "PAI FARDO": {
-      "kg": 896759.0,
-      "movimientos": 322,
-      "kg_ingreso": 458284.0,
-      "kg_salida": 438475.0
-    },
-    "PAI FARDO CHICOS": {
-      "kg": 9882.0,
-      "movimientos": 7,
-      "kg_ingreso": 9882.0
-    },
-    "PAI FARDO NESTLÉ RECUPAC": {
-      "kg": 778.0,
-      "movimientos": 1,
-      "kg_ingreso": 778.0
+     "ingreso": 54711.0
     },
     "PAI POST CONSUMO": {
-      "kg": 10992.0,
-      "movimientos": 19,
-      "kg_ingreso": 10992.0
+     "ingreso": 646.0
     },
     "PAI PROCESADO": {
-      "kg": 186954.0,
-      "movimientos": 24,
-      "kg_salida": 186954.0
-    },
-    "PAI RAMA": {
-      "kg": 159.0,
-      "movimientos": 1,
-      "kg_ingreso": 159.0
-    },
-    "PAI RAMAS NESTLÉ RECUPAC": {
-      "kg": 72.0,
-      "movimientos": 1,
-      "kg_ingreso": 72.0
-    },
-    "PAI ROLLOS": {
-      "kg": 6442.0,
-      "movimientos": 4,
-      "kg_ingreso": 6442.0
-    },
-    "PALLETS BUENOS": {
-      "kg": 3324.0,
-      "movimientos": 31,
-      "kg_ingreso": 3324.0
-    },
-    "PALLETS ENTEROS": {
-      "kg": 3919.0,
-      "movimientos": 13,
-      "kg_ingreso": 325.0,
-      "kg_retiro": 3330.0,
-      "kg_salida": 264.0
-    },
-    "PALLETS MALOS": {
-      "kg": 17.0,
-      "movimientos": 1,
-      "kg_ingreso": 17.0
-    },
-    "PAPEL Y CARTÓN": {
-      "kg": 3555.9,
-      "movimientos": 31,
-      "kg_ingreso": 3115.9,
-      "kg_retiro": 440.0
-    },
-    "PE EXPANDIDO": {
-      "kg": 2170.0,
-      "movimientos": 1,
-      "kg_retiro": 2170.0
+     "salida": 79590.0
     },
     "PEBD COLOR": {
-      "kg": 190252.75,
-      "movimientos": 710,
-      "kg_ingreso": 58336.95,
-      "kg_retiro": 12095.8,
-      "kg_salida": 119820.0
+     "ingreso": 2951.0,
+     "salida": 4587.0
     },
     "PEBD TRANSPARENTE": {
-      "kg": 159357.09,
-      "movimientos": 178,
-      "kg_ingreso": 86679.09,
-      "kg_retiro": 936.0,
-      "kg_salida": 71742.0
+     "ingreso": 6407.0,
+     "salida": 6975.0
     },
     "PLÁSTICOS": {
-      "kg": 16353.9,
-      "movimientos": 49,
-      "kg_ingreso": 3628.6,
-      "kg_retiro": 6775.3,
-      "kg_salida": 5950.0
-    },
-    "PP RÍGIDO ENTERO": {
-      "kg": 10074.2,
-      "movimientos": 150,
-      "kg_ingreso": 940.0,
-      "kg_retiro": 8194.2,
-      "kg_salida": 940.0
+     "salida": 5950.0
     },
     "RAFIA BLANCA": {
-      "kg": 595572.93,
-      "movimientos": 317,
-      "kg_ingreso": 311937.93,
-      "kg_retiro": 873.0,
-      "kg_salida": 282762.0
-    },
-    "RAFIA BLANCA + PEBD (BBL)": {
-      "kg": 3996.0,
-      "movimientos": 1,
-      "kg_ingreso": 3996.0
-    },
-    "RAFIA CHICA": {
-      "kg": 4050.0,
-      "movimientos": 1,
-      "kg_ingreso": 4050.0
-    },
-    "RAFIA COLOR": {
-      "kg": 7513.0,
-      "movimientos": 6,
-      "kg_ingreso": 2378.0,
-      "kg_retiro": 129.0,
-      "kg_salida": 5006.0
+     "ingreso": 3706.0,
+     "salida": 581.0
     },
     "RAFIA GRIS": {
-      "kg": 306021.0,
-      "movimientos": 46,
-      "kg_ingreso": 151947.0,
-      "kg_salida": 154074.0
-    },
-    "RAFIA NEGRA": {
-      "kg": 6055.0,
-      "movimientos": 2,
-      "kg_salida": 6055.0
-    },
-    "REDES NYLON": {
-      "kg": 15.0,
-      "movimientos": 1,
-      "kg_ingreso": 15.0
-    },
-    "RESIDUOS NO RECICLABLES": {
-      "kg": 373330.0,
-      "movimientos": 425,
-      "kg_ingreso": 367790.0,
-      "kg_retiro": 5540.0
-    },
-    "RESIDUOS NO VALORIZABLES": {
-      "kg": 190488.0,
-      "movimientos": 64,
-      "kg_ingreso": 10677.0,
-      "kg_retiro": 24.0,
-      "kg_salida": 179787.0
+     "ingreso": 27470.0,
+     "salida": 27533.0
     },
     "RESIDUOS ORGÁNICOS": {
-      "kg": 184273.5,
-      "movimientos": 174,
-      "kg_ingreso": 18660.0,
-      "kg_retiro": 161733.5,
-      "kg_salida": 3880.0
-    },
-    "REVISTA": {
-      "kg": 895.0,
-      "movimientos": 2,
-      "kg_ingreso": 895.0
+     "retiro": 10800.0
     },
     "ROLLO PLÁSTICO DESDE VIÑA SANTA RITA": {
-      "kg": 51643.0,
-      "movimientos": 15,
-      "kg_ingreso": 24743.0,
-      "kg_salida": 26900.0
-    },
-    "ROLLOS POLIAMIDA": {
-      "kg": 51957.0,
-      "movimientos": 3,
-      "kg_salida": 51957.0
+     "ingreso": 2606.0
     },
     "ROPA": {
-      "kg": 6688.0,
-      "movimientos": 11,
-      "kg_ingreso": 2976.0,
-      "kg_retiro": 172.0,
-      "kg_salida": 3540.0
+     "ingreso": 1334.0
     },
     "SOPLADO ENTERO": {
-      "kg": 200.0,
-      "movimientos": 3,
-      "kg_ingreso": 200.0
+     "ingreso": 177.0
     },
     "STRETCH FILM": {
-      "kg": 194879.0,
-      "movimientos": 489,
-      "kg_ingreso": 57541.0,
-      "kg_retiro": 54858.0,
-      "kg_salida": 82480.0
+     "ingreso": 3593.0,
+     "retiro": 1840.0,
+     "salida": 4504.0
     },
     "SÓLIDOS CONTAMINADOS": {
-      "kg": 1584290.0,
-      "movimientos": 129,
-      "kg_retiro": 1584290.0
-    },
-    "TAMBORES ENTEROS": {
-      "kg": 3954.0,
-      "movimientos": 30,
-      "kg_ingreso": 3954.0
-    },
-    "TAPA GARRAFÓN ENTERO": {
-      "kg": 687.0,
-      "movimientos": 5,
-      "kg_ingreso": 687.0
-    },
-    "TAPAS DE GARRAFÓN ENTERAS": {
-      "kg": 8001.3,
-      "movimientos": 25,
-      "kg_ingreso": 3556.3,
-      "kg_salida": 4445.0
-    },
-    "TAPAS DE GARRAFÓN TRITURADAS": {
-      "kg": 1584.0,
-      "movimientos": 1,
-      "kg_salida": 1584.0
-    },
-    "TAPAS ENTEROS": {
-      "kg": 7156.15,
-      "movimientos": 21,
-      "kg_ingreso": 1965.15,
-      "kg_salida": 5191.0
-    },
-    "TEXTIL": {
-      "kg": 3598.0,
-      "movimientos": 14,
-      "kg_ingreso": 2156.0,
-      "kg_retiro": 1442.0
-    },
-    "TORTAS Y RAMAS": {
-      "kg": 3137.0,
-      "movimientos": 1,
-      "kg_ingreso": 3137.0
-    },
-    "TUBERÍAS": {
-      "kg": 1014.5,
-      "movimientos": 6,
-      "kg_ingreso": 1014.5
-    },
-    "TUBERÍAS ENTERAS": {
-      "kg": 57643.8,
-      "movimientos": 50,
-      "kg_ingreso": 44835.8,
-      "kg_salida": 12808.0
-    },
-    "TUBERÍAS TRITURADAS": {
-      "kg": 6522.0,
-      "movimientos": 3,
-      "kg_ingreso": 596.0,
-      "kg_salida": 5926.0
+     "retiro": 158390.0
     },
     "VIDRIO": {
-      "kg": 51516.2,
-      "movimientos": 140,
-      "kg_ingreso": 10445.6,
-      "kg_retiro": 40345.6,
-      "kg_salida": 725.0
-    },
-    "VIDRIO COLOR": {
-      "kg": 30081.0,
-      "movimientos": 28,
-      "kg_ingreso": 12001.0,
-      "kg_salida": 18080.0
+     "retiro": 430.0,
+     "salida": 485.0
     },
     "ZUNCHO PET": {
-      "kg": 18701.21,
-      "movimientos": 78,
-      "kg_ingreso": 14227.21,
-      "kg_retiro": 974.0,
-      "kg_salida": 3500.0
+     "ingreso": 1013.0
     },
     "ZUNCHO PP": {
-      "kg": 1599.0,
-      "movimientos": 33,
-      "kg_ingreso": 729.0,
-      "kg_retiro": 67.0,
-      "kg_salida": 803.0
+     "ingreso": 45.0
     }
+   },
+   "destinos": {
+    "RELLENO SANTA MARTA": {
+     "kg": 685130.0,
+     "mov": 288
+    },
+    "KDM": {
+     "kg": 519630.0,
+     "mov": 97
+    },
+    "GERSA": {
+     "kg": 202700.0,
+     "mov": 112
+    },
+    "HIDRONOR": {
+     "kg": 158390.0,
+     "mov": 15
+    },
+    "REINSA MAIPÚ": {
+     "kg": 64700.0,
+     "mov": 37
+    },
+    "CREATIVE WORLD LIMITED": {
+     "kg": 48590.0,
+     "mov": 2
+    },
+    "GREENREC": {
+     "kg": 44673.0,
+     "mov": 24
+    },
+    "REINSA RENCA": {
+     "kg": 31640.0,
+     "mov": 26
+    },
+    "LOGIPAK SPA": {
+     "kg": 30000.0,
+     "mov": 4
+    },
+    "REINSA LA PINTANA": {
+     "kg": 28508.0,
+     "mov": 21
+    },
+    "FIPLAS SPA": {
+     "kg": 27533.0,
+     "mov": 5
+    },
+    "INTCO MALAYSIA SDN BHD": {
+     "kg": 27500.0,
+     "mov": 2
+    },
+    "RECICLADOS INDUSTRIALES S.A": {
+     "kg": 21026.0,
+     "mov": 6
+    },
+    "INDUSTRIA PROCESADORA DE PLASTICOS LTDA": {
+     "kg": 19856.0,
+     "mov": 7
+    },
+    "AMBIPAR SERVICIOS DE VALORIZACIÓN LTDA": {
+     "kg": 9450.0,
+     "mov": 2
+    },
+    "IDEACORP": {
+     "kg": 9120.0,
+     "mov": 5
+    },
+    "ACEROS AZA": {
+     "kg": 3700.0,
+     "mov": 1
+    },
+    "COMERCIAL RIO ACONCAGUA SPA": {
+     "kg": 3349.0,
+     "mov": 2
+    },
+    "RECAUCHAJES ATLAS": {
+     "kg": 3200.0,
+     "mov": 1
+    },
+    "INPROPLAS": {
+     "kg": 1840.0,
+     "mov": 1
+    },
+    "ARMONY": {
+     "kg": 1680.0,
+     "mov": 2
+    },
+    "RECUPAC S.A": {
+     "kg": 1460.0,
+     "mov": 1
+    },
+    "RECUPAC LA PINTANA": {
+     "kg": 1450.0,
+     "mov": 1
+    },
+    "WENCO S.A": {
+     "kg": 1000.0,
+     "mov": 1
+    },
+    "POCK SPA": {
+     "kg": 906.0,
+     "mov": 1
+    },
+    "RECICLAJES CORESA SPA": {
+     "kg": 581.0,
+     "mov": 2
+    },
+    "CRISTALERIAS TORO": {
+     "kg": 485.0,
+     "mov": 1
+    },
+    "CRISTALERÍAS TORO": {
+     "kg": 430.0,
+     "mov": 1
+    }
+   },
+   "clientes": {
+    "DESARROLLOS E INVERSIONES INTERNACIONALES SPA": {
+     "kg": 855470.0,
+     "mov": 204
+    },
+    "ANGLO AMERICAN SUR S.A": {
+     "kg": 152750.0,
+     "mov": 11
+    },
+    "SERVICIOS AVO II SPA": {
+     "kg": 124800.0,
+     "mov": 61
+    },
+    "VEOLIA SI CHILE S.A": {
+     "kg": 64558.0,
+     "mov": 120
+    },
+    "ECOFIBRAS S.A": {
+     "kg": 59318.0,
+     "mov": 8
+    },
+    "GARIBALDI S.A": {
+     "kg": 50120.0,
+     "mov": 9
+    },
+    "INDUSTRIAL Y MINERIA LOS ESTEROS LTDA": {
+     "kg": 42721.25,
+     "mov": 23
+    },
+    "SOCIEDAD ANONIMA VIÑA SANTA RITA S.A": {
+     "kg": 31920.0,
+     "mov": 47
+    },
+    "IMPRENTA ALFREDO MOLINA FLORES S.A": {
+     "kg": 31920.0,
+     "mov": 18
+    },
+    "ALL4LABELS SANTIAGO SPA": {
+     "kg": 30060.0,
+     "mov": 13
+    },
+    "COSEMAR SERVICIOS INDUSTRIALES SPA": {
+     "kg": 27470.0,
+     "mov": 3
+    },
+    "SOCIEDAD CONCESIONARIA AUTOPISTA SAN ANTONIO-SANTIAGO S.A": {
+     "kg": 27370.0,
+     "mov": 15
+    },
+    "SOCIEDAD CONCESIONARIA CONEXIÓN VIAL RUTA 78_68 S.A": {
+     "kg": 26970.0,
+     "mov": 9
+    },
+    "RECUPAC S.A": {
+     "kg": 25847.0,
+     "mov": 12
+    },
+    "IMAL SPA": {
+     "kg": 24750.0,
+     "mov": 14
+    },
+    "CORPORACIÓN INDEPENDIENTE DE FÚTBOL": {
+     "kg": 22170.0,
+     "mov": 5
+    },
+    "INMOBILIARIA SAN IGNACIO SPA": {
+     "kg": 22010.0,
+     "mov": 17
+    },
+    "ARMACERO MATCO S.A": {
+     "kg": 18700.0,
+     "mov": 6
+    },
+    "INMOBILIARIA RECONQUISTA S.A": {
+     "kg": 15910.0,
+     "mov": 9
+    },
+    "RESIMPLE": {
+     "kg": 15870.0,
+     "mov": 26
+    },
+    "GESTION VIAL S.A": {
+     "kg": 13790.0,
+     "mov": 2
+    },
+    "LABORATORIO MAVER S.A": {
+     "kg": 13490.0,
+     "mov": 4
+    },
+    "EMPRESA NACIONAL DE TELECOMUNICACIONES S.A": {
+     "kg": 12940.0,
+     "mov": 4
+    },
+    "SHERWIN WILLIAMS CHILE S.A": {
+     "kg": 12520.0,
+     "mov": 8
+    },
+    "SOLO VERDE S.A": {
+     "kg": 11080.0,
+     "mov": 5
+    },
+    "REVESOL SPA": {
+     "kg": 10070.0,
+     "mov": 4
+    },
+    "PEHUEN SPA": {
+     "kg": 9940.0,
+     "mov": 5
+    },
+    "MUEBLES Y EQUIPAMIENTOS COMERCIALES SPA": {
+     "kg": 9550.0,
+     "mov": 3
+    },
+    "FUNDACION EDUCACIONAL CARDENAL CARO": {
+     "kg": 8620.0,
+     "mov": 10
+    },
+    "AMBIPAR ENVIRONMENT CHILE": {
+     "kg": 8293.0,
+     "mov": 38
+    }
+   }
   },
-  "por_mes": {
-    "2025-09": {
-      "kg": 8160.0,
-      "movimientos": 14,
-      "kg_ingreso": 8160.0
+  "2025-11": {
+   "flujos": {
+    "Ingreso": {
+     "kg": 185695.0,
+     "mov": 325
     },
-    "2025-10": {
-      "kg": 2275241.4,
-      "movimientos": 1226,
-      "kg_ingreso": 247468.0,
-      "kg_retiro": 1836037.4,
-      "kg_salida": 191736.0
+    "Retiro BO": {
+     "kg": 1597539.6,
+     "mov": 612
     },
-    "2025-11": {
-      "kg": 2019594.0,
-      "movimientos": 1222,
-      "kg_ingreso": 187105.0,
-      "kg_retiro": 1693396.0,
-      "kg_salida": 139093.0
-    },
-    "2025-12": {
-      "kg": 2200659.55,
-      "movimientos": 1383,
-      "kg_ingreso": 268380.0,
-      "kg_retiro": 1727312.55,
-      "kg_salida": 204967.0
-    },
-    "2026-01": {
-      "kg": 2484545.69,
-      "movimientos": 1726,
-      "kg_ingreso": 377033.99,
-      "kg_retiro": 1653555.7,
-      "kg_salida": 453956.0
-    },
-    "2026-02": {
-      "kg": 2238359.04,
-      "movimientos": 1845,
-      "kg_ingreso": 472464.61,
-      "kg_retiro": 1551858.43,
-      "kg_salida": 214036.0
-    },
-    "2026-03": {
-      "kg": 3077715.81,
-      "movimientos": 2791,
-      "kg_ingreso": 579049.06,
-      "kg_retiro": 1981663.75,
-      "kg_salida": 517003.0
-    },
-    "2026-04": {
-      "kg": 2387919.68,
-      "movimientos": 3282,
-      "kg_ingreso": 452559.45,
-      "kg_retiro": 1663603.23,
-      "kg_salida": 271757.0
-    },
-    "2026-05": {
-      "kg": 2281168.85,
-      "movimientos": 2855,
-      "kg_ingreso": 409965.65,
-      "kg_retiro": 1440299.7,
-      "kg_salida": 430903.5
-    },
-    "2026-06": {
-      "kg": 2001198.58,
-      "movimientos": 2906,
-      "kg_ingreso": 473997.08,
-      "kg_retiro": 1046598.0,
-      "kg_salida": 480603.5
-    },
-    "2026-07": {
-      "kg": 1779639.44,
-      "movimientos": 2066,
-      "kg_ingreso": 461044.19,
-      "kg_retiro": 975773.25,
-      "kg_salida": 342822.0
+    "Salida": {
+     "kg": 140263.0,
+     "mov": 30
     }
+   },
+   "plantas": {
+    "BO San Bernardo": {
+     "mov": 517,
+     "retiro": 1340589.6
+    },
+    "Ecofibras Coronel": {
+     "mov": 22,
+     "ingreso": 18525.0
+    },
+    "Ecofibras San Bernardo": {
+     "mov": 333,
+     "ingreso": 167170.0,
+     "salida": 140263.0
+    },
+    "Proveedores": {
+     "mov": 95,
+     "retiro": 256950.0
+    }
+   },
+   "tipos": {
+    "ASIMILABLE A DOMICILIARIO": {
+     "ingreso": 1237.0,
+     "retiro": 1282412.25,
+     "salida": 1640.0
+    },
+    "BANDEJA NEGRA": {
+     "ingreso": 2273.0
+    },
+    "BANDEJAS ENTERAS": {
+     "ingreso": 341.0
+    },
+    "BIDONES ENTEROS SIN PROCESAR": {
+     "ingreso": 104.0
+    },
+    "BLANCO": {
+     "ingreso": 406.0,
+     "salida": 1520.0
+    },
+    "BOTAS": {
+     "salida": 6.0
+    },
+    "BOTELLA TRANSPARENTE": {
+     "ingreso": 335.0
+    },
+    "CARRETE ENTERO": {
+     "ingreso": 286.0
+    },
+    "CARTÓN CORRUGADO": {
+     "ingreso": 33664.0,
+     "retiro": 141730.0,
+     "salida": 19287.0
+    },
+    "CARTÓN PARA LÍQUIDOS": {
+     "ingreso": 692.0,
+     "salida": 6024.0
+    },
+    "CHATARRA": {
+     "ingreso": 120.0
+    },
+    "CONO ENTERO": {
+     "ingreso": 106.0
+    },
+    "CONO ENTERO SIN PROCESAR": {
+     "ingreso": 1143.0
+    },
+    "DESPUNTES": {
+     "salida": 3940.0
+    },
+    "EPS SIN PROCESAR": {
+     "ingreso": 897.0,
+     "salida": 16470.0
+    },
+    "ESCOMBROS": {
+     "retiro": 23577.35
+    },
+    "ESQUINERO": {
+     "ingreso": 2328.0
+    },
+    "GARRAFÓN ENTERO": {
+     "ingreso": 536.0
+    },
+    "LAMAS": {
+     "salida": 6.0
+    },
+    "LATAS": {
+     "ingreso": 40.0
+    },
+    "MADERA": {
+     "retiro": 2510.0
+    },
+    "MIX RESIMPLE": {
+     "ingreso": 18525.0
+    },
+    "PAI BANDEJAS ENTERAS": {
+     "ingreso": 3118.0,
+     "salida": 7000.0
+    },
+    "PAI ESTRELLA": {
+     "ingreso": 16664.0
+    },
+    "PAI ESTRELLA NESTLÉ RECUPAC": {
+     "ingreso": 6240.0
+    },
+    "PAI FARDO": {
+     "ingreso": 55213.0,
+     "salida": 48730.0
+    },
+    "PAI FARDO CHICOS": {
+     "ingreso": 1192.0
+    },
+    "PAI POST CONSUMO": {
+     "ingreso": 320.0
+    },
+    "PAI PROCESADO": {
+     "salida": 9000.0
+    },
+    "PAI RAMAS NESTLÉ RECUPAC": {
+     "ingreso": 72.0
+    },
+    "PEBD COLOR": {
+     "ingreso": 3171.0,
+     "salida": 3703.0
+    },
+    "RAFIA BLANCA": {
+     "ingreso": 3060.0,
+     "salida": 4201.0
+    },
+    "RAFIA COLOR": {
+     "ingreso": 18.0
+    },
+    "RAFIA GRIS": {
+     "ingreso": 17541.0,
+     "salida": 4456.0
+    },
+    "RAFIA NEGRA": {
+     "salida": 4030.0
+    },
+    "RESIDUOS ORGÁNICOS": {
+     "retiro": 18200.0
+    },
+    "ROLLO PLÁSTICO DESDE VIÑA SANTA RITA": {
+     "ingreso": 6759.0
+    },
+    "ROPA": {
+     "ingreso": 712.0,
+     "salida": 3540.0
+    },
+    "SOPLADO ENTERO": {
+     "ingreso": 15.0
+    },
+    "STRETCH FILM": {
+     "ingreso": 7912.0,
+     "salida": 6470.0
+    },
+    "SÓLIDOS CONTAMINADOS": {
+     "retiro": 128880.0
+    },
+    "VIDRIO": {
+     "retiro": 230.0,
+     "salida": 240.0
+    },
+    "ZUNCHO PET": {
+     "ingreso": 622.0
+    },
+    "ZUNCHO PP": {
+     "ingreso": 33.0
+    }
+   },
+   "destinos": {
+    "RELLENO SANTA MARTA": {
+     "kg": 559310.0,
+     "mov": 235
+    },
+    "KDM": {
+     "kg": 548110.0,
+     "mov": 113
+    },
+    "GERSA": {
+     "kg": 171632.0,
+     "mov": 111
+    },
+    "HIDRONOR": {
+     "kg": 139770.0,
+     "mov": 15
+    },
+    "REINSA MAIPÚ": {
+     "kg": 85590.0,
+     "mov": 62
+    },
+    "CREATIVE WORLD LIMITED": {
+     "kg": 48730.0,
+     "mov": 2
+    },
+    "REINSA RENCA": {
+     "kg": 29410.0,
+     "mov": 26
+    },
+    "GREENREC": {
+     "kg": 24807.6,
+     "mov": 19
+    },
+    "RECICLADOS INDUSTRIALES S.A": {
+     "kg": 20807.0,
+     "mov": 7
+    },
+    "IDEACORP": {
+     "kg": 16900.0,
+     "mov": 17
+    },
+    "THERMOGREEN SL": {
+     "kg": 16470.0,
+     "mov": 1
+    },
+    "LOGIPAK SPA": {
+     "kg": 16000.0,
+     "mov": 3
+    },
+    "REINSA LA PINTANA": {
+     "kg": 15840.0,
+     "mov": 11
+    },
+    "AMBIPAR SERVICIOS DE VALORIZACIÓN LTDA": {
+     "kg": 15234.0,
+     "mov": 5
+    },
+    "INDUSTRIA PROCESADORA DE PLASTICOS LTDA": {
+     "kg": 10173.0,
+     "mov": 3
+    },
+    "FIPLAS SPA": {
+     "kg": 4456.0,
+     "mov": 1
+    },
+    "BIOPLASTIC SPA": {
+     "kg": 4201.0,
+     "mov": 2
+    },
+    "STA. MARTA": {
+     "kg": 3430.0,
+     "mov": 1
+    },
+    "RECUPAC S.A": {
+     "kg": 2770.0,
+     "mov": 2
+    },
+    "ARMONY": {
+     "kg": 2510.0,
+     "mov": 1
+    },
+    "RECUPAC MAIPÚ": {
+     "kg": 1170.0,
+     "mov": 1
+    },
+    "CRISTALERIAS TORO": {
+     "kg": 240.0,
+     "mov": 1
+    },
+    "CRISTALERÍAS TORO": {
+     "kg": 230.0,
+     "mov": 1
+    },
+    "POCK SPA": {
+     "kg": 12.0,
+     "mov": 2
+    }
+   },
+   "clientes": {
+    "DESARROLLOS E INVERSIONES INTERNACIONALES SPA": {
+     "kg": 784390.0,
+     "mov": 196
+    },
+    "SERVICIOS AVO II SPA": {
+     "kg": 146250.0,
+     "mov": 66
+    },
+    "ANGLO AMERICAN SUR S.A": {
+     "kg": 134590.0,
+     "mov": 10
+    },
+    "VEOLIA SI CHILE S.A": {
+     "kg": 54021.0,
+     "mov": 98
+    },
+    "GARIBALDI S.A": {
+     "kg": 49860.0,
+     "mov": 9
+    },
+    "IMAL SPA": {
+     "kg": 32260.0,
+     "mov": 16
+    },
+    "IDEAL S.A": {
+     "kg": 29430.0,
+     "mov": 37
+    },
+    "INMOBILIARIA RECONQUISTA S.A": {
+     "kg": 23800.0,
+     "mov": 12
+    },
+    "INMOBILIARIA SAN IGNACIO SPA": {
+     "kg": 23652.0,
+     "mov": 18
+    },
+    "CORPORACION EMPRENDE TU MENTE": {
+     "kg": 22740.0,
+     "mov": 12
+    },
+    "SOCIEDAD CONCESIONARIA AUTOPISTA SAN ANTONIO-SANTIAGO S.A": {
+     "kg": 22340.0,
+     "mov": 11
+    },
+    "SOCIEDAD ANONIMA VIÑA SANTA RITA S.A": {
+     "kg": 21588.0,
+     "mov": 37
+    },
+    "GESTION DE EXPORTACIONES FRUTICOLAS S.A": {
+     "kg": 19541.0,
+     "mov": 14
+    },
+    "RESIMPLE": {
+     "kg": 18525.0,
+     "mov": 22
+    },
+    "COSEMAR SERVICIOS INDUSTRIALES SPA": {
+     "kg": 17541.0,
+     "mov": 2
+    },
+    "ALL4LABELS SANTIAGO SPA": {
+     "kg": 17210.0,
+     "mov": 12
+    },
+    "IMPRENTA ALFREDO MOLINA FLORES S.A": {
+     "kg": 17010.0,
+     "mov": 10
+    },
+    "RECUPAC S.A": {
+     "kg": 16795.0,
+     "mov": 11
+    },
+    "ECOFIBRAS S.A": {
+     "kg": 15180.0,
+     "mov": 3
+    },
+    "GESTION VIAL S.A": {
+     "kg": 14210.0,
+     "mov": 2
+    },
+    "MULTIFRUTA S.A": {
+     "kg": 14146.0,
+     "mov": 26
+    },
+    "INDUSTRIAL Y MINERIA LOS ESTEROS LTDA": {
+     "kg": 13761.25,
+     "mov": 10
+    },
+    "LABORATORIO MAVER S.A": {
+     "kg": 12670.0,
+     "mov": 4
+    },
+    "EMPRESA NACIONAL DE TELECOMUNICACIONES S.A": {
+     "kg": 12420.0,
+     "mov": 4
+    },
+    "JUNCO INNOVACION Y DESARROLLO LTDA": {
+     "kg": 9592.0,
+     "mov": 4
+    },
+    "CLASS EDIFICACION SPA": {
+     "kg": 9560.0,
+     "mov": 4
+    },
+    "SOC COMERCIAL Y DE INVERSIONES MEDITERRANEO": {
+     "kg": 9360.0,
+     "mov": 4
+    },
+    "REVESOL SPA": {
+     "kg": 8130.0,
+     "mov": 4
+    },
+    "PEHUEN SPA": {
+     "kg": 7750.0,
+     "mov": 3
+    },
+    "MUEBLES Y EQUIPAMIENTOS COMERCIALES SPA": {
+     "kg": 7740.0,
+     "mov": 3
+    }
+   }
   },
-  "destinos": [
-    {
-      "destino": "RELLENO SANTA MARTA",
-      "movimientos": 4240,
-      "kg": 5206285.0
+  "2025-12": {
+   "flujos": {
+    "Ingreso": {
+     "kg": 259730.0,
+     "mov": 410
     },
-    {
-      "destino": "KDM",
-      "movimientos": 823,
-      "kg": 4036110.0
+    "Retiro BO": {
+     "kg": 1646918.35,
+     "mov": 642
     },
-    {
-      "destino": "GERSA",
-      "movimientos": 1771,
-      "kg": 1833663.0
-    },
-    {
-      "destino": "HIDRONOR",
-      "movimientos": 131,
-      "kg": 1613570.0
-    },
-    {
-      "destino": "GIRI",
-      "movimientos": 1622,
-      "kg": 634162.3
-    },
-    {
-      "destino": "REINSA MAIPÚ",
-      "movimientos": 402,
-      "kg": 533186.0
-    },
-    {
-      "destino": "REXIN",
-      "movimientos": 101,
-      "kg": 353724.11
-    },
-    {
-      "destino": "RÍO ACONCAGUA",
-      "movimientos": 219,
-      "kg": 312008.0
-    },
-    {
-      "destino": "SANTIAGO",
-      "movimientos": 19,
-      "kg": 303810.0
-    },
-    {
-      "destino": "GREENREC",
-      "movimientos": 153,
-      "kg": 259528.8
-    },
-    {
-      "destino": "AMBIPAR SERVICIOS DE VALORIZACION LTDA",
-      "movimientos": 17,
-      "kg": 190211.0
-    },
-    {
-      "destino": "BIOPLASTIC SPA",
-      "movimientos": 12,
-      "kg": 175140.0
+    "Salida": {
+     "kg": 212067.0,
+     "mov": 39
     }
-  ],
-  "clientes": [
-    {
-      "cliente": "DESARROLLOS E INVERSIONES INTERNACIONALES SPA",
-      "movimientos": 2852,
-      "kg": 6222277.1
+   },
+   "plantas": {
+    "BO San Bernardo": {
+     "mov": 549,
+     "retiro": 1487785.35
     },
-    {
-      "cliente": "ANGLO AMERICAN SUR S.A",
-      "movimientos": 107,
-      "kg": 1575150.0
+    "Ecofibras Coronel": {
+     "mov": 111,
+     "ingreso": 60002.0,
+     "salida": 7100.0
     },
-    {
-      "cliente": "SERVICIOS AVO II SPA",
-      "movimientos": 1548,
-      "kg": 1436004.0
+    "Ecofibras San Bernardo": {
+     "mov": 331,
+     "ingreso": 194934.0,
+     "salida": 204967.0
     },
-    {
-      "cliente": "VEOLIA SI CHILE S.A",
-      "movimientos": 954,
-      "kg": 550164.0
+    "Ecofibras San Joaquin": {
+     "mov": 7,
+     "ingreso": 4794.0
     },
-    {
-      "cliente": "GARIBALDI S.A",
-      "movimientos": 89,
-      "kg": 488400.0
-    },
-    {
-      "cliente": "ECOFIBRAS S.A",
-      "movimientos": 128,
-      "kg": 412841.48
-    },
-    {
-      "cliente": "RESIMPLE",
-      "movimientos": 727,
-      "kg": 390674.3
-    },
-    {
-      "cliente": "VIDRIOS LIRQUÉN S.A",
-      "movimientos": 64,
-      "kg": 382234.0
-    },
-    {
-      "cliente": "IDEAL S.A",
-      "movimientos": 578,
-      "kg": 381098.0
-    },
-    {
-      "cliente": "MOWI CHILE S.A",
-      "movimientos": 344,
-      "kg": 318296.84
-    },
-    {
-      "cliente": "BIOMAR CHILE S.A",
-      "movimientos": 254,
-      "kg": 269073.0
-    },
-    {
-      "cliente": "SOCIEDAD ANONIMA VIÑA SANTA RITA S.A",
-      "movimientos": 385,
-      "kg": 261388.0
+    "Proveedores": {
+     "mov": 93,
+     "retiro": 159133.0
     }
-  ],
-  "zonas": {
-    "ZONA CENTRO": {
-      "kg": 18609623.01,
-      "movimientos": 14230
+   },
+   "tipos": {
+    "ASIMILABLE A DOMICILIARIO": {
+     "ingreso": 8497.0,
+     "retiro": 1288250.0,
+     "salida": 25310.0
     },
-    "ZONA NORTE": {
-      "kg": 110422.0,
-      "movimientos": 315
+    "BANDEJA NEGRA": {
+     "ingreso": 1495.0
     },
-    "ZONA SUR": {
-      "kg": 4034157.03,
-      "movimientos": 6771
+    "BANDEJAS ENTERAS": {
+     "ingreso": 2423.0,
+     "salida": 1164.0
+    },
+    "BIDONES ENTEROS SIN PROCESAR": {
+     "ingreso": 73.0
+    },
+    "BLANCO": {
+     "ingreso": 2691.0
+    },
+    "BOTELLA COLOR": {
+     "ingreso": 45.0
+    },
+    "BOTELLA TRANSPARENTE": {
+     "ingreso": 153.0
+    },
+    "CARRETE ENTERO": {
+     "ingreso": 235.0,
+     "salida": 1120.0
+    },
+    "CARTÓN CORRUGADO": {
+     "ingreso": 31765.0,
+     "retiro": 182643.0,
+     "salida": 38689.0
+    },
+    "CARTÓN PARA LÍQUIDOS": {
+     "ingreso": 628.0
+    },
+    "CHATARRA": {
+     "ingreso": 165.0,
+     "retiro": 3430.0
+    },
+    "CONO ENTERO": {
+     "ingreso": 656.0
+    },
+    "CONO ENTERO SIN PROCESAR": {
+     "salida": 1000.0
+    },
+    "CRISTAL ENTERO ANILLO": {
+     "salida": 50.0
+    },
+    "CRISTAL MOLIDO": {
+     "salida": 50.0
+    },
+    "DÚPLEX": {
+     "salida": 5941.0
+    },
+    "EPS BLOQUE": {
+     "ingreso": 33157.0,
+     "salida": 31920.0
+    },
+    "EPS SIN PROCESAR": {
+     "ingreso": 5224.0
+    },
+    "EPS TORTA": {
+     "ingreso": 2869.0
+    },
+    "EPS TORTA COLOR": {
+     "ingreso": 381.0
+    },
+    "ESCOMBROS": {
+     "retiro": 24015.35
+    },
+    "ESQUINERO": {
+     "ingreso": 2940.0,
+     "salida": 5170.0
+    },
+    "FILM": {
+     "ingreso": 3.0
+    },
+    "GARRAFÓN ENTERO": {
+     "ingreso": 1421.0
+    },
+    "LATAS": {
+     "ingreso": 51.0
+    },
+    "MADERA": {
+     "retiro": 890.0
+    },
+    "MEZCLA DE ENVASES Y EMBALAJES": {
+     "ingreso": 38.0
+    },
+    "MEZCLA DE PAPEL Y CARTÓN": {
+     "ingreso": 4.0
+    },
+    "MIX RESIMPLE": {
+     "ingreso": 24988.0
+    },
+    "PAI BANDEJAS ENTERAS": {
+     "ingreso": 4194.0
+    },
+    "PAI ESTRELLA": {
+     "ingreso": 23184.0
+    },
+    "PAI FARDO": {
+     "ingreso": 34616.0,
+     "salida": 49820.0
+    },
+    "PAI FARDO CHICOS": {
+     "ingreso": 4447.0
+    },
+    "PAI FARDO NESTLÉ RECUPAC": {
+     "ingreso": 778.0
+    },
+    "PAI POST CONSUMO": {
+     "ingreso": 487.0
+    },
+    "PAI PROCESADO": {
+     "salida": 8000.0
+    },
+    "PALLETS BUENOS": {
+     "ingreso": 1560.0
+    },
+    "PAPEL Y CARTÓN": {
+     "ingreso": 203.0
+    },
+    "PEBD COLOR": {
+     "ingreso": 4297.0,
+     "retiro": 2300.0,
+     "salida": 626.0
+    },
+    "PEBD TRANSPARENTE": {
+     "ingreso": 1321.0,
+     "salida": 7187.0
+    },
+    "PP RÍGIDO ENTERO": {
+     "ingreso": 241.0
+    },
+    "RAFIA BLANCA": {
+     "ingreso": 28194.0
+    },
+    "RAFIA GRIS": {
+     "ingreso": 16140.0,
+     "salida": 26623.0
+    },
+    "RESIDUOS NO RECICLABLES": {
+     "salida": 7100.0
+    },
+    "RESIDUOS ORGÁNICOS": {
+     "retiro": 6910.0
+    },
+    "ROLLO PLÁSTICO DESDE VIÑA SANTA RITA": {
+     "ingreso": 5173.0
+    },
+    "ROPA": {
+     "ingreso": 875.0
+    },
+    "SOPLADO ENTERO": {
+     "ingreso": 8.0
+    },
+    "STRETCH FILM": {
+     "ingreso": 11499.0,
+     "salida": 2297.0
+    },
+    "SÓLIDOS CONTAMINADOS": {
+     "retiro": 138480.0
+    },
+    "TAPA GARRAFÓN ENTERO": {
+     "ingreso": 160.0
+    },
+    "TAPAS DE GARRAFÓN ENTERAS": {
+     "ingreso": 502.0
+    },
+    "TEXTIL": {
+     "ingreso": 43.0
+    },
+    "ZUNCHO PET": {
+     "ingreso": 1869.0
+    },
+    "ZUNCHO PP": {
+     "ingreso": 37.0
     }
+   },
+   "destinos": {
+    "KDM": {
+     "kg": 691170.0,
+     "mov": 125
+    },
+    "RELLENO SANTA MARTA": {
+     "kg": 393580.0,
+     "mov": 221
+    },
+    "GERSA": {
+     "kg": 203500.0,
+     "mov": 123
+    },
+    "HIDRONOR": {
+     "kg": 145580.0,
+     "mov": 13
+    },
+    "REINSA MAIPÚ": {
+     "kg": 99993.0,
+     "mov": 67
+    },
+    "CREATIVE WORLD LIMITED": {
+     "kg": 49820.0,
+     "mov": 2
+    },
+    "REINSA RENCA": {
+     "kg": 46320.0,
+     "mov": 49
+    },
+    "RECICLADOS INDUSTRIALES S.A": {
+     "kg": 44630.0,
+     "mov": 14
+    },
+    "REINSA LA PINTANA": {
+     "kg": 35170.0,
+     "mov": 18
+    },
+    "THERMOGREEN SL": {
+     "kg": 31920.0,
+     "mov": 2
+    },
+    "AMBIPAR SERVICIOS DE VALORIZACIÓN LTDA": {
+     "kg": 25310.0,
+     "mov": 6
+    },
+    "GREENREC": {
+     "kg": 24015.35,
+     "mov": 16
+    },
+    "GREENVALLY ECO COMPANY": {
+     "kg": 21990.0,
+     "mov": 1
+    },
+    "INDUSTRIA PROCESADORA DE PLASTICOS LTDA": {
+     "kg": 12394.0,
+     "mov": 6
+    },
+    "WENCO S.A": {
+     "kg": 8000.0,
+     "mov": 1
+    },
+    "IDEACORP": {
+     "kg": 6910.0,
+     "mov": 8
+    },
+    "COMERCIAL RIO ACONCAGUA SPA": {
+     "kg": 6170.0,
+     "mov": 2
+    },
+    "FIPLAS SPA": {
+     "kg": 4633.0,
+     "mov": 1
+    },
+    "ACEROS AZA": {
+     "kg": 3430.0,
+     "mov": 1
+    },
+    "INPROPLAS": {
+     "kg": 2300.0,
+     "mov": 1
+    },
+    "RÍO ACONCAGUA": {
+     "kg": 1160.0,
+     "mov": 1
+    },
+    "ARMONY": {
+     "kg": 890.0,
+     "mov": 1
+    },
+    "REVALORA SPA": {
+     "kg": 100.0,
+     "mov": 2
+    }
+   },
+   "clientes": {
+    "DESARROLLOS E INVERSIONES INTERNACIONALES SPA": {
+     "kg": 869893.0,
+     "mov": 215
+    },
+    "ANGLO AMERICAN SUR S.A": {
+     "kg": 137740.0,
+     "mov": 10
+    },
+    "SERVICIOS AVO II SPA": {
+     "kg": 132680.0,
+     "mov": 65
+    },
+    "ECOFIBRAS S.A": {
+     "kg": 53256.0,
+     "mov": 7
+    },
+    "VEOLIA SI CHILE S.A": {
+     "kg": 50834.0,
+     "mov": 99
+    },
+    "GARIBALDI S.A": {
+     "kg": 47260.0,
+     "mov": 8
+    },
+    "IMAL SPA": {
+     "kg": 28390.0,
+     "mov": 16
+    },
+    "IDEAL S.A": {
+     "kg": 26880.0,
+     "mov": 37
+    },
+    "RESIMPLE": {
+     "kg": 24988.0,
+     "mov": 44
+    },
+    "SOCIEDAD CONCESIONARIA AUTOPISTA SAN ANTONIO-SANTIAGO S.A": {
+     "kg": 23440.0,
+     "mov": 14
+    },
+    "SOCIEDAD ANONIMA VIÑA SANTA RITA S.A": {
+     "kg": 22974.0,
+     "mov": 36
+    },
+    "MULTIFRUTA S.A": {
+     "kg": 19092.0,
+     "mov": 32
+    },
+    "INDUSTRIAL Y MINERIA LOS ESTEROS LTDA": {
+     "kg": 19084.85,
+     "mov": 11
+    },
+    "SOLO VERDE S.A": {
+     "kg": 18840.0,
+     "mov": 11
+    },
+    "INMOBILIARIA RECONQUISTA S.A": {
+     "kg": 18770.0,
+     "mov": 10
+    },
+    "ALL4LABELS SANTIAGO SPA": {
+     "kg": 16110.0,
+     "mov": 12
+    },
+    "COSEMAR SERVICIOS INDUSTRIALES SPA": {
+     "kg": 16072.0,
+     "mov": 2
+    },
+    "RECYCLA CHILE S.A": {
+     "kg": 15680.0,
+     "mov": 4
+    },
+    "RECUPAC S.A": {
+     "kg": 15361.0,
+     "mov": 9
+    },
+    "IMPRENTA ALFREDO MOLINA FLORES S.A": {
+     "kg": 15260.0,
+     "mov": 9
+    },
+    "GESTION DE EXPORTACIONES FRUTICOLAS S.A": {
+     "kg": 14865.0,
+     "mov": 14
+    },
+    "INMOBILIARIA SAN IGNACIO SPA": {
+     "kg": 14120.0,
+     "mov": 15
+    },
+    "LABORATORIO MAVER S.A": {
+     "kg": 12090.0,
+     "mov": 5
+    },
+    "PEHUEN SPA": {
+     "kg": 11030.0,
+     "mov": 6
+    },
+    "CORP. INDEPENDIENTE DE FUTBOL": {
+     "kg": 10880.0,
+     "mov": 3
+    },
+    "AMBIPAR ENVIRONMENT CHILE LTDA": {
+     "kg": 10637.0,
+     "mov": 14
+    },
+    "AMBIPAR ENVIRONMENT CHILE": {
+     "kg": 10356.0,
+     "mov": 38
+    },
+    "SOC COMERCIAL Y DE INVERSIONES MEDITERRANEO": {
+     "kg": 9870.0,
+     "mov": 5
+    },
+    "INGENIERIA AGROSONDA SPA": {
+     "kg": 9720.0,
+     "mov": 3
+    },
+    "REVESOL SPA": {
+     "kg": 9300.0,
+     "mov": 5
+    }
+   }
   },
-  "total_kg": 22754202.04,
-  "total_movimientos": 21316,
-  "registros_totales": 21316,
-  "ultima_dato": "2026-07-29",
-  "actualizado": "2026-07-29T22:19:26",
-  "primer_dato": "2025-09-05"
+  "2026-01": {
+   "flujos": {
+    "Ingreso": {
+     "kg": 795019.99,
+     "mov": 1186
+    },
+    "Retiro BO": {
+     "kg": 1567545.6,
+     "mov": 620
+    },
+    "Salida": {
+     "kg": 748927.0,
+     "mov": 124
+    }
+   },
+   "plantas": {
+    "BO San Bernardo": {
+     "mov": 523,
+     "retiro": 1307305.6
+    },
+    "BO Trapen": {
+     "mov": 2,
+     "retiro": 8000.0
+    },
+    "Ecofibras Coronel": {
+     "mov": 118,
+     "ingreso": 48291.0,
+     "salida": 115049.0
+    },
+    "Ecofibras Planta Trapen": {
+     "mov": 36,
+     "ingreso": 30624.0
+    },
+    "Ecofibras San Bernardo": {
+     "mov": 292,
+     "ingreso": 137081.0,
+     "salida": 203169.0
+    },
+    "Ecofibras San Joaquin": {
+     "mov": 349,
+     "ingreso": 125793.99,
+     "salida": 114603.0
+    },
+    "GIRI": {
+     "mov": 515,
+     "ingreso": 453230.0,
+     "salida": 316106.0
+    },
+    "Proveedores": {
+     "mov": 95,
+     "retiro": 252240.0
+    }
+   },
+   "tipos": {
+    "ALIMENTO DESCARTADO": {
+     "ingreso": 150.0
+    },
+    "ALIMENTO LÁCTEO": {
+     "ingreso": 76620.0
+    },
+    "ASIMILABLE A DOMICILIARIO": {
+     "ingreso": 56966.0,
+     "retiro": 1225409.0,
+     "salida": 2480.0
+    },
+    "BANDEJA NEGRA": {
+     "ingreso": 223.0
+    },
+    "BANDEJAS ENTERAS": {
+     "ingreso": 272.0,
+     "salida": 280.0
+    },
+    "BIDONES ENTEROS SIN PROCESAR": {
+     "ingreso": 8427.1,
+     "salida": 390.0
+    },
+    "BLANCO": {
+     "ingreso": 2467.5,
+     "salida": 11296.0
+    },
+    "BOTAS": {
+     "ingreso": 140.0,
+     "salida": 6656.0
+    },
+    "BOTELLA COLOR": {
+     "ingreso": 883.8,
+     "salida": 14350.0
+    },
+    "BOTELLA TRANSPARENTE": {
+     "ingreso": 23516.1,
+     "salida": 17830.0
+    },
+    "BOYAS ENTERAS": {
+     "ingreso": 6150.0
+    },
+    "CABOS ENTEROS (PTO MONTT)": {
+     "ingreso": 158.0
+    },
+    "CABOS TRITURADOS": {
+     "salida": 135.0
+    },
+    "CARRETE ENTERO": {
+     "ingreso": 253.0,
+     "salida": 495.0
+    },
+    "CARTÓN CORRUGADO": {
+     "ingreso": 45127.7,
+     "retiro": 127480.0,
+     "salida": 38562.0
+    },
+    "CARTÓN PARA LÍQUIDOS": {
+     "ingreso": 2210.69
+    },
+    "CDR": {
+     "salida": 181900.0
+    },
+    "CHATARRA": {
+     "ingreso": 4857.0,
+     "retiro": 2380.0,
+     "salida": 8890.0
+    },
+    "CONO ENTERO": {
+     "ingreso": 127.0,
+     "salida": 1292.0
+    },
+    "DESPUNTES": {
+     "salida": 3850.0
+    },
+    "ELECTRÓNICOS": {
+     "salida": 800.0
+    },
+    "ENVASES HDPE": {
+     "ingreso": 4770.0,
+     "salida": 5061.0
+    },
+    "EPS BLOQUE": {
+     "ingreso": 32656.8,
+     "salida": 31030.0
+    },
+    "EPS GRANEL": {
+     "ingreso": 199.8
+    },
+    "EPS SIN PROCESAR": {
+     "ingreso": 42636.1
+    },
+    "EPS TORTA": {
+     "salida": 840.0
+    },
+    "ESCOMBROS": {
+     "ingreso": 1130.0,
+     "retiro": 25006.6
+    },
+    "FILM": {
+     "ingreso": 25.0
+    },
+    "FILM PESCADO": {
+     "ingreso": 22081.5
+    },
+    "FLOTADORES LAMINADOS": {
+     "salida": 5890.0
+    },
+    "FÁRMACOS": {
+     "ingreso": 37620.0
+    },
+    "GARRAFÓN ENTERO": {
+     "ingreso": 848.0
+    },
+    "HOJALATA": {
+     "ingreso": 3431.5,
+     "salida": 3300.0
+    },
+    "INDUSTRIAL": {
+     "retiro": 8000.0
+    },
+    "INVENTARIO": {
+     "ingreso": 75330.0
+    },
+    "LAMAS": {
+     "salida": 865.0
+    },
+    "LATAS": {
+     "ingreso": 572.0,
+     "salida": 622.0
+    },
+    "LATAS DE AEROSOLES": {
+     "ingreso": 154.0,
+     "salida": 480.0
+    },
+    "MADERA": {
+     "ingreso": 26268.0,
+     "salida": 3040.0
+    },
+    "MAXISACOS": {
+     "ingreso": 1281.0
+    },
+    "METALES": {
+     "ingreso": 660.0
+    },
+    "MEZCLA DE ENVASES Y EMBALAJES": {
+     "ingreso": 3543.0,
+     "salida": 1290.0
+    },
+    "MEZCLA DE PAPEL Y CARTÓN": {
+     "ingreso": 1480.0
+    },
+    "MEZCLA DE PLÁSTICOS": {
+     "ingreso": 38622.8
+    },
+    "MIX RESIMPLE": {
+     "ingreso": 27820.0,
+     "salida": 44310.0
+    },
+    "NEUMÁTICOS FUERA DE USO": {
+     "ingreso": 6930.0
+    },
+    "OTRAS MADERAS": {
+     "ingreso": 7590.0
+    },
+    "PAI BANDEJAS ENTERAS": {
+     "ingreso": 2180.0
+    },
+    "PAI ESTRELLA": {
+     "ingreso": 22038.0,
+     "salida": 15524.0
+    },
+    "PAI FARDO": {
+     "ingreso": 42841.0,
+     "salida": 57796.0
+    },
+    "PAI FARDO CHICOS": {
+     "ingreso": 2470.0
+    },
+    "PAI POST CONSUMO": {
+     "ingreso": 627.0
+    },
+    "PAI PROCESADO": {
+     "salida": 16000.0
+    },
+    "PAI RAMA": {
+     "ingreso": 159.0
+    },
+    "PALLETS BUENOS": {
+     "ingreso": 504.0
+    },
+    "PALLETS ENTEROS": {
+     "ingreso": 210.0
+    },
+    "PAPEL Y CARTÓN": {
+     "ingreso": 19028.0
+    },
+    "PEBD COLOR": {
+     "ingreso": 4945.0,
+     "salida": 28040.0
+    },
+    "PEBD TRANSPARENTE": {
+     "ingreso": 7114.0,
+     "salida": 5850.0
+    },
+    "PEQUEÑOS APARATOS": {
+     "ingreso": 18110.0
+    },
+    "PLÁSTICOS": {
+     "ingreso": 2139.6
+    },
+    "PP RÍGIDO ENTERO": {
+     "ingreso": 1373.7,
+     "salida": 3200.0
+    },
+    "RAFIA BLANCA": {
+     "ingreso": 36337.0,
+     "salida": 65751.0
+    },
+    "RAFIA GRIS": {
+     "ingreso": 9410.0,
+     "salida": 20550.0
+    },
+    "RESIDUOS NO RECICLABLES": {
+     "salida": 26439.0
+    },
+    "RESIDUOS NO VALORIZABLES": {
+     "ingreso": 6268.0,
+     "salida": 25736.0
+    },
+    "RESIDUOS ORGÁNICOS": {
+     "retiro": 20080.0,
+     "salida": 41539.0
+    },
+    "STRETCH FILM": {
+     "ingreso": 15441.1,
+     "retiro": 1550.0,
+     "salida": 39323.0
+    },
+    "SÓLIDOS CONTAMINADOS": {
+     "ingreso": 20320.0,
+     "retiro": 157640.0
+    },
+    "TAPA GARRAFÓN ENTERO": {
+     "ingreso": 192.0
+    },
+    "TAPAS DE GARRAFÓN ENTERAS": {
+     "ingreso": 1158.0
+    },
+    "TAPAS ENTEROS": {
+     "ingreso": 1.0,
+     "salida": 3634.0
+    },
+    "TEXTIL": {
+     "ingreso": 2498.0
+    },
+    "TUBERÍAS ENTERAS": {
+     "ingreso": 7038.0,
+     "salida": 12808.0
+    },
+    "VIDRIO": {
+     "ingreso": 7130.2
+    },
+    "ZUNCHO PET": {
+     "ingreso": 1279.0
+    },
+    "ZUNCHO PP": {
+     "ingreso": 10.0,
+     "salida": 803.0
+    }
+   },
+   "destinos": {
+    "KDM": {
+     "kg": 559480.0,
+     "mov": 110
+    },
+    "RELLENO SANTA MARTA": {
+     "kg": 508079.0,
+     "mov": 269
+    },
+    "HIDRONOR": {
+     "kg": 187119.0,
+     "mov": 17
+    },
+    "CO-PROCESAMIENTO": {
+     "kg": 181900.0,
+     "mov": 9
+    },
+    "GERSA": {
+     "kg": 157850.0,
+     "mov": 93
+    },
+    "CREATIVE WORLD LIMITED": {
+     "kg": 73320.0,
+     "mov": 4
+    },
+    "REINSA MAIPÚ": {
+     "kg": 69050.0,
+     "mov": 52
+    },
+    "BIOPLASTIC SPA": {
+     "kg": 65751.0,
+     "mov": 6
+    },
+    "RECICLAJE": {
+     "kg": 54580.0,
+     "mov": 17
+    },
+    "RESIMPLE": {
+     "kg": 44310.0,
+     "mov": 2
+    },
+    "COMPOSTAJE": {
+     "kg": 38310.0,
+     "mov": 3
+    },
+    "THERMOGREEN SL": {
+     "kg": 31870.0,
+     "mov": 3
+    },
+    "RÍO ACONCAGUA": {
+     "kg": 29530.0,
+     "mov": 24
+    },
+    "RELLENO SANITARIO": {
+     "kg": 25736.0,
+     "mov": 16
+    },
+    "METALURGICA VIRUTEX ILKO S.A": {
+     "kg": 25484.0,
+     "mov": 1
+    },
+    "GREENREC": {
+     "kg": 25006.6,
+     "mov": 20
+    },
+    "REINSA LA PINTANA": {
+     "kg": 24930.0,
+     "mov": 11
+    },
+    "FORESTAL Y PAPELERA CONCEPCION S.A": {
+     "kg": 24896.0,
+     "mov": 3
+    },
+    "VIRUTEX ILKO S.A": {
+     "kg": 22680.0,
+     "mov": 1
+    },
+    "FIPLAS SPA": {
+     "kg": 20685.0,
+     "mov": 6
+    },
+    "INDUSTRIA PROCESADORA DE PLASTICOS LTDA": {
+     "kg": 20638.0,
+     "mov": 13
+    },
+    "IDEACORP": {
+     "kg": 20080.0,
+     "mov": 14
+    },
+    "SOCIEDAD COMERCIAL INDUSTRIAL CHILEPLAST SPA": {
+     "kg": 18698.0,
+     "mov": 2
+    },
+    "WENCO S.A": {
+     "kg": 16000.0,
+     "mov": 2
+    },
+    "VENTA": {
+     "kg": 13810.0,
+     "mov": 8
+    },
+    "RECICLADOS INDUSTRIALES S.A": {
+     "kg": 11744.0,
+     "mov": 5
+    },
+    "REXIN": {
+     "kg": 8000.0,
+     "mov": 2
+    },
+    "PEREZ Y GONZALEZ LTDA": {
+     "kg": 7521.0,
+     "mov": 2
+    },
+    "REINSA RENCA": {
+     "kg": 3970.0,
+     "mov": 11
+    },
+    "REUTILIZACIÓN DE ENVASES PLASTICOS LTDA": {
+     "kg": 3634.0,
+     "mov": 1
+    }
+   },
+   "clientes": {
+    "DESARROLLOS E INVERSIONES INTERNACIONALES SPA": {
+     "kg": 816710.0,
+     "mov": 212
+    },
+    "ANGLO AMERICAN SUR S.A": {
+     "kg": 154970.0,
+     "mov": 10
+    },
+    "RECUPAC S.A": {
+     "kg": 138760.0,
+     "mov": 37
+    },
+    "SERVICIOS AVO II SPA": {
+     "kg": 133020.0,
+     "mov": 68
+    },
+    "AMBIPAR ENVIRONMENT CHILE": {
+     "kg": 122691.0,
+     "mov": 312
+    },
+    "VEOLIA SI CHILE S.A": {
+     "kg": 70343.0,
+     "mov": 92
+    },
+    "AMBIPAR SERVICIOS INTEGRALES": {
+     "kg": 55680.0,
+     "mov": 22
+    },
+    "GARIBALDI S.A": {
+     "kg": 50790.0,
+     "mov": 9
+    },
+    "BIOMAR CHILE S.A": {
+     "kg": 42900.0,
+     "mov": 36
+    },
+    "WASTE ECONOMY CYCLE SPA": {
+     "kg": 37620.0,
+     "mov": 6
+    },
+    "ECOFIBRAS S.A": {
+     "kg": 32330.0,
+     "mov": 2
+    },
+    "IDEAL S.A": {
+     "kg": 30100.0,
+     "mov": 42
+    },
+    "RESIMPLE": {
+     "kg": 27820.0,
+     "mov": 49
+    },
+    "REMAP SPA": {
+     "kg": 26340.0,
+     "mov": 1
+    },
+    "AISLAPOL S.A": {
+     "kg": 23760.0,
+     "mov": 29
+    },
+    "IMAL SPA": {
+     "kg": 22650.0,
+     "mov": 14
+    },
+    "SOCIEDAD CONCESIONARIA AUTOPISTA SAN ANTONIO-SANTIAGO S.A": {
+     "kg": 22310.0,
+     "mov": 13
+    },
+    "RECYCLA CHILE S.A": {
+     "kg": 21800.0,
+     "mov": 6
+    },
+    "CIRCCULAR SPA": {
+     "kg": 20540.0,
+     "mov": 31
+    },
+    "AVERY DENNISON CHILE S.A": {
+     "kg": 18950.0,
+     "mov": 4
+    },
+    "SOLO VERDE S.A": {
+     "kg": 18179.0,
+     "mov": 10
+    },
+    "INMOBILIARIA RECONQUISTA S.A": {
+     "kg": 16780.0,
+     "mov": 10
+    },
+    "IMPRENTA ALFREDO MOLINA FLORES S.A": {
+     "kg": 16530.0,
+     "mov": 9
+    },
+    "INDUSTRIAL Y MINERIA LOS ESTEROS LTDA": {
+     "kg": 15145.6,
+     "mov": 10
+    },
+    "INMOBILIARIA SAN IGNACIO SPA": {
+     "kg": 14810.0,
+     "mov": 12
+    },
+    "ALL4LABELS SANTIAGO SPA": {
+     "kg": 14520.0,
+     "mov": 10
+    },
+    "CLEAN WORLD TYN SPA": {
+     "kg": 13000.0,
+     "mov": 3
+    },
+    "SOCIEDAD ANONIMA VIÑA SANTA RITA S.A": {
+     "kg": 12254.0,
+     "mov": 27
+    },
+    "AGENCIAS UNIVERSALES S.A": {
+     "kg": 11060.0,
+     "mov": 12
+    },
+    "MOWI CHILE S.A": {
+     "kg": 10960.0,
+     "mov": 34
+    }
+   }
+  },
+  "2026-02": {
+   "flujos": {
+    "Ingreso": {
+     "kg": 878588.61,
+     "mov": 1155
+    },
+    "Retiro BO": {
+     "kg": 1471063.23,
+     "mov": 620
+    },
+    "Salida": {
+     "kg": 534181.0,
+     "mov": 115
+    }
+   },
+   "plantas": {
+    "BO San Bernardo": {
+     "mov": 547,
+     "retiro": 1342976.75
+    },
+    "BO Trapen": {
+     "mov": 5,
+     "retiro": 16848.48
+    },
+    "Ecofibras Coronel": {
+     "mov": 107,
+     "ingreso": 108555.0,
+     "salida": 35310.0
+    },
+    "Ecofibras Planta Trapen": {
+     "mov": 23,
+     "ingreso": 15980.8
+    },
+    "Ecofibras San Bernardo": {
+     "mov": 288,
+     "ingreso": 165984.91,
+     "salida": 52347.0
+    },
+    "Ecofibras San Joaquin": {
+     "mov": 343,
+     "ingreso": 143768.9,
+     "salida": 115494.0
+    },
+    "GIRI": {
+     "mov": 509,
+     "ingreso": 444299.0,
+     "salida": 331030.0
+    },
+    "Proveedores": {
+     "mov": 68,
+     "retiro": 111238.0
+    }
+   },
+   "tipos": {
+    "ALIMENTO DESCARTADO": {
+     "ingreso": 240.0
+    },
+    "ALIMENTO LÁCTEO": {
+     "ingreso": 115580.0
+    },
+    "ASIMILABLE A DOMICILIARIO": {
+     "ingreso": 47262.0,
+     "retiro": 1170868.48,
+     "salida": 17730.0
+    },
+    "BALDES ENTEROS": {
+     "retiro": 36.0
+    },
+    "BANDEJA NEGRA": {
+     "ingreso": 27.0
+    },
+    "BANDEJAS ENTERAS": {
+     "ingreso": 443.0
+    },
+    "BATERÍAS": {
+     "salida": 135.0
+    },
+    "BIDONES ENTEROS SIN PROCESAR": {
+     "ingreso": 4394.36
+    },
+    "BLANCO": {
+     "ingreso": 7955.8,
+     "salida": 22978.0
+    },
+    "BOTELLA COLOR": {
+     "ingreso": 2725.6
+    },
+    "BOTELLA TRANSPARENTE": {
+     "ingreso": 32179.9,
+     "salida": 24630.0
+    },
+    "BOYAS ENTERAS": {
+     "ingreso": 23674.0
+    },
+    "CABOS ENTEROS (PTO MONTT)": {
+     "ingreso": 210.0,
+     "salida": 492.0
+    },
+    "CARRETE ENTERO": {
+     "ingreso": 328.0
+    },
+    "CARTÓN CORRUGADO": {
+     "ingreso": 41151.4,
+     "retiro": 124068.0,
+     "salida": 31820.0
+    },
+    "CARTÓN PARA LÍQUIDOS": {
+     "ingreso": 2191.7
+    },
+    "CDR": {
+     "salida": 167390.0
+    },
+    "CHATARRA": {
+     "ingreso": 15075.0,
+     "retiro": 3750.0,
+     "salida": 21820.0
+    },
+    "CONO ENTERO": {
+     "ingreso": 481.0
+    },
+    "CRISTAL ENTERO ANILLO": {
+     "ingreso": 1761.0
+    },
+    "ELECTRÓNICOS": {
+     "ingreso": 635.0,
+     "salida": 1271.0
+    },
+    "ENVASES HDPE": {
+     "ingreso": 6328.3
+    },
+    "EPS GRANEL": {
+     "ingreso": 776.4
+    },
+    "EPS SIN PROCESAR": {
+     "ingreso": 55946.1
+    },
+    "EPS TORTA": {
+     "ingreso": 529.0
+    },
+    "ESCOMBROS": {
+     "retiro": 15916.75
+    },
+    "ESQUINERO": {
+     "ingreso": 92.0
+    },
+    "FILM": {
+     "ingreso": 73.0
+    },
+    "FILM PESCADO": {
+     "ingreso": 21256.0,
+     "salida": 24573.0
+    },
+    "GARRAFÓN ENTERO": {
+     "ingreso": 17137.0
+    },
+    "HOJALATA": {
+     "ingreso": 5792.6,
+     "salida": 5520.0
+    },
+    "INDUSTRIAL": {
+     "retiro": 16000.0
+    },
+    "INVENTARIO": {
+     "ingreso": 46060.2
+    },
+    "LATAS": {
+     "ingreso": 662.7,
+     "salida": 884.0
+    },
+    "LATAS DE AEROSOLES": {
+     "salida": 730.0
+    },
+    "MADERA": {
+     "ingreso": 46472.0,
+     "retiro": 4550.0,
+     "salida": 6670.0
+    },
+    "MANGUERA RIEGO ENTERA": {
+     "ingreso": 872.5
+    },
+    "METALES": {
+     "ingreso": 141.0,
+     "retiro": 4.0
+    },
+    "MEZCLA DE ENVASES Y EMBALAJES": {
+     "ingreso": 2870.0,
+     "salida": 14090.0
+    },
+    "MEZCLA DE PAPEL Y CARTÓN": {
+     "ingreso": 194.8
+    },
+    "MEZCLA DE PLÁSTICOS": {
+     "ingreso": 19412.7
+    },
+    "MIX RESIMPLE": {
+     "ingreso": 30517.0
+    },
+    "NEUMÁTICOS FUERA DE USO": {
+     "ingreso": 33736.0,
+     "salida": 10424.0
+    },
+    "OTRAS MADERAS": {
+     "ingreso": 9773.8
+    },
+    "PAI BANDEJAS ENTERAS": {
+     "ingreso": 4374.0
+    },
+    "PAI ESTRELLA": {
+     "ingreso": 22525.0
+    },
+    "PAI FARDO": {
+     "ingreso": 44369.0
+    },
+    "PAI POST CONSUMO": {
+     "ingreso": 2518.0
+    },
+    "PAI ROLLOS": {
+     "ingreso": 4599.0
+    },
+    "PALLETS BUENOS": {
+     "ingreso": 684.0
+    },
+    "PALLETS ENTEROS": {
+     "ingreso": 92.0
+    },
+    "PAPEL Y CARTÓN": {
+     "ingreso": 18266.0
+    },
+    "PEBD COLOR": {
+     "ingreso": 3093.0
+    },
+    "PEBD TRANSPARENTE": {
+     "ingreso": 3139.0
+    },
+    "PLÁSTICOS": {
+     "ingreso": 3596.1
+    },
+    "PP RÍGIDO ENTERO": {
+     "ingreso": 1858.2
+    },
+    "RAFIA BLANCA": {
+     "ingreso": 47000.0,
+     "salida": 61299.0
+    },
+    "RAFIA GRIS": {
+     "ingreso": 19587.0,
+     "salida": 9183.0
+    },
+    "RESIDUOS NO RECICLABLES": {
+     "ingreso": 55580.0,
+     "salida": 22870.0
+    },
+    "RESIDUOS NO VALORIZABLES": {
+     "ingreso": 1850.0,
+     "salida": 80887.0
+    },
+    "RESIDUOS ORGÁNICOS": {
+     "retiro": 14910.0,
+     "salida": 5285.0
+    },
+    "ROLLO PLÁSTICO DESDE VIÑA SANTA RITA": {
+     "ingreso": 857.0
+    },
+    "ROLLOS POLIAMIDA": {
+     "ingreso": 171.0
+    },
+    "STRETCH FILM": {
+     "ingreso": 17665.0,
+     "retiro": 2010.0
+    },
+    "SÓLIDOS CONTAMINADOS": {
+     "ingreso": 6380.0,
+     "retiro": 118950.0
+    },
+    "TAMBORES ENTEROS": {
+     "ingreso": 203.0
+    },
+    "TAPA GARRAFÓN ENTERO": {
+     "ingreso": 80.0
+    },
+    "TAPAS DE GARRAFÓN ENTERAS": {
+     "ingreso": 211.3
+    },
+    "TAPAS ENTEROS": {
+     "ingreso": 817.15
+    },
+    "TEXTIL": {
+     "ingreso": 340.0
+    },
+    "TUBERÍAS": {
+     "ingreso": 208.0
+    },
+    "TUBERÍAS ENTERAS": {
+     "ingreso": 2684.0
+    },
+    "VIDRIO": {
+     "ingreso": 19476.0
+    },
+    "ZUNCHO PET": {
+     "ingreso": 1214.0,
+     "salida": 3500.0
+    },
+    "ZUNCHO PP": {
+     "ingreso": 194.0
+    }
+   },
+   "destinos": {
+    "KDM": {
+     "kg": 546480.0,
+     "mov": 110
+    },
+    "RELLENO SANTA MARTA": {
+     "kg": 416650.0,
+     "mov": 268
+    },
+    "GERSA": {
+     "kg": 211650.0,
+     "mov": 99
+    },
+    "CO-PROCESAMIENTO": {
+     "kg": 167390.0,
+     "mov": 8
+    },
+    "HIDRONOR": {
+     "kg": 141820.0,
+     "mov": 12
+    },
+    "RELLENO SANITARIO": {
+     "kg": 86825.0,
+     "mov": 30
+    },
+    "BIOPLASTIC SPA": {
+     "kg": 61791.0,
+     "mov": 7
+    },
+    "REINSA MAIPÚ": {
+     "kg": 54840.0,
+     "mov": 47
+    },
+    "RÍO ACONCAGUA": {
+     "kg": 54638.0,
+     "mov": 42
+    },
+    "VENTA": {
+     "kg": 29604.0,
+     "mov": 21
+    },
+    "METALURGICA VIRUTEX ILKO S.A": {
+     "kg": 24573.0,
+     "mov": 1
+    },
+    "RECICLAJE": {
+     "kg": 23591.0,
+     "mov": 5
+    },
+    "FORESTAL Y PAPELERA CONCEPCION S.A": {
+     "kg": 22978.0,
+     "mov": 1
+    },
+    "REXIN": {
+     "kg": 16848.48,
+     "mov": 5
+    },
+    "GREENREC": {
+     "kg": 15916.75,
+     "mov": 11
+    },
+    "OTRO": {
+     "kg": 14820.0,
+     "mov": 13
+    },
+    "RECICLADOS INDUSTRIALES S.A": {
+     "kg": 14790.0,
+     "mov": 4
+    },
+    "REINSA LA PINTANA": {
+     "kg": 14590.0,
+     "mov": 7
+    },
+    "AMBIPAR SERVICIOS DE VALORIZACIÓN LTDA": {
+     "kg": 12970.0,
+     "mov": 6
+    },
+    "IDEACORP": {
+     "kg": 12830.0,
+     "mov": 12
+    },
+    "FORESTAL Y PAPELERA CONCEPCION S.A (FPC)": {
+     "kg": 12440.0,
+     "mov": 2
+    },
+    "AMBIPAR SERVICIOS DE VALORIZACION LTDA": {
+     "kg": 11291.0,
+     "mov": 5
+    },
+    "FIPLAS SPA": {
+     "kg": 9183.0,
+     "mov": 2
+    },
+    "ARMONY": {
+     "kg": 6630.0,
+     "mov": 5
+    },
+    "SOCIEDAD Y COMERCIAL Y TRANSPORTE  MAQUINEX LTDA (METALEX)": {
+     "kg": 5520.0,
+     "mov": 2
+    },
+    "ACEROS AZA": {
+     "kg": 3750.0,
+     "mov": 1
+    },
+    "GARIBALDI S.A.": {
+     "kg": 3500.0,
+     "mov": 1
+    },
+    "COMPOSTAJE": {
+     "kg": 2040.0,
+     "mov": 1
+    },
+    "INPROPLAS": {
+     "kg": 2010.0,
+     "mov": 1
+    },
+    "CHICUREO VERDE": {
+     "kg": 2000.0,
+     "mov": 1
+    }
+   },
+   "clientes": {
+    "DESARROLLOS E INVERSIONES INTERNACIONALES SPA": {
+     "kg": 645378.0,
+     "mov": 184
+    },
+    "VEOLIA SI CHILE S.A": {
+     "kg": 162242.0,
+     "mov": 117
+    },
+    "SERVICIOS AVO II SPA": {
+     "kg": 148700.0,
+     "mov": 67
+    },
+    "ANGLO AMERICAN SUR S.A": {
+     "kg": 118240.0,
+     "mov": 9
+    },
+    "AMBIPAR ENVIRONMENT CHILE": {
+     "kg": 100081.0,
+     "mov": 315
+    },
+    "RECUPAC S.A": {
+     "kg": 77347.0,
+     "mov": 26
+    },
+    "AMBIPAR SERVICIOS INTEGRALES": {
+     "kg": 74570.0,
+     "mov": 25
+    },
+    "ECOFIBRAS S.A": {
+     "kg": 57725.48,
+     "mov": 17
+    },
+    "VIDRIOS LIRQUÉN S.A": {
+     "kg": 55580.0,
+     "mov": 4
+    },
+    "GARIBALDI S.A": {
+     "kg": 52610.0,
+     "mov": 10
+    },
+    "PESQUERA DEL MAR ANTARTICO S.A": {
+     "kg": 38112.0,
+     "mov": 5
+    },
+    "SOLO VERDE S.A": {
+     "kg": 31430.0,
+     "mov": 12
+    },
+    "RESIMPLE": {
+     "kg": 30517.0,
+     "mov": 57
+    },
+    "BIOMAR CHILE S.A": {
+     "kg": 29920.0,
+     "mov": 36
+    },
+    "MOWI CHILE S.A": {
+     "kg": 29614.0,
+     "mov": 54
+    },
+    "INMOBILIARIA RECONQUISTA S.A": {
+     "kg": 28590.0,
+     "mov": 13
+    },
+    "CIRCCULAR SPA": {
+     "kg": 25780.0,
+     "mov": 26
+    },
+    "IDEAL S.A": {
+     "kg": 25410.0,
+     "mov": 40
+    },
+    "INMOBILIARIA SAN IGNACIO SPA": {
+     "kg": 25100.0,
+     "mov": 15
+    },
+    "SOCIEDAD CONCESIONARIA AUTOPISTA SAN ANTONIO-SANTIAGO S.A": {
+     "kg": 22640.0,
+     "mov": 11
+    },
+    "IMAL SPA": {
+     "kg": 22400.0,
+     "mov": 13
+    },
+    "COSEMAR SERVICIOS INDUSTRIALES SPA": {
+     "kg": 19707.0,
+     "mov": 3
+    },
+    "ALL4LABELS SANTIAGO SPA": {
+     "kg": 19320.0,
+     "mov": 11
+    },
+    "EMPRESA PORTUARIA PUERTO MONTT": {
+     "kg": 18663.0,
+     "mov": 38
+    },
+    "AVERY DENNISON CHILE S.A": {
+     "kg": 18170.0,
+     "mov": 4
+    },
+    "CORP. INDEPENDIENTE DE FUTBOL": {
+     "kg": 17170.0,
+     "mov": 4
+    },
+    "SOCIEDAD ANONIMA VIÑA SANTA RITA S.A": {
+     "kg": 16570.0,
+     "mov": 35
+    },
+    "AGENCIAS UNIVERSALES S.A": {
+     "kg": 16450.0,
+     "mov": 14
+    },
+    "SERVICIOS DE RECICLAJE PUDU LTDA (VALDIVIA)": {
+     "kg": 13260.0,
+     "mov": 1
+    },
+    "AISLAPOL S.A": {
+     "kg": 13200.0,
+     "mov": 19
+    }
+   }
+  },
+  "2026-03": {
+   "flujos": {
+    "Ingreso": {
+     "kg": 1008463.16,
+     "mov": 1219
+    },
+    "Retiro BO": {
+     "kg": 1879278.75,
+     "mov": 1503
+    },
+    "Salida": {
+     "kg": 1112453.0,
+     "mov": 161
+    }
+   },
+   "plantas": {
+    "BO San Bernardo": {
+     "mov": 596,
+     "retiro": 1467187.25
+    },
+    "BO Trapen": {
+     "mov": 9,
+     "retiro": 30600.0
+    },
+    "Ecofibras Coronel": {
+     "mov": 130,
+     "ingreso": 68685.0,
+     "salida": 181902.0
+    },
+    "Ecofibras Planta Trapen": {
+     "mov": 22,
+     "ingreso": 19072.0
+    },
+    "Ecofibras San Bernardo": {
+     "mov": 341,
+     "ingreso": 191076.0,
+     "salida": 324636.0
+    },
+    "Ecofibras San Joaquin": {
+     "mov": 301,
+     "ingreso": 168951.06,
+     "salida": 109785.0
+    },
+    "GIRI": {
+     "mov": 586,
+     "ingreso": 560679.1,
+     "salida": 496130.0
+    },
+    "Proveedores": {
+     "mov": 106,
+     "retiro": 278230.0
+    },
+    "Tradicionales": {
+     "mov": 792,
+     "retiro": 103261.5
+    }
+   },
+   "tipos": {
+    "ALIMENTO DESCARTADO": {
+     "ingreso": 880.0
+    },
+    "ALIMENTO LÁCTEO": {
+     "ingreso": 50190.0
+    },
+    "ASIMILABLE A DOMICILIARIO": {
+     "ingreso": 98551.0,
+     "retiro": 1196070.25,
+     "salida": 27205.0
+    },
+    "BALDES ENTEROS": {
+     "retiro": 56.0
+    },
+    "BANDEJA NEGRA": {
+     "ingreso": 228.0
+    },
+    "BANDEJAS ENTERAS": {
+     "ingreso": 486.0
+    },
+    "BIDONES ENTEROS SIN PROCESAR": {
+     "ingreso": 5240.0
+    },
+    "BIDONES TRITURADOS": {
+     "ingreso": 5540.0,
+     "salida": 2090.0
+    },
+    "BLANCO": {
+     "ingreso": 4600.6
+    },
+    "BOTAS": {
+     "ingreso": 3283.0
+    },
+    "BOTELLA COLOR": {
+     "ingreso": 376.0,
+     "salida": 2288.8
+    },
+    "BOTELLA TRANSPARENTE": {
+     "ingreso": 23670.3,
+     "salida": 22416.8
+    },
+    "BOYAS ENTERAS": {
+     "ingreso": 4320.0
+    },
+    "CABOS ENTEROS (PTO MONTT)": {
+     "ingreso": 132.6
+    },
+    "CARRETE ENTERO": {
+     "ingreso": 321.0
+    },
+    "CARTÓN CORRUGADO": {
+     "ingreso": 61607.9,
+     "retiro": 155610.0,
+     "salida": 44411.2
+    },
+    "CARTÓN PARA LÍQUIDOS": {
+     "ingreso": 15404.6,
+     "salida": 3715.0
+    },
+    "CDR": {
+     "salida": 331370.0
+    },
+    "CHATARRA": {
+     "ingreso": 6627.0,
+     "salida": 11110.0
+    },
+    "CONO ENTERO": {
+     "ingreso": 1948.76
+    },
+    "DESPUNTES": {
+     "salida": 2140.0
+    },
+    "ELECTRÓNICOS": {
+     "retiro": 662.0
+    },
+    "ENVASES HDPE": {
+     "ingreso": 49.6,
+     "salida": 4210.0
+    },
+    "EPS BLOQUE": {
+     "ingreso": 40434.0,
+     "salida": 52131.0
+    },
+    "EPS GRANEL": {
+     "ingreso": 264.1
+    },
+    "EPS SIN PROCESAR": {
+     "ingreso": 35806.9
+    },
+    "EPS TORTA": {
+     "ingreso": 8817.0,
+     "salida": 7669.0
+    },
+    "ESCOMBROS": {
+     "ingreso": 2160.0,
+     "retiro": 18787.0
+    },
+    "ESQUINERO": {
+     "ingreso": 168.0
+    },
+    "FILM": {
+     "ingreso": 560.0
+    },
+    "FILM PESCADO": {
+     "ingreso": 26858.7
+    },
+    "FLOTADORES TRITURADOS": {
+     "ingreso": 30000.0,
+     "salida": 14211.0
+    },
+    "GARRAFÓN ENTERO": {
+     "ingreso": 5760.0,
+     "salida": 36310.0
+    },
+    "HOJALATA": {
+     "ingreso": 53.1,
+     "salida": 5682.0
+    },
+    "INDUSTRIAL": {
+     "retiro": 158170.0
+    },
+    "INVENTARIO": {
+     "ingreso": 31496.0
+    },
+    "LAMAS": {
+     "ingreso": 1562.0
+    },
+    "LATAS": {
+     "ingreso": 964.2
+    },
+    "MADERA": {
+     "ingreso": 27558.0,
+     "retiro": 1950.0,
+     "salida": 5570.0
+    },
+    "METALES": {
+     "ingreso": 15.6,
+     "retiro": 12.0
+    },
+    "MEZCLA DE ENVASES Y EMBALAJES": {
+     "ingreso": 1416.0,
+     "salida": 14550.0
+    },
+    "MEZCLA DE METALES": {
+     "ingreso": 3660.0
+    },
+    "MEZCLA DE PAPEL Y CARTÓN": {
+     "ingreso": 3167.9
+    },
+    "MEZCLA DE PLÁSTICOS": {
+     "ingreso": 72080.0
+    },
+    "MIX RESIMPLE": {
+     "ingreso": 44132.5,
+     "salida": 47369.0
+    },
+    "NEUMÁTICOS FUERA DE USO": {
+     "ingreso": 41270.0
+    },
+    "OTRAS MADERAS": {
+     "ingreso": 2494.0,
+     "salida": 3450.0
+    },
+    "PAI ESTRELLA": {
+     "ingreso": 25120.0,
+     "salida": 30281.0
+    },
+    "PAI FARDO": {
+     "ingreso": 48442.0,
+     "salida": 91849.0
+    },
+    "PAI POST CONSUMO": {
+     "ingreso": 321.0
+    },
+    "PAI PROCESADO": {
+     "salida": 24000.0
+    },
+    "PALLETS ENTEROS": {
+     "ingreso": 486.0
+    },
+    "PALLETS MALOS": {
+     "ingreso": 17.0
+    },
+    "PAPEL Y CARTÓN": {
+     "ingreso": 36602.0
+    },
+    "PEBD COLOR": {
+     "ingreso": 4474.0,
+     "salida": 24730.0
+    },
+    "PEBD TRANSPARENTE": {
+     "ingreso": 8747.0,
+     "salida": 5680.0
+    },
+    "PLÁSTICOS": {
+     "ingreso": 9193.8
+    },
+    "PP RÍGIDO ENTERO": {
+     "ingreso": 2010.5,
+     "salida": 553.0
+    },
+    "RAFIA BLANCA": {
+     "ingreso": 33628.8,
+     "salida": 17676.0
+    },
+    "RAFIA GRIS": {
+     "ingreso": 9787.0,
+     "salida": 10192.0
+    },
+    "RESIDUOS NO RECICLABLES": {
+     "ingreso": 10720.0,
+     "salida": 113360.0
+    },
+    "RESIDUOS NO VALORIZABLES": {
+     "ingreso": 2087.0,
+     "salida": 116880.0
+    },
+    "RESIDUOS ORGÁNICOS": {
+     "retiro": 39360.0,
+     "salida": 20176.0
+    },
+    "ROLLO PLÁSTICO DESDE VIÑA SANTA RITA": {
+     "ingreso": 2840.0
+    },
+    "STRETCH FILM": {
+     "ingreso": 17217.1,
+     "retiro": 2240.0,
+     "salida": 19177.2
+    },
+    "SÓLIDOS CONTAMINADOS": {
+     "ingreso": 19320.0,
+     "retiro": 203100.0
+    },
+    "TAMBORES ENTEROS": {
+     "ingreso": 340.0
+    },
+    "TAPA GARRAFÓN ENTERO": {
+     "ingreso": 127.0
+    },
+    "TAPAS DE GARRAFÓN ENTERAS": {
+     "ingreso": 154.0
+    },
+    "TAPAS ENTEROS": {
+     "ingreso": 127.0
+    },
+    "TUBERÍAS": {
+     "ingreso": 6.0
+    },
+    "TUBERÍAS ENTERAS": {
+     "ingreso": 5038.0
+    },
+    "VIDRIO": {
+     "ingreso": 105490.6
+    },
+    "ZUNCHO PET": {
+     "ingreso": 1966.0
+    },
+    "ZUNCHO PP": {
+     "ingreso": 47.0
+    }
+   },
+   "destinos": {
+    "RELLENO SANTA MARTA": {
+     "kg": 604443.5,
+     "mov": 736
+    },
+    "KDM": {
+     "kg": 579100.0,
+     "mov": 122
+    },
+    "CO-PROCESAMIENTO": {
+     "kg": 331370.0,
+     "mov": 16
+    },
+    "HIDRONOR": {
+     "kg": 316460.0,
+     "mov": 29
+    },
+    "GERSA": {
+     "kg": 230014.0,
+     "mov": 295
+    },
+    "CREATIVE WORLD LIMITED": {
+     "kg": 158440.0,
+     "mov": 9
+    },
+    "RÍO ACONCAGUA": {
+     "kg": 93630.0,
+     "mov": 58
+    },
+    "AMBIPAR SERVICIOS DE VALORIZACION LTDA": {
+     "kg": 69770.0,
+     "mov": 4
+    },
+    "INTCO MALAYSIA SDN BHD": {
+     "kg": 59800.0,
+     "mov": 6
+    },
+    "RELLENO SANITARIO": {
+     "kg": 50660.0,
+     "mov": 18
+    },
+    "RESIMPLE": {
+     "kg": 47369.0,
+     "mov": 2
+    },
+    "REINSA MAIPÚ": {
+     "kg": 37370.0,
+     "mov": 42
+    },
+    "VENTA": {
+     "kg": 33780.0,
+     "mov": 23
+    },
+    "RECICLADOS INDUSTRIALES S.A": {
+     "kg": 31257.0,
+     "mov": 10
+    },
+    "REXIN": {
+     "kg": 30600.0,
+     "mov": 9
+    },
+    "CHICUREO VERDE": {
+     "kg": 26300.0,
+     "mov": 9
+    },
+    "RECICLAJE": {
+     "kg": 26010.0,
+     "mov": 4
+    },
+    "OTRO": {
+     "kg": 25270.0,
+     "mov": 16
+    },
+    "AMBIPAR SERVICIOS DE VALORIZACIÓN LTDA": {
+     "kg": 25080.0,
+     "mov": 13
+    },
+    "LOGIPAK SPA": {
+     "kg": 24000.0,
+     "mov": 3
+    },
+    "REINSA LA PINTANA": {
+     "kg": 22270.0,
+     "mov": 9
+    },
+    "GREENREC": {
+     "kg": 20017.25,
+     "mov": 15
+    },
+    "VIRUTEX ILKO S.A": {
+     "kg": 19030.0,
+     "mov": 1
+    },
+    "BIOPLASTIC SPA": {
+     "kg": 17676.0,
+     "mov": 1
+    },
+    "INDUSTRIA PROCESADORA DE PLASTICOS LTDA": {
+     "kg": 15870.0,
+     "mov": 3
+    },
+    "COMPOSTAJE": {
+     "kg": 14990.0,
+     "mov": 3
+    },
+    "SOCIEDAD COMERCIAL INDUSTRIAL CHILEPLAST SPA": {
+     "kg": 14211.0,
+     "mov": 1
+    },
+    "IDEACORP": {
+     "kg": 13090.0,
+     "mov": 10
+    },
+    "FIPLAS SPA": {
+     "kg": 10192.0,
+     "mov": 2
+    },
+    "SOCIEDAD Y COMERCIAL Y TRANSPORTE  MAQUINEX LTDA (METALEX)": {
+     "kg": 5682.0,
+     "mov": 2
+    }
+   },
+   "clientes": {
+    "DESARROLLOS E INVERSIONES INTERNACIONALES SPA": {
+     "kg": 816450.0,
+     "mov": 222
+    },
+    "ANGLO AMERICAN SUR S.A": {
+     "kg": 200020.0,
+     "mov": 13
+    },
+    "AMBIPAR ENVIRONMENT CHILE": {
+     "kg": 172194.1,
+     "mov": 381
+    },
+    "SERVICIOS AVO II SPA": {
+     "kg": 156670.0,
+     "mov": 254
+    },
+    "ECOFIBRAS S.A": {
+     "kg": 123644.0,
+     "mov": 19
+    },
+    "VEOLIA SI CHILE S.A": {
+     "kg": 116263.0,
+     "mov": 124
+    },
+    "SERVICIOS DE RECICLAJE PUDU LTDA (VALDIVIA)": {
+     "kg": 98600.0,
+     "mov": 8
+    },
+    "AMBIPAR SERVICIOS INTEGRALES": {
+     "kg": 59110.0,
+     "mov": 19
+    },
+    "MOWI CHILE S.A": {
+     "kg": 57340.0,
+     "mov": 39
+    },
+    "GARIBALDI S.A": {
+     "kg": 54330.0,
+     "mov": 10
+    },
+    "RESIMPLE": {
+     "kg": 44132.5,
+     "mov": 86
+    },
+    "BIOMAR CHILE S.A": {
+     "kg": 40530.0,
+     "mov": 34
+    },
+    "IDEAL S.A": {
+     "kg": 38168.0,
+     "mov": 63
+    },
+    "AVERY DENNISON CHILE S.A": {
+     "kg": 36370.0,
+     "mov": 6
+    },
+    "SOCIEDAD ANONIMA VIÑA SANTA RITA S.A": {
+     "kg": 28715.0,
+     "mov": 45
+    },
+    "SOCIEDAD CONCESIONARIA AUTOPISTA SAN ANTONIO-SANTIAGO S.A": {
+     "kg": 28160.0,
+     "mov": 12
+    },
+    "INMOBILIARIA RECONQUISTA S.A": {
+     "kg": 27990.0,
+     "mov": 29
+    },
+    "RECUPAC S.A": {
+     "kg": 26316.0,
+     "mov": 18
+    },
+    "IMAL SPA": {
+     "kg": 24610.0,
+     "mov": 13
+    },
+    "ALL4LABELS SANTIAGO SPA": {
+     "kg": 24280.0,
+     "mov": 13
+    },
+    "SERVICIOS COVI SPA": {
+     "kg": 24190.0,
+     "mov": 50
+    },
+    "SODEXO SERVICIOS S.A": {
+     "kg": 23560.0,
+     "mov": 7
+    },
+    "REMAP SPA": {
+     "kg": 22870.0,
+     "mov": 1
+    },
+    "CIRCCULAR SPA": {
+     "kg": 21530.0,
+     "mov": 30
+    },
+    "SOCIEDAD AGRICOLA LA HORNILLA SPA": {
+     "kg": 20700.0,
+     "mov": 43
+    },
+    "AGENCIAS UNIVERSALES S.A": {
+     "kg": 19155.0,
+     "mov": 26
+    },
+    "EMPRESA PORTUARIA PUERTO MONTT": {
+     "kg": 19026.0,
+     "mov": 28
+    },
+    "EMPRESA NACIONAL DE TELECOMUNICACIONES S.A": {
+     "kg": 17830.0,
+     "mov": 2
+    },
+    "CORP. INDEPENDIENTE DE FUTBOL": {
+     "kg": 16760.0,
+     "mov": 4
+    },
+    "SOLO VERDE S.A": {
+     "kg": 15420.0,
+     "mov": 7
+    }
+   }
+  },
+  "2026-04": {
+   "flujos": {
+    "Ingreso": {
+     "kg": 1193380.45,
+     "mov": 2147
+    },
+    "Retiro BO": {
+     "kg": 1520276.23,
+     "mov": 1405
+    },
+    "Salida": {
+     "kg": 1235354.0,
+     "mov": 158
+    }
+   },
+   "plantas": {
+    "BO Chillán": {
+     "mov": 11,
+     "retiro": 855.0
+    },
+    "BO San Bernardo": {
+     "mov": 532,
+     "retiro": 1161513.0
+    },
+    "BO Trapen": {
+     "mov": 12,
+     "retiro": 23507.13
+    },
+    "Ecofibras Coronel": {
+     "mov": 834,
+     "ingreso": 51961.0,
+     "salida": 115910.0
+    },
+    "Ecofibras Planta Trapen": {
+     "mov": 76,
+     "ingreso": 85709.0
+    },
+    "Ecofibras San Bernardo": {
+     "mov": 266,
+     "ingreso": 140263.0,
+     "salida": 102940.0
+    },
+    "Ecofibras San Joaquin": {
+     "mov": 451,
+     "ingreso": 143699.45,
+     "salida": 83834.0
+    },
+    "GIRI": {
+     "mov": 678,
+     "ingreso": 771748.0,
+     "salida": 932670.0
+    },
+    "Proveedores": {
+     "mov": 104,
+     "retiro": 237570.6
+    },
+    "Temuco": {
+     "mov": 12,
+     "retiro": 1381.0
+    },
+    "Tradicionales": {
+     "mov": 734,
+     "retiro": 95449.5
+    }
+   },
+   "tipos": {
+    "ALIMENTO DESCARTADO": {
+     "ingreso": 800.0
+    },
+    "ALIMENTO LÁCTEO": {
+     "ingreso": 89770.0
+    },
+    "ASIMILABLE A DOMICILIARIO": {
+     "ingreso": 243140.0,
+     "retiro": 844331.63,
+     "salida": 89600.0
+    },
+    "BALDES ENTEROS": {
+     "retiro": 105.0,
+     "salida": 810.0
+    },
+    "BANDEJA NEGRA": {
+     "ingreso": 180.0
+    },
+    "BANDEJAS ENTERAS": {
+     "ingreso": 464.0
+    },
+    "BIDONES ENTEROS SIN PROCESAR": {
+     "ingreso": 6636.7
+    },
+    "BIDONES TRITURADOS": {
+     "ingreso": 7333.0,
+     "salida": 1025.0
+    },
+    "BINS": {
+     "ingreso": 1953.0
+    },
+    "BLANCO": {
+     "ingreso": 1816.2,
+     "salida": 5790.0
+    },
+    "BOTAS": {
+     "ingreso": 491.0,
+     "salida": 3265.0
+    },
+    "BOTELLA COLOR": {
+     "ingreso": 2706.2
+    },
+    "BOTELLA TRANSPARENTE": {
+     "ingreso": 40748.0,
+     "salida": 26920.0
+    },
+    "BOYAS ENTERAS": {
+     "ingreso": 1200.0
+    },
+    "CABLES ELÉCTRICOS": {
+     "salida": 56280.0
+    },
+    "CABOS ENTEROS (PTO MONTT)": {
+     "ingreso": 7102.0,
+     "salida": 18127.0
+    },
+    "CARRETE ENTERO": {
+     "ingreso": 349.0
+    },
+    "CARTÓN CORRUGADO": {
+     "ingreso": 74372.04,
+     "retiro": 139070.0,
+     "salida": 38298.0
+    },
+    "CARTÓN PARA LÍQUIDOS": {
+     "ingreso": 7970.6
+    },
+    "CDR": {
+     "salida": 369130.0
+    },
+    "CHATARRA": {
+     "ingreso": 8521.7,
+     "retiro": 3350.0,
+     "salida": 13120.0
+    },
+    "CONO ENTERO": {
+     "ingreso": 980.0
+    },
+    "CONO ENTERO SIN PROCESAR": {
+     "salida": 3100.0
+    },
+    "COSMÉTICOS": {
+     "ingreso": 8730.0
+    },
+    "DESPUNTES": {
+     "salida": 5490.0
+    },
+    "ELECTRÓNICOS": {
+     "salida": 7130.0
+    },
+    "EPS GRANEL": {
+     "ingreso": 184.5
+    },
+    "EPS SIN PROCESAR": {
+     "ingreso": 57952.2
+    },
+    "EPS TORTA": {
+     "ingreso": 150.0
+    },
+    "ESCOMBROS": {
+     "ingreso": 750.0,
+     "retiro": 30714.5
+    },
+    "ESQUINERO": {
+     "ingreso": 165.0,
+     "salida": 620.0
+    },
+    "FILM": {
+     "ingreso": 12.0
+    },
+    "FILM PESCADO": {
+     "ingreso": 12712.0
+    },
+    "FLOTADORES TRITURADOS": {
+     "ingreso": 21600.0
+    },
+    "FÁRMACOS": {
+     "ingreso": 4551.0
+    },
+    "GARRAFÓN ENTERO": {
+     "ingreso": 320.0
+    },
+    "HOJALATA": {
+     "ingreso": 5814.8,
+     "salida": 5705.0
+    },
+    "INDUSTRIAL": {
+     "retiro": 181510.0
+    },
+    "INVENTARIO": {
+     "ingreso": 34632.0
+    },
+    "LAMAS": {
+     "salida": 1573.0
+    },
+    "LATAS": {
+     "ingreso": 1035.6
+    },
+    "LATAS DE AEROSOLES": {
+     "ingreso": 50.0,
+     "salida": 637.0
+    },
+    "LODOS CONTAMINADOS": {
+     "retiro": 18390.0
+    },
+    "MADERA": {
+     "ingreso": 115865.0,
+     "retiro": 2050.0,
+     "salida": 12600.0
+    },
+    "MANGUERA RIEGO ENTERA": {
+     "ingreso": 20.0
+    },
+    "MAXISACOS": {
+     "ingreso": 340.0
+    },
+    "METALES": {
+     "retiro": 19.0
+    },
+    "MEZCLA DE ENVASES Y EMBALAJES": {
+     "ingreso": 29.0
+    },
+    "MEZCLA DE PAPEL Y CARTÓN": {
+     "ingreso": 142.7
+    },
+    "MEZCLA DE PLÁSTICOS": {
+     "ingreso": 40939.5
+    },
+    "MIX RESIMPLE": {
+     "ingreso": 52386.3,
+     "salida": 24815.0
+    },
+    "NEUMÁTICOS FUERA DE USO": {
+     "ingreso": 30059.0
+    },
+    "OTRAS MADERAS": {
+     "ingreso": 2799.0,
+     "salida": 1520.0
+    },
+    "PAI BANDEJAS ENTERAS": {
+     "ingreso": 3746.0
+    },
+    "PAI ESTRELLA": {
+     "ingreso": 23598.0
+    },
+    "PAI FARDO": {
+     "ingreso": 50286.0,
+     "salida": 50300.0
+    },
+    "PAI POST CONSUMO": {
+     "ingreso": 319.0
+    },
+    "PAI PROCESADO": {
+     "salida": 8000.0
+    },
+    "PALLETS ENTEROS": {
+     "ingreso": 2158.0
+    },
+    "PAPEL Y CARTÓN": {
+     "ingreso": 21110.0
+    },
+    "PE EXPANDIDO": {
+     "retiro": 2170.0
+    },
+    "PEBD COLOR": {
+     "ingreso": 6776.0
+    },
+    "PEBD TRANSPARENTE": {
+     "ingreso": 14684.61,
+     "salida": 30584.0
+    },
+    "PLÁSTICOS": {
+     "ingreso": 267.0
+    },
+    "PP RÍGIDO ENTERO": {
+     "ingreso": 2292.9,
+     "salida": 2697.4
+    },
+    "RAFIA BLANCA": {
+     "ingreso": 43449.0,
+     "salida": 12119.0
+    },
+    "RAFIA BLANCA + PEBD (BBL)": {
+     "ingreso": 3996.0
+    },
+    "RAFIA COLOR": {
+     "salida": 5006.0
+    },
+    "RAFIA GRIS": {
+     "ingreso": 19378.0
+    },
+    "RAFIA NEGRA": {
+     "salida": 2025.0
+    },
+    "RESIDUOS NO RECICLABLES": {
+     "ingreso": 590.0,
+     "salida": 25580.0
+    },
+    "RESIDUOS NO VALORIZABLES": {
+     "ingreso": 2129.0,
+     "salida": 365044.0
+    },
+    "RESIDUOS ORGÁNICOS": {
+     "ingreso": 775.0,
+     "retiro": 20216.6,
+     "salida": 5697.0
+    },
+    "ROLLO PLÁSTICO DESDE VIÑA SANTA RITA": {
+     "ingreso": 1530.0
+    },
+    "ROLLOS POLIAMIDA": {
+     "salida": 1.0
+    },
+    "STRETCH FILM": {
+     "ingreso": 13652.2,
+     "salida": 34567.6
+    },
+    "SÓLIDOS CONTAMINADOS": {
+     "ingreso": 16110.0,
+     "retiro": 182900.0,
+     "salida": 1853.0
+    },
+    "TAMBORES ENTEROS": {
+     "ingreso": 210.0
+    },
+    "TAPAS DE GARRAFÓN ENTERAS": {
+     "ingreso": 20.0,
+     "salida": 4445.0
+    },
+    "TAPAS ENTEROS": {
+     "ingreso": 380.0
+    },
+    "TUBERÍAS ENTERAS": {
+     "ingreso": 7750.0
+    },
+    "VIDRIO": {
+     "ingreso": 68487.7
+    },
+    "ZUNCHO PET": {
+     "ingreso": 1784.0
+    },
+    "ZUNCHO PP": {
+     "ingreso": 129.0
+    }
+   },
+   "destinos": {
+    "RELLENO SANTA MARTA": {
+     "kg": 579550.5,
+     "mov": 682
+    },
+    "CO-PROCESAMIENTO": {
+     "kg": 450590.0,
+     "mov": 25
+    },
+    "RELLENO SANITARIO": {
+     "kg": 343360.0,
+     "mov": 40
+    },
+    "KDM": {
+     "kg": 319730.0,
+     "mov": 85
+    },
+    "HIDRONOR": {
+     "kg": 229010.0,
+     "mov": 21
+    },
+    "GERSA": {
+     "kg": 182075.0,
+     "mov": 246
+    },
+    "OTRO": {
+     "kg": 72390.0,
+     "mov": 13
+    },
+    "RÍO ACONCAGUA": {
+     "kg": 72030.0,
+     "mov": 52
+    },
+    "REINSA MAIPÚ": {
+     "kg": 54094.0,
+     "mov": 43
+    },
+    "CREATIVE WORLD LIMITED": {
+     "kg": 50300.0,
+     "mov": 2
+    },
+    "VENTA": {
+     "kg": 46450.0,
+     "mov": 20
+    },
+    "AMBIPAR SERVICIOS DE VALORIZACIÓN LTDA": {
+     "kg": 34600.0,
+     "mov": 4
+    },
+    "RECUPAC S.A": {
+     "kg": 29660.0,
+     "mov": 4
+    },
+    "GREENREC": {
+     "kg": 29429.0,
+     "mov": 13
+    },
+    "AMBIPAR SERVICIOS DE VALORIZACION LTDA": {
+     "kg": 27674.0,
+     "mov": 2
+    },
+    "RESIMPLE": {
+     "kg": 24815.0,
+     "mov": 1
+    },
+    "REXIN": {
+     "kg": 23507.13,
+     "mov": 12
+    },
+    "METALURGICA VIRUTEX ILKO S.A": {
+     "kg": 23297.0,
+     "mov": 1
+    },
+    "IDEACORP": {
+     "kg": 16770.0,
+     "mov": 16
+    },
+    "BIOPLASTIC SPA": {
+     "kg": 14971.0,
+     "mov": 2
+    },
+    "RECICLADOS INDUSTRIALES S.A": {
+     "kg": 12420.0,
+     "mov": 7
+    },
+    "INDUSTRIA PROCESADORA DE PLASTICOS LTDA": {
+     "kg": 9852.0,
+     "mov": 3
+    },
+    "REINSA LA PINTANA": {
+     "kg": 9020.0,
+     "mov": 4
+    },
+    "LOGIPAK SPA": {
+     "kg": 8000.0,
+     "mov": 1
+    },
+    "FORESTAL Y PAPELERA CONCEPCION S.A (FPC)": {
+     "kg": 6428.0,
+     "mov": 1
+    },
+    "SOCIEDAD Y COMERCIAL Y TRANSPORTE  MAQUINEX LTDA (METALEX)": {
+     "kg": 5705.0,
+     "mov": 2
+    },
+    "RECICLAJE": {
+     "kg": 5500.0,
+     "mov": 1
+    },
+    "REUTILIZACIÓN DE ENVASES PLASTICOS LTDA": {
+     "kg": 5470.0,
+     "mov": 3
+    },
+    "RECICLAJES CORESA SPA": {
+     "kg": 5006.0,
+     "mov": 1
+    },
+    "RECICLAJES CORESA SPA (RECCOR)": {
+     "kg": 5000.0,
+     "mov": 2
+    }
+   },
+   "clientes": {
+    "DESARROLLOS E INVERSIONES INTERNACIONALES SPA": {
+     "kg": 581984.0,
+     "mov": 195
+    },
+    "AMBIPAR ENVIRONMENT CHILE": {
+     "kg": 290584.0,
+     "mov": 421
+    },
+    "ANGLO AMERICAN SUR S.A": {
+     "kg": 197710.0,
+     "mov": 12
+    },
+    "AMBIPAR SERVICIOS INTEGRALES": {
+     "kg": 164740.0,
+     "mov": 35
+    },
+    "VEOLIA SI CHILE S.A": {
+     "kg": 151571.0,
+     "mov": 117
+    },
+    "SERVICIOS AVO II SPA": {
+     "kg": 146310.0,
+     "mov": 246
+    },
+    "SERVICIOS DE RECICLAJE PUDU LTDA (VALDIVIA)": {
+     "kg": 61310.0,
+     "mov": 18
+    },
+    "RESIMPLE": {
+     "kg": 52386.3,
+     "mov": 98
+    },
+    "ECOFIBRAS S.A": {
+     "kg": 52210.0,
+     "mov": 9
+    },
+    "GARIBALDI S.A": {
+     "kg": 49240.0,
+     "mov": 9
+    },
+    "BIOMAR CHILE S.A": {
+     "kg": 43790.0,
+     "mov": 40
+    },
+    "CIRCCULAR SPA": {
+     "kg": 41030.0,
+     "mov": 40
+    },
+    "MOWI CHILE S.A": {
+     "kg": 40250.98,
+     "mov": 59
+    },
+    "RECUPAC S.A": {
+     "kg": 32348.0,
+     "mov": 18
+    },
+    "IDEAL S.A": {
+     "kg": 30824.0,
+     "mov": 56
+    },
+    "SOCIEDAD CONCESIONARIA AUTOPISTA SAN ANTONIO-SANTIAGO S.A": {
+     "kg": 25310.0,
+     "mov": 12
+    },
+    "SOCIEDAD ANONIMA VIÑA SANTA RITA S.A": {
+     "kg": 23156.0,
+     "mov": 40
+    },
+    "PESQUERA DEL MAR ANTARTICO S.A": {
+     "kg": 22704.0,
+     "mov": 23
+    },
+    "INMOBILIARIA RECONQUISTA S.A": {
+     "kg": 22650.0,
+     "mov": 25
+    },
+    "AVERY DENNISON CHILE S.A": {
+     "kg": 21110.0,
+     "mov": 4
+    },
+    "SERVICIOS COVI SPA": {
+     "kg": 20160.0,
+     "mov": 48
+    },
+    "IMAL SPA": {
+     "kg": 20060.0,
+     "mov": 12
+    },
+    "COSEMAR SERVICIOS INDUSTRIALES SPA": {
+     "kg": 19728.0,
+     "mov": 3
+    },
+    "AGENCIAS UNIVERSALES S.A": {
+     "kg": 18220.0,
+     "mov": 31
+    },
+    "TRUSAL S.A": {
+     "kg": 17512.0,
+     "mov": 15
+    },
+    "INMOBILIARIA SAN IGNACIO SPA": {
+     "kg": 17250.0,
+     "mov": 15
+    },
+    "INDUSTRIAL Y MINERIA LOS ESTEROS LTDA": {
+     "kg": 17179.5,
+     "mov": 9
+    },
+    "ADMINISTRADORA DE VENTAS AL DETALLE LTDA": {
+     "kg": 16716.0,
+     "mov": 890
+    },
+    "ALL4LABELS SANTIAGO SPA": {
+     "kg": 16290.0,
+     "mov": 13
+    },
+    "ALSANEO L7 SPA": {
+     "kg": 16029.5,
+     "mov": 25
+    }
+   }
+  },
+  "2026-05": {
+   "flujos": {
+    "Ingreso": {
+     "kg": 1124198.58,
+     "mov": 1750
+    },
+    "Retiro BO": {
+     "kg": 1425955.7,
+     "mov": 1285
+    },
+    "Salida": {
+     "kg": 1214486.27,
+     "mov": 163
+    }
+   },
+   "plantas": {
+    "BO Chillán": {
+     "mov": 23,
+     "retiro": 19123.0
+    },
+    "BO San Bernardo": {
+     "mov": 454,
+     "retiro": 1040286.0
+    },
+    "BO Trapen": {
+     "mov": 18,
+     "retiro": 60220.8
+    },
+    "Ecofibras Coronel": {
+     "mov": 790,
+     "ingreso": 65802.0,
+     "salida": 80856.0
+    },
+    "Ecofibras Planta Trapen": {
+     "mov": 55,
+     "ingreso": 48451.2
+    },
+    "Ecofibras San Bernardo": {
+     "mov": 244,
+     "ingreso": 145138.0,
+     "salida": 204667.0
+    },
+    "Ecofibras San Joaquin": {
+     "mov": 375,
+     "ingreso": 116679.68,
+     "salida": 154564.27
+    },
+    "GIRI": {
+     "mov": 449,
+     "ingreso": 748127.7,
+     "salida": 774399.0
+    },
+    "Proveedores": {
+     "mov": 86,
+     "retiro": 213801.4
+    },
+    "Temuco": {
+     "mov": 14,
+     "retiro": 2052.0
+    },
+    "Tradicionales": {
+     "mov": 690,
+     "retiro": 90472.5
+    }
+   },
+   "tipos": {
+    "ALIMENTO DESCARTADO": {
+     "ingreso": 23360.0
+    },
+    "ASIMILABLE A DOMICILIARIO": {
+     "ingreso": 230757.09,
+     "retiro": 887739.5,
+     "salida": 11960.0
+    },
+    "BALDES ENTEROS": {
+     "retiro": 64.0
+    },
+    "BANDEJAS ENTERAS": {
+     "ingreso": 379.0,
+     "salida": 1532.4
+    },
+    "BIDONES ENTEROS SIN PROCESAR": {
+     "ingreso": 4624.3
+    },
+    "BIDONES TRITURADOS": {
+     "ingreso": 6583.0,
+     "salida": 7589.0
+    },
+    "BLANCO": {
+     "ingreso": 1734.4
+    },
+    "BOTAS": {
+     "ingreso": 38.0
+    },
+    "BOTELLA COLOR": {
+     "ingreso": 3185.2,
+     "salida": 1035.0
+    },
+    "BOTELLA TRANSPARENTE": {
+     "ingreso": 22864.8,
+     "salida": 24845.1
+    },
+    "CABOS ENTEROS (PTO MONTT)": {
+     "salida": 173.2
+    },
+    "CABOS TRITURADOS": {
+     "salida": 1000.0
+    },
+    "CARRETE ENTERO": {
+     "ingreso": 214.0,
+     "salida": 852.0
+    },
+    "CARRETE MOLIDO": {
+     "ingreso": 15.0
+    },
+    "CARTÓN CORRUGADO": {
+     "ingreso": 60722.13,
+     "retiro": 131251.0,
+     "salida": 100335.97
+    },
+    "CARTÓN PARA LÍQUIDOS": {
+     "ingreso": 10833.5,
+     "salida": 22.6
+    },
+    "CDR": {
+     "ingreso": 3430.0,
+     "salida": 578860.0
+    },
+    "CHATARRA": {
+     "ingreso": 6385.0,
+     "retiro": 2130.0,
+     "salida": 13380.0
+    },
+    "CON CERA": {
+     "ingreso": 237.2
+    },
+    "CONO ENTERO": {
+     "ingreso": 550.0
+    },
+    "CONO ENTERO SIN PROCESAR": {
+     "ingreso": 1323.53
+    },
+    "DESPUNTES": {
+     "salida": 1900.0
+    },
+    "ENVASES HDPE": {
+     "salida": 7589.0
+    },
+    "EPS BLOQUE": {
+     "ingreso": 24711.0,
+     "salida": 24130.0
+    },
+    "EPS GRANEL": {
+     "ingreso": 23.4
+    },
+    "EPS SIN PROCESAR": {
+     "ingreso": 41343.7,
+     "retiro": 140.8,
+     "salida": 43.9
+    },
+    "EPS TORTA": {
+     "salida": 1580.0
+    },
+    "ESCOMBROS": {
+     "retiro": 32711.5
+    },
+    "ESQUINERO": {
+     "ingreso": 515.0
+    },
+    "FILM PESCADO": {
+     "ingreso": 11611.0
+    },
+    "FLOTADORES TRITURADOS": {
+     "salida": 15004.0
+    },
+    "GARRAFÓN ENTERO": {
+     "ingreso": 3293.0
+    },
+    "HOJALATA": {
+     "ingreso": 83.8,
+     "salida": 2931.9
+    },
+    "INDUSTRIAL": {
+     "retiro": 97140.0
+    },
+    "INVENTARIO": {
+     "ingreso": 11760.0
+    },
+    "LATAS": {
+     "ingreso": 456.6,
+     "salida": 17.3
+    },
+    "MADERA": {
+     "ingreso": 180188.0,
+     "retiro": 13669.0
+    },
+    "MAXISACOS": {
+     "ingreso": 437.2
+    },
+    "METALES": {
+     "ingreso": 1320.0,
+     "retiro": 11.0
+    },
+    "MEZCLA DE ENVASES Y EMBALAJES": {
+     "ingreso": 8.0
+    },
+    "MEZCLA DE PAPEL Y CARTÓN": {
+     "ingreso": 322.0,
+     "salida": 2871.0
+    },
+    "MEZCLA DE PLÁSTICOS": {
+     "ingreso": 33660.0
+    },
+    "MIX RESIMPLE": {
+     "ingreso": 53403.0,
+     "salida": 52083.5
+    },
+    "NEUMÁTICOS FUERA DE USO": {
+     "ingreso": 73328.0,
+     "salida": 8220.0
+    },
+    "OTRAS MADERAS": {
+     "ingreso": 1434.0
+    },
+    "PAI DESCARTE": {
+     "ingreso": 515.0
+    },
+    "PAI ESTRELLA": {
+     "ingreso": 22846.0,
+     "salida": 16380.0
+    },
+    "PAI FARDO": {
+     "ingreso": 40678.0,
+     "salida": 31780.0
+    },
+    "PAI FARDO CHICOS": {
+     "ingreso": 1773.0
+    },
+    "PAI POST CONSUMO": {
+     "ingreso": 767.0
+    },
+    "PAI PROCESADO": {
+     "salida": 1760.0
+    },
+    "PAI ROLLOS": {
+     "ingreso": 1767.0
+    },
+    "PALLETS BUENOS": {
+     "ingreso": 324.0
+    },
+    "PALLETS ENTEROS": {
+     "ingreso": 495.0
+    },
+    "PAPEL Y CARTÓN": {
+     "ingreso": 19872.0,
+     "salida": 133.8
+    },
+    "PEBD COLOR": {
+     "ingreso": 6944.25,
+     "salida": 16018.0
+    },
+    "PEBD TRANSPARENTE": {
+     "ingreso": 13557.98,
+     "retiro": 430.0,
+     "salida": 7959.1
+    },
+    "PLÁSTICOS": {
+     "ingreso": 62703.0
+    },
+    "PP RÍGIDO ENTERO": {
+     "ingreso": 534.7
+    },
+    "RAFIA BLANCA": {
+     "ingreso": 32891.0,
+     "salida": 39303.1
+    },
+    "RAFIA GRIS": {
+     "ingreso": 7036.0,
+     "salida": 36476.0
+    },
+    "RESIDUOS NO RECICLABLES": {
+     "ingreso": 347.0,
+     "retiro": 5540.0,
+     "salida": 55360.0
+    },
+    "RESIDUOS NO VALORIZABLES": {
+     "ingreso": 1593.0,
+     "salida": 111757.0
+    },
+    "RESIDUOS ORGÁNICOS": {
+     "ingreso": 4005.0,
+     "retiro": 12561.4,
+     "salida": 8860.0
+    },
+    "REVISTA": {
+     "ingreso": 303.0
+    },
+    "ROLLO PLÁSTICO DESDE VIÑA SANTA RITA": {
+     "ingreso": 1057.0,
+     "salida": 26900.0
+    },
+    "STRETCH FILM": {
+     "ingreso": 11549.8,
+     "retiro": 2867.0,
+     "salida": 3623.0
+    },
+    "SÓLIDOS CONTAMINADOS": {
+     "ingreso": 19150.0,
+     "retiro": 148830.0
+    },
+    "TAMBORES ENTEROS": {
+     "ingreso": 980.0
+    },
+    "TAPA GARRAFÓN ENTERO": {
+     "ingreso": 128.0
+    },
+    "TAPAS DE GARRAFÓN ENTERAS": {
+     "ingreso": 240.0
+    },
+    "TAPAS ENTEROS": {
+     "ingreso": 290.0
+    },
+    "TUBERÍAS ENTERAS": {
+     "ingreso": 12000.0
+    },
+    "VIDRIO": {
+     "ingreso": 43207.0,
+     "salida": 220.4
+    },
+    "ZUNCHO PET": {
+     "ingreso": 1479.0,
+     "retiro": 398.0
+    },
+    "ZUNCHO PP": {
+     "ingreso": 32.0
+    }
+   },
+   "destinos": {
+    "RELLENO SANTA MARTA": {
+     "kg": 671413.5,
+     "mov": 656
+    },
+    "CO-PROCESAMIENTO": {
+     "kg": 559600.0,
+     "mov": 28
+    },
+    "HIDRONOR": {
+     "kg": 177960.0,
+     "mov": 15
+    },
+    "KDM": {
+     "kg": 177820.0,
+     "mov": 39
+    },
+    "GERSA": {
+     "kg": 155256.0,
+     "mov": 248
+    },
+    "RELLENO SANITARIO": {
+     "kg": 112950.0,
+     "mov": 16
+    },
+    "RÍO ACONCAGUA": {
+     "kg": 61020.0,
+     "mov": 42
+    },
+    "REXIN": {
+     "kg": 60080.0,
+     "mov": 17
+    },
+    "RESIMPLE": {
+     "kg": 52083.5,
+     "mov": 2
+    },
+    "REINSA MAIPÚ": {
+     "kg": 48990.0,
+     "mov": 29
+    },
+    "CREATIVE WORLD LIMITED": {
+     "kg": 48160.0,
+     "mov": 3
+    },
+    "BIOPLASTIC SPA": {
+     "kg": 38790.0,
+     "mov": 2
+    },
+    "RECICLAJE": {
+     "kg": 38039.0,
+     "mov": 6
+    },
+    "FORESTAL Y PAPELERA CONCEPCION S.A": {
+     "kg": 28589.0,
+     "mov": 1
+    },
+    "VENTA": {
+     "kg": 27810.0,
+     "mov": 12
+    },
+    "RECICLADOS INDUSTRIALES S.A": {
+     "kg": 27465.0,
+     "mov": 10
+    },
+    "YOUJIN INDUSTRY CO.": {
+     "kg": 26900.0,
+     "mov": 1
+    },
+    "INTCO MALAYSIA SDN BHD": {
+     "kg": 25710.0,
+     "mov": 2
+    },
+    "AMBIPAR SERVICIOS DE VALORIZACION LTDA": {
+     "kg": 25037.0,
+     "mov": 2
+    },
+    "GREENVALLY ECO COMPANY": {
+     "kg": 24850.0,
+     "mov": 1
+    },
+    "GREENREC": {
+     "kg": 24801.0,
+     "mov": 12
+    },
+    "COMPOSTAJE": {
+     "kg": 23690.0,
+     "mov": 3
+    },
+    "FORESTAL Y PAPELERA CONCEPCION S.A (FPC)": {
+     "kg": 22405.0,
+     "mov": 4
+    },
+    "AMBIPAR SERVICIOS DE VALORIZACIÓN LTDA": {
+     "kg": 19549.0,
+     "mov": 4
+    },
+    "SOCIEDAD COMERCIAL INDUSTRIAL CHILEPLAST SPA": {
+     "kg": 15004.0,
+     "mov": 1
+    },
+    "INDUSTRIA PROCESADORA DE PLASTICOS LTDA": {
+     "kg": 14897.0,
+     "mov": 7
+    },
+    "METALURGICA VIRUTEX ILKO S.A": {
+     "kg": 13834.0,
+     "mov": 1
+    },
+    "FIPLAS SPA": {
+     "kg": 12626.0,
+     "mov": 4
+    },
+    "IDEACORP": {
+     "kg": 11980.0,
+     "mov": 16
+    },
+    "REINSA LA PINTANA": {
+     "kg": 11580.0,
+     "mov": 4
+    }
+   },
+   "clientes": {
+    "DESARROLLOS E INVERSIONES INTERNACIONALES SPA": {
+     "kg": 556650.0,
+     "mov": 177
+    },
+    "AMBIPAR ENVIRONMENT CHILE": {
+     "kg": 260316.7,
+     "mov": 226
+    },
+    "AMBIPAR SERVICIOS INTEGRALES": {
+     "kg": 233790.0,
+     "mov": 33
+    },
+    "ANGLO AMERICAN SUR S.A": {
+     "kg": 147660.0,
+     "mov": 9
+    },
+    "SERVICIOS AVO II SPA": {
+     "kg": 108965.0,
+     "mov": 222
+    },
+    "ECOFIBRAS S.A": {
+     "kg": 89091.0,
+     "mov": 11
+    },
+    "RECUPAC S.A": {
+     "kg": 65803.0,
+     "mov": 18
+    },
+    "VEOLIA SI CHILE S.A": {
+     "kg": 58140.0,
+     "mov": 70
+    },
+    "RESIMPLE": {
+     "kg": 54054.0,
+     "mov": 111
+    },
+    "GARIBALDI S.A": {
+     "kg": 45020.0,
+     "mov": 8
+    },
+    "IDEAL S.A": {
+     "kg": 41551.0,
+     "mov": 53
+    },
+    "SERVICIOS DE RECICLAJE PUDU LTDA (VALDIVIA)": {
+     "kg": 38628.0,
+     "mov": 12
+    },
+    "BIOMAR CHILE S.A": {
+     "kg": 34380.0,
+     "mov": 32
+    },
+    "SERVICIOS COVI SPA": {
+     "kg": 31980.0,
+     "mov": 50
+    },
+    "SOCIEDAD ANONIMA VIÑA SANTA RITA S.A": {
+     "kg": 30382.0,
+     "mov": 43
+    },
+    "REMAP SPA": {
+     "kg": 23760.0,
+     "mov": 1
+    },
+    "INMOBILIARIA RECONQUISTA S.A": {
+     "kg": 23510.0,
+     "mov": 22
+    },
+    "MOWI CHILE S.A": {
+     "kg": 23279.24,
+     "mov": 42
+    },
+    "CIRCCULAR SPA": {
+     "kg": 23050.0,
+     "mov": 46
+    },
+    "INDUSTRIAL Y MINERIA LOS ESTEROS LTDA": {
+     "kg": 22340.5,
+     "mov": 10
+    },
+    "SOCIEDAD CONCESIONARIA AUTOPISTA SAN ANTONIO-SANTIAGO S.A": {
+     "kg": 20550.0,
+     "mov": 9
+    },
+    "AVERY DENNISON CHILE S.A": {
+     "kg": 19580.0,
+     "mov": 7
+    },
+    "PESQUERA DEL MAR ANTARTICO S.A": {
+     "kg": 19536.0,
+     "mov": 18
+    },
+    "AMBIPAR ENVIRONMENT CHILE LTDA": {
+     "kg": 17440.0,
+     "mov": 19
+    },
+    "ALL4LABELS SANTIAGO SPA": {
+     "kg": 17230.0,
+     "mov": 13
+    },
+    "AGENCIAS UNIVERSALES S.A": {
+     "kg": 16495.0,
+     "mov": 30
+    },
+    "IMAL SPA": {
+     "kg": 15550.0,
+     "mov": 11
+    },
+    "AISLAPOL S.A": {
+     "kg": 15312.0,
+     "mov": 17
+    },
+    "EMPRESA PORTUARIA PUERTO MONTT": {
+     "kg": 15290.0,
+     "mov": 3
+    },
+    "L'ORÉAL CHILE S.A": {
+     "kg": 13580.0,
+     "mov": 6
+    }
+   }
+  },
+  "2026-06": {
+   "flujos": {
+    "Ingreso": {
+     "kg": 1355688.08,
+     "mov": 1758
+    },
+    "Retiro BO": {
+     "kg": 1042674.0,
+     "mov": 1315
+    },
+    "Salida": {
+     "kg": 1352677.5,
+     "mov": 180
+    }
+   },
+   "plantas": {
+    "BO Chillán": {
+     "mov": 25,
+     "retiro": 19690.0
+    },
+    "BO Chiloé": {
+     "mov": 16,
+     "retiro": 66600.0
+    },
+    "BO San Bernardo": {
+     "mov": 429,
+     "retiro": 812759.3
+    },
+    "BO Trapen": {
+     "mov": 14,
+     "retiro": 33139.7
+    },
+    "BO Valparaíso": {
+     "mov": 3,
+     "retiro": 2980.0
+    },
+    "Ecofibras Coronel": {
+     "mov": 781,
+     "ingreso": 77080.0,
+     "salida": 112791.0
+    },
+    "Ecofibras Planta Trapen": {
+     "mov": 59,
+     "ingreso": 34644.98,
+     "salida": 5380.0
+    },
+    "Ecofibras San Bernardo": {
+     "mov": 272,
+     "ingreso": 168153.0,
+     "salida": 200394.0
+    },
+    "Ecofibras San Joaquin": {
+     "mov": 399,
+     "ingreso": 139670.1,
+     "salida": 169617.5
+    },
+    "GIRI": {
+     "mov": 419,
+     "ingreso": 929530.0,
+     "salida": 864495.0
+    },
+    "IRAR Arica": {
+     "mov": 1,
+     "ingreso": 1584.0
+    },
+    "Proveedores": {
+     "mov": 4,
+     "retiro": 565.5
+    },
+    "Recynor": {
+     "mov": 64,
+     "ingreso": 5026.0,
+     "retiro": 6159.0
+    },
+    "Temuco": {
+     "mov": 15,
+     "retiro": 1932.0
+    },
+    "Tradicionales": {
+     "mov": 752,
+     "retiro": 98848.5
+    }
+   },
+   "tipos": {
+    "ALIMENTO DESCARTADO": {
+     "ingreso": 32320.0
+    },
+    "ALIMENTO LÁCTEO": {
+     "ingreso": 83300.0
+    },
+    "ASIMILABLE A DOMICILIARIO": {
+     "ingreso": 41995.0,
+     "retiro": 347160.7,
+     "salida": 96170.0
+    },
+    "BALDES ENTEROS": {
+     "retiro": 332.8
+    },
+    "BANDEJAS ENTERAS": {
+     "ingreso": 1297.9
+    },
+    "BIDONES ENTEROS SIN PROCESAR": {
+     "ingreso": 1373.0,
+     "retiro": 8.0,
+     "salida": 5094.0
+    },
+    "BIDONES TRITURADOS": {
+     "ingreso": 10518.0,
+     "salida": 12801.0
+    },
+    "BINS": {
+     "ingreso": 6066.0
+    },
+    "BLANCO": {
+     "ingreso": 272.0,
+     "salida": 560.0
+    },
+    "BOTELLA COLOR": {
+     "ingreso": 185.4,
+     "salida": 3970.2
+    },
+    "BOTELLA TRANSPARENTE": {
+     "ingreso": 18997.9,
+     "retiro": 174.0,
+     "salida": 17269.8
+    },
+    "CABLES ELÉCTRICOS": {
+     "ingreso": 4360.0
+    },
+    "CABOS ENTEROS (PTO MONTT)": {
+     "ingreso": 344.1
+    },
+    "CARRETE ENTERO": {
+     "ingreso": 336.0
+    },
+    "CARTÓN CORRUGADO": {
+     "ingreso": 68380.3,
+     "retiro": 22574.0,
+     "salida": 82394.0
+    },
+    "CARTÓN PARA LÍQUIDOS": {
+     "ingreso": 8601.8,
+     "retiro": 9.0
+    },
+    "CDR": {
+     "salida": 471480.0
+    },
+    "CHATARRA": {
+     "ingreso": 1510.0,
+     "retiro": 2906.0,
+     "salida": 11750.0
+    },
+    "CONO ENTERO": {
+     "ingreso": 623.0
+    },
+    "CRISTAL ENTERO ANILLO": {
+     "ingreso": 1291.0
+    },
+    "DESPUNTES": {
+     "salida": 4300.0
+    },
+    "DUPLEX": {
+     "salida": 786.0
+    },
+    "ELECTRÓNICOS": {
+     "ingreso": 1441.3
+    },
+    "ENVASES HDPE": {
+     "ingreso": 24.4,
+     "salida": 10345.0
+    },
+    "EPS BLOQUE": {
+     "ingreso": 26551.0,
+     "salida": 23183.0
+    },
+    "EPS SIN PROCESAR": {
+     "ingreso": 34797.98
+    },
+    "EPS TORTA": {
+     "salida": 327.0
+    },
+    "ESCOMBROS": {
+     "retiro": 18741.5
+    },
+    "ESQUINERO": {
+     "ingreso": 131.0
+    },
+    "FILM PESCADO": {
+     "ingreso": 6230.0
+    },
+    "FLOTADORES ENTEROS": {
+     "ingreso": 2295.0
+    },
+    "FLOTADORES TRITURADOS": {
+     "salida": 5380.0
+    },
+    "GANCHO ROPA": {
+     "salida": 3750.0
+    },
+    "GARRAFÓN ENTERO": {
+     "ingreso": 3625.0
+    },
+    "HOJALATA": {
+     "ingreso": 3476.2,
+     "salida": 6870.0
+    },
+    "INDUSTRIAL": {
+     "retiro": 347340.0
+    },
+    "INVENTARIO": {
+     "ingreso": 27868.7
+    },
+    "LATAS": {
+     "ingreso": 351.7,
+     "retiro": 2.0
+    },
+    "MADERA": {
+     "ingreso": 263635.0,
+     "retiro": 14500.0
+    },
+    "MAXISACOS": {
+     "ingreso": 104.0
+    },
+    "METALES": {
+     "ingreso": 10454.0,
+     "retiro": 255.0
+    },
+    "MEZCLA DE ENVASES Y EMBALAJES": {
+     "ingreso": 40.0
+    },
+    "MEZCLA DE PLÁSTICOS": {
+     "ingreso": 38210.0
+    },
+    "MIX RESIMPLE": {
+     "ingreso": 59951.0,
+     "salida": 71230.5
+    },
+    "MULTICAPA": {
+     "ingreso": 6305.0
+    },
+    "NEUMÁTICOS FUERA DE USO": {
+     "ingreso": 56319.0,
+     "salida": 42940.0
+    },
+    "OTRAS MADERAS": {
+     "ingreso": 2836.0,
+     "retiro": 33.0
+    },
+    "PAI BANDEJAS ENTERAS": {
+     "ingreso": 5859.0
+    },
+    "PAI DESCARTE": {
+     "ingreso": 1123.0
+    },
+    "PAI ESTRELLA": {
+     "ingreso": 22347.0,
+     "salida": 13240.0
+    },
+    "PAI FARDO": {
+     "ingreso": 51030.0,
+     "salida": 56270.0
+    },
+    "PAI POST CONSUMO": {
+     "ingreso": 4611.0
+    },
+    "PAI PROCESADO": {
+     "salida": 33604.0
+    },
+    "PAI ROLLOS": {
+     "ingreso": 76.0
+    },
+    "PALLETS BUENOS": {
+     "ingreso": 252.0
+    },
+    "PALLETS ENTEROS": {
+     "ingreso": 810.0,
+     "salida": 330.0
+    },
+    "PAPEL Y CARTÓN": {
+     "ingreso": 35301.1,
+     "retiro": 30.0
+    },
+    "PEBD COLOR": {
+     "ingreso": 9055.0,
+     "retiro": 452.0,
+     "salida": 1297.0
+    },
+    "PEBD TRANSPARENTE": {
+     "ingreso": 16197.6,
+     "retiro": 301.0,
+     "salida": 6263.0
+    },
+    "PLÁSTICOS": {
+     "ingreso": 144587.0,
+     "retiro": 4.0
+    },
+    "PP RÍGIDO ENTERO": {
+     "ingreso": 117.0
+    },
+    "RAFIA BLANCA": {
+     "ingreso": 39053.8,
+     "retiro": 20.0,
+     "salida": 43684.0
+    },
+    "RAFIA CHICA": {
+     "ingreso": 4050.0
+    },
+    "RAFIA COLOR": {
+     "retiro": 2360.0
+    },
+    "RAFIA GRIS": {
+     "ingreso": 12057.0,
+     "salida": 8469.0
+    },
+    "REDES NYLON": {
+     "ingreso": 15.0
+    },
+    "RESIDUOS NO RECICLABLES": {
+     "ingreso": 8630.0,
+     "salida": 105880.0
+    },
+    "RESIDUOS NO VALORIZABLES": {
+     "salida": 146879.0
+    },
+    "RESIDUOS ORGÁNICOS": {
+     "ingreso": 2913.0,
+     "retiro": 11135.5,
+     "salida": 13992.0
+    },
+    "ROLLO PLÁSTICO DESDE VIÑA SANTA RITA": {
+     "ingreso": 1645.0
+    },
+    "ROLLOS POLIAMIDA": {
+     "salida": 23100.0
+    },
+    "STRETCH FILM": {
+     "ingreso": 8396.0,
+     "retiro": 1012.0,
+     "salida": 12452.0
+    },
+    "SÓLIDOS CONTAMINADOS": {
+     "ingreso": 63580.0,
+     "retiro": 173900.0
+    },
+    "TAMBORES ENTEROS": {
+     "ingreso": 1011.0
+    },
+    "TAPAS DE GARRAFÓN ENTERAS": {
+     "ingreso": 811.0
+    },
+    "TAPAS DE GARRAFÓN TRITURADAS": {
+     "salida": 1584.0
+    },
+    "TAPAS ENTEROS": {
+     "ingreso": 230.0,
+     "salida": 1557.0
+    },
+    "TEXTIL": {
+     "ingreso": 9322.3
+    },
+    "TIERRAS CONTAMINADAS": {
+     "ingreso": 46640.0
+    },
+    "TROZOS DE CAUCHO": {
+     "ingreso": 1240.0
+    },
+    "TUBERÍAS": {
+     "ingreso": 800.5
+    },
+    "TUBERÍAS ENTERAS": {
+     "ingreso": 4063.0
+    },
+    "TUBERÍAS TRITURADAS": {
+     "salida": 5926.0
+    },
+    "VIDRIO": {
+     "ingreso": 31351.1
+    },
+    "VIDRIO COLOR": {
+     "retiro": 239.0,
+     "salida": 7550.0
+    },
+    "ZUNCHO PET": {
+     "ingreso": 1617.0,
+     "retiro": 316.0
+    },
+    "ZUNCHO PP": {
+     "ingreso": 479.0,
+     "retiro": 20.0
+    }
+   },
+   "destinos": {
+    "CO-PROCESAMIENTO": {
+     "kg": 563100.0,
+     "mov": 43
+    },
+    "RELLENO SANTA MARTA": {
+     "kg": 433738.5,
+     "mov": 688
+    },
+    "HIDRONOR": {
+     "kg": 206860.0,
+     "mov": 20
+    },
+    "GERSA": {
+     "kg": 199962.0,
+     "mov": 346
+    },
+    "RELLENO SANITARIO": {
+     "kg": 163360.0,
+     "mov": 31
+    },
+    "REXIN": {
+     "kg": 99739.7,
+     "mov": 30
+    },
+    "RECICLAJE": {
+     "kg": 76585.0,
+     "mov": 14
+    },
+    "RESIMPLE": {
+     "kg": 71230.5,
+     "mov": 3
+    },
+    "CREATIVE WORLD LIMITED": {
+     "kg": 69510.0,
+     "mov": 4
+    },
+    "AMBIPAR SERVICIOS DE VALORIZACION LTDA": {
+     "kg": 56439.0,
+     "mov": 4
+    },
+    "KDM": {
+     "kg": 50740.0,
+     "mov": 12
+    },
+    "AMBIPAR SERVICIOS DE VALORIZACIÓN LTDA": {
+     "kg": 45745.0,
+     "mov": 6
+    },
+    "BIOPLASTIC SPA": {
+     "kg": 43684.0,
+     "mov": 2
+    },
+    "VENTA": {
+     "kg": 38980.0,
+     "mov": 17
+    },
+    "LOGIPAK SPA": {
+     "kg": 32000.0,
+     "mov": 5
+    },
+    "FORESTAL Y PAPELERA CONCEPCION S.A": {
+     "kg": 26299.0,
+     "mov": 1
+    },
+    "THERMOGREEN SL": {
+     "kg": 23510.0,
+     "mov": 2
+    },
+    "RECICLADOS INDUSTRIALES S.A": {
+     "kg": 23220.0,
+     "mov": 6
+    },
+    "GREENREC": {
+     "kg": 18741.5,
+     "mov": 10
+    },
+    "REINSA RENCA": {
+     "kg": 16285.0,
+     "mov": 23
+    },
+    "RIMAT": {
+     "kg": 14500.0,
+     "mov": 8
+    },
+    "INDUSTRIA PROCESADORA DE PLASTICOS LTDA": {
+     "kg": 11386.0,
+     "mov": 5
+    },
+    "REINSA MAIPÚ": {
+     "kg": 10475.0,
+     "mov": 14
+    },
+    "REUTILIZACIÓN DE ENVASES PLASTICOS LTDA": {
+     "kg": 8664.0,
+     "mov": 3
+    },
+    "FIPLAS SPA": {
+     "kg": 8469.0,
+     "mov": 2
+    },
+    "IDEACORP": {
+     "kg": 6890.0,
+     "mov": 6
+    },
+    "SOCIEDAD Y COMERCIAL Y TRANSPORTE  MAQUINEX LTDA (METALEX)": {
+     "kg": 6870.0,
+     "mov": 2
+    },
+    "CHICUREO VERDE": {
+     "kg": 5670.0,
+     "mov": 3
+    },
+    "COMPOSTAJE": {
+     "kg": 5670.0,
+     "mov": 3
+    },
+    "CHILE PLAST": {
+     "kg": 5380.0,
+     "mov": 1
+    }
+   },
+   "clientes": {
+    "AMBIPAR SERVICIOS INTEGRALES": {
+     "kg": 339050.0,
+     "mov": 52
+    },
+    "SERVICIOS AVO II SPA": {
+     "kg": 171720.0,
+     "mov": 265
+    },
+    "ANGLO AMERICAN SUR S.A": {
+     "kg": 159020.0,
+     "mov": 11
+    },
+    "VEOLIA SI CHILE S.A": {
+     "kg": 157425.0,
+     "mov": 104
+    },
+    "ECOFIBRAS S.A": {
+     "kg": 119914.0,
+     "mov": 26
+    },
+    "AMBIPAR ENVIRONMENT CHILE": {
+     "kg": 105188.5,
+     "mov": 127
+    },
+    "AMBIPAR RESPONSE": {
+     "kg": 82410.0,
+     "mov": 18
+    },
+    "MOWI CHILE S.A": {
+     "kg": 80850.32,
+     "mov": 68
+    },
+    "RESIMPLE": {
+     "kg": 59951.0,
+     "mov": 117
+    },
+    "RECUPAC S.A": {
+     "kg": 54499.0,
+     "mov": 22
+    },
+    "RECICLAJES ECOTRANS LTDA": {
+     "kg": 50300.0,
+     "mov": 13
+    },
+    "GARIBALDI S.A": {
+     "kg": 47580.0,
+     "mov": 9
+    },
+    "GESTION INTEGRAL DE RESIDUOS GEOBARRA EXINS S.A.": {
+     "kg": 46640.0,
+     "mov": 2
+    },
+    "SERVICIOS COVI SPA": {
+     "kg": 46440.0,
+     "mov": 72
+    },
+    "IDEAL S.A": {
+     "kg": 42483.8,
+     "mov": 57
+    },
+    "BIOMAR CHILE S.A": {
+     "kg": 38280.0,
+     "mov": 40
+    },
+    "AVERY DENNISON CHILE S.A": {
+     "kg": 33100.0,
+     "mov": 7
+    },
+    "INMOBILIARIA RECONQUISTA S.A": {
+     "kg": 26595.0,
+     "mov": 26
+    },
+    "SOCIEDAD ANONIMA VIÑA SANTA RITA S.A": {
+     "kg": 23636.0,
+     "mov": 36
+    },
+    "SERVICIOS DE RECICLAJE PUDU LTDA (VALDIVIA)": {
+     "kg": 23410.0,
+     "mov": 9
+    },
+    "LABORATORIO MAVER S.A": {
+     "kg": 22510.0,
+     "mov": 5
+    },
+    "SOCIEDAD CONCESIONARIA AUTOPISTA SAN ANTONIO-SANTIAGO S.A": {
+     "kg": 20420.0,
+     "mov": 12
+    },
+    "ALL4LABELS SANTIAGO SPA": {
+     "kg": 20130.0,
+     "mov": 13
+    },
+    "EMPRESA PORTUARIA PUERTO MONTT": {
+     "kg": 18596.6,
+     "mov": 34
+    },
+    "PESQUERA TRANS ANTARTIC LTDA": {
+     "kg": 18377.0,
+     "mov": 26
+    },
+    "IMAL SPA": {
+     "kg": 18060.0,
+     "mov": 12
+    },
+    "IMPRENTA ALFREDO MOLINA FLORES S.A": {
+     "kg": 16260.0,
+     "mov": 11
+    },
+    "AGENCIAS UNIVERSALES S.A": {
+     "kg": 15085.0,
+     "mov": 34
+    },
+    "CIRCCULAR SPA": {
+     "kg": 14580.0,
+     "mov": 39
+    },
+    "PESQUERA DEL MAR ANTARTICO S.A": {
+     "kg": 14256.0,
+     "mov": 16
+    }
+   }
+  },
+  "2026-07": {
+   "flujos": {
+    "Ingreso": {
+     "kg": 1092721.19,
+     "mov": 1571
+    },
+    "Retiro BO": {
+     "kg": 969695.75,
+     "mov": 609
+    },
+    "Salida": {
+     "kg": 1261474.0,
+     "mov": 165
+    }
+   },
+   "plantas": {
+    "BO Chiloé": {
+     "mov": 13,
+     "retiro": 59908.8
+    },
+    "BO Iquique": {
+     "mov": 37,
+     "retiro": 74660.0
+    },
+    "BO San Bernardo": {
+     "mov": 351,
+     "retiro": 762636.95
+    },
+    "BO Trapen": {
+     "mov": 13,
+     "retiro": 55040.0
+    },
+    "BO Valparaíso": {
+     "mov": 4,
+     "retiro": 4520.0
+    },
+    "Ecofibras Coronel": {
+     "mov": 708,
+     "ingreso": 47979.0,
+     "salida": 126595.0
+    },
+    "Ecofibras Planta Trapen": {
+     "mov": 62,
+     "ingreso": 38955.2
+    },
+    "Ecofibras San Bernardo": {
+     "mov": 220,
+     "ingreso": 150575.0,
+     "salida": 147885.0
+    },
+    "Ecofibras San Joaquin": {
+     "mov": 332,
+     "ingreso": 136475.99,
+     "salida": 94160.0
+    },
+    "GIRI": {
+     "mov": 380,
+     "ingreso": 707870.0,
+     "salida": 892130.0
+    },
+    "Recynor": {
+     "mov": 213,
+     "ingreso": 10866.0,
+     "retiro": 11423.0,
+     "salida": 704.0
+    },
+    "Temuco": {
+     "mov": 12,
+     "retiro": 1507.0
+    }
+   },
+   "tipos": {
+    "ALIMENTO DESCARTADO": {
+     "ingreso": 127500.0
+    },
+    "ALIMENTO LÁCTEO": {
+     "ingreso": 106860.0
+    },
+    "ASIMILABLE A DOMICILIARIO": {
+     "ingreso": 92782.7,
+     "retiro": 380140.8,
+     "salida": 118610.0
+    },
+    "BALDES ENTEROS": {
+     "retiro": 161.2
+    },
+    "BANDEJAS ENTERAS": {
+     "ingreso": 744.0,
+     "salida": 1527.0
+    },
+    "BIDONES ENTEROS SIN PROCESAR": {
+     "ingreso": 17274.9,
+     "retiro": 41.0
+    },
+    "BIDONES TRITURADOS": {
+     "ingreso": 6083.0,
+     "salida": 16396.0
+    },
+    "BINS": {
+     "ingreso": 123.0
+    },
+    "BLANCO": {
+     "ingreso": 4193.8
+    },
+    "BOTAS": {
+     "ingreso": 74.45
+    },
+    "BOTELLA COLOR": {
+     "ingreso": 716.0
+    },
+    "BOTELLA TRANSPARENTE": {
+     "ingreso": 16674.4,
+     "retiro": 527.0,
+     "salida": 29240.0
+    },
+    "CABOS ENTEROS (PTO MONTT)": {
+     "ingreso": 330.2
+    },
+    "CARRETE ENTERO": {
+     "ingreso": 251.0
+    },
+    "CARTÓN CORRUGADO": {
+     "ingreso": 56701.1,
+     "retiro": 21182.0,
+     "salida": 30376.0
+    },
+    "CARTÓN PARA LÍQUIDOS": {
+     "ingreso": 7735.1,
+     "retiro": 43.0
+    },
+    "CDR": {
+     "salida": 452000.0
+    },
+    "CHATARRA": {
+     "ingreso": 2088.6,
+     "retiro": 286.0,
+     "salida": 10220.0
+    },
+    "CONO ENTERO": {
+     "ingreso": 1138.0,
+     "salida": 2480.0
+    },
+    "ELECTRÓNICOS": {
+     "ingreso": 322.9
+    },
+    "ENVASES HDPE": {
+     "ingreso": 3350.0,
+     "salida": 21500.0
+    },
+    "EPS BLOQUE": {
+     "ingreso": 27718.0,
+     "salida": 23875.0
+    },
+    "EPS GRANEL": {
+     "salida": 130.0
+    },
+    "EPS SIN PROCESAR": {
+     "ingreso": 41155.2
+    },
+    "EPS TORTA": {
+     "salida": 1005.0
+    },
+    "ESCOMBROS": {
+     "retiro": 34670.75
+    },
+    "ESQUINERO": {
+     "ingreso": 208.0,
+     "salida": 580.0
+    },
+    "FILM": {
+     "ingreso": 64.8
+    },
+    "FILM PESCADO": {
+     "ingreso": 699.5
+    },
+    "FLOTADORES LAMINADOS": {
+     "ingreso": 196.0
+    },
+    "FÁRMACOS": {
+     "ingreso": 11890.0
+    },
+    "GARRAFÓN ENTERO": {
+     "ingreso": 1540.0
+    },
+    "HOJALATA": {
+     "ingreso": 3880.3,
+     "salida": 4240.0
+    },
+    "INDUSTRIAL": {
+     "retiro": 344760.0
+    },
+    "INVENTARIO": {
+     "ingreso": 56395.9
+    },
+    "LATAS": {
+     "ingreso": 330.4,
+     "retiro": 11.0,
+     "salida": 1510.0
+    },
+    "MADERA": {
+     "ingreso": 123678.0,
+     "retiro": 670.0
+    },
+    "MAXISACOS": {
+     "ingreso": 409.4,
+     "retiro": 1020.0,
+     "salida": 930.0
+    },
+    "METALES": {
+     "ingreso": 4240.0,
+     "retiro": 474.0
+    },
+    "MEZCLA DE ENVASES Y EMBALAJES": {
+     "ingreso": 3.0
+    },
+    "MEZCLA DE PLÁSTICOS": {
+     "ingreso": 25600.0
+    },
+    "MIX RESIMPLE": {
+     "ingreso": 54270.5,
+     "salida": 71607.0
+    },
+    "MULTICAPA": {
+     "ingreso": 6086.7
+    },
+    "NEUMÁTICOS FUERA DE USO": {
+     "salida": 24090.0
+    },
+    "OTRAS MADERAS": {
+     "ingreso": 6143.0,
+     "retiro": 1068.0
+    },
+    "PAI BANDEJAS ENTERAS": {
+     "ingreso": 4320.0
+    },
+    "PAI DESCARTE": {
+     "ingreso": 957.0
+    },
+    "PAI ESTRELLA": {
+     "ingreso": 17814.0
+    },
+    "PAI FARDO": {
+     "ingreso": 36098.0,
+     "salida": 51930.0
+    },
+    "PAI POST CONSUMO": {
+     "ingreso": 376.0
+    },
+    "PAI PROCESADO": {
+     "salida": 7000.0
+    },
+    "PALLETS ENTEROS": {
+     "ingreso": 405.0,
+     "salida": 264.0
+    },
+    "PAPEL Y CARTÓN": {
+     "ingreso": 5193.0,
+     "retiro": 67.0
+    },
+    "PEBD COLOR": {
+     "ingreso": 9708.7,
+     "salida": 40819.0
+    },
+    "PEBD TRANSPARENTE": {
+     "ingreso": 14627.8,
+     "retiro": 287.0,
+     "salida": 2045.0
+    },
+    "PLÁSTICOS": {
+     "ingreso": 33310.4,
+     "retiro": 1.0
+    },
+    "PP RÍGIDO ENTERO": {
+     "ingreso": 150.0
+    },
+    "RAFIA BLANCA": {
+     "ingreso": 43353.23,
+     "salida": 19787.0
+    },
+    "RAFIA GRIS": {
+     "ingreso": 13541.0,
+     "salida": 10592.0
+    },
+    "RESIDUOS NO RECICLABLES": {
+     "ingreso": 224.0,
+     "salida": 149240.0
+    },
+    "RESIDUOS NO VALORIZABLES": {
+     "salida": 114010.0
+    },
+    "RESIDUOS ORGÁNICOS": {
+     "ingreso": 2330.0,
+     "retiro": 7560.0,
+     "salida": 4720.0
+    },
+    "REVISTA": {
+     "ingreso": 592.0
+    },
+    "ROLLO PLÁSTICO DESDE VIÑA SANTA RITA": {
+     "ingreso": 2276.0
+    },
+    "ROLLOS POLIAMIDA": {
+     "ingreso": 28980.0,
+     "salida": 28856.0
+    },
+    "ROPA": {
+     "ingreso": 55.0
+    },
+    "STRETCH FILM": {
+     "ingreso": 10245.7,
+     "retiro": 2905.0,
+     "salida": 10925.0
+    },
+    "SÓLIDOS CONTAMINADOS": {
+     "ingreso": 28740.0,
+     "retiro": 173220.0
+    },
+    "TAMBORES ENTEROS": {
+     "ingreso": 1210.0
+    },
+    "TAPAS DE GARRAFÓN ENTERAS": {
+     "ingreso": 460.0
+    },
+    "TAPAS ENTEROS": {
+     "ingreso": 120.0
+    },
+    "TEXTIL": {
+     "ingreso": 585.0
+    },
+    "TORTAS Y RAMAS": {
+     "ingreso": 3137.0
+    },
+    "TROZOS DE CAUCHO": {
+     "ingreso": 4130.0
+    },
+    "TUBERÍAS ENTERAS": {
+     "ingreso": 6262.8
+    },
+    "TUBERÍAS TRITURADAS": {
+     "ingreso": 596.0
+    },
+    "VIDRIO": {
+     "ingreso": 11263.5
+    },
+    "VIDRIO COLOR": {
+     "ingreso": 760.0,
+     "retiro": 329.0,
+     "salida": 10530.0
+    },
+    "ZUNCHO PET": {
+     "ingreso": 1327.21,
+     "retiro": 252.0
+    },
+    "ZUNCHO PP": {
+     "ingreso": 121.0,
+     "retiro": 20.0
+    }
+   },
+   "destinos": {
+    "CO-PROCESAMIENTO": {
+     "kg": 481580.0,
+     "mov": 30
+    },
+    "RELLENO SANTA MARTA": {
+     "kg": 354390.0,
+     "mov": 197
+    },
+    "RELLENO SANITARIO": {
+     "kg": 293370.0,
+     "mov": 48
+    },
+    "HIDRONOR": {
+     "kg": 173220.0,
+     "mov": 13
+    },
+    "GERSA": {
+     "kg": 118310.0,
+     "mov": 66
+    },
+    "REXIN": {
+     "kg": 114948.8,
+     "mov": 26
+    },
+    "COSEMAR - VERTEDERO SANTA INES": {
+     "kg": 74660.0,
+     "mov": 37
+    },
+    "RESIMPLE": {
+     "kg": 71607.0,
+     "mov": 3
+    },
+    "KDM": {
+     "kg": 63500.0,
+     "mov": 19
+    },
+    "RECICLAJE": {
+     "kg": 61570.0,
+     "mov": 8
+    },
+    "AMBIPAR SERVICIOS DE VALORIZACIÓN LTDA": {
+     "kg": 57432.0,
+     "mov": 6
+    },
+    "CREATIVE WORLD LIMITED": {
+     "kg": 51930.0,
+     "mov": 2
+    },
+    "HIDRONOR CHILE S.A (COPILEMU)": {
+     "kg": 34260.0,
+     "mov": 4
+    },
+    "VENTA": {
+     "kg": 33610.0,
+     "mov": 12
+    },
+    "GREENREC": {
+     "kg": 32120.75,
+     "mov": 13
+    },
+    "VIRUTEX ILKO": {
+     "kg": 25589.0,
+     "mov": 1
+    },
+    "INTCO MALAYSIA SDN BHD": {
+     "kg": 24880.0,
+     "mov": 2
+    },
+    "REUPLASTIC  LTDA": {
+     "kg": 19787.0,
+     "mov": 1
+    },
+    "VIRUTEX ILKO S.A": {
+     "kg": 15230.0,
+     "mov": 1
+    },
+    "OTRO": {
+     "kg": 14320.0,
+     "mov": 17
+    },
+    "HIDRONOR CHILE S.A (PLANTA DE TRANSFERENCIA)": {
+     "kg": 13760.0,
+     "mov": 4
+    },
+    "FIPLAS SPA": {
+     "kg": 10592.0,
+     "mov": 3
+    },
+    "REINSA MAIPÚ": {
+     "kg": 8084.0,
+     "mov": 9
+    },
+    "REINSA RENCA": {
+     "kg": 7930.0,
+     "mov": 20
+    },
+    "LOGIPAK SPA": {
+     "kg": 7000.0,
+     "mov": 1
+    },
+    "RECICLADOS INDUSTRIALES S.A": {
+     "kg": 6930.0,
+     "mov": 5
+    },
+    "FORESTAL Y PAPELERA CONCEPCION S.A (FPC)": {
+     "kg": 6546.0,
+     "mov": 1
+    },
+    "VERTEDERO LOS MOLLES": {
+     "kg": 4270.0,
+     "mov": 3
+    },
+    "SOCIEDAD Y COMERCIAL Y TRANSPORTE  MAQUINEX LTDA (METALEX)": {
+     "kg": 4240.0,
+     "mov": 1
+    },
+    "CONSORCIO SANTA MARTA S.A.": {
+     "kg": 4180.0,
+     "mov": 1
+    }
+   },
+   "clientes": {
+    "ANGLO AMERICAN SUR S.A": {
+     "kg": 172450.0,
+     "mov": 12
+    },
+    "VEOLIA SI CHILE S.A": {
+     "kg": 167637.0,
+     "mov": 85
+    },
+    "SERVICIOS AVO II SPA": {
+     "kg": 147540.0,
+     "mov": 67
+    },
+    "AMBIPAR SERVICIOS INTEGRALES": {
+     "kg": 132860.0,
+     "mov": 29
+    },
+    "JUAN BAS ALIMENTOS S.A": {
+     "kg": 112060.0,
+     "mov": 12
+    },
+    "ECOFIBRAS S.A": {
+     "kg": 97933.0,
+     "mov": 65
+    },
+    "AMBIPAR ENVIRONMENT CHILE": {
+     "kg": 97870.0,
+     "mov": 93
+    },
+    "RECUPAC S.A": {
+     "kg": 91046.0,
+     "mov": 39
+    },
+    "MOWI CHILE S.A": {
+     "kg": 76002.3,
+     "mov": 48
+    },
+    "RESIMPLE": {
+     "kg": 54270.5,
+     "mov": 103
+    },
+    "SIGES CHILE SPA": {
+     "kg": 44420.0,
+     "mov": 18
+    },
+    "GARIBALDI S.A": {
+     "kg": 41590.0,
+     "mov": 8
+    },
+    "BIOMAR CHILE S.A": {
+     "kg": 39273.0,
+     "mov": 36
+    },
+    "SERVICIOS COVI SPA": {
+     "kg": 36430.0,
+     "mov": 14
+    },
+    "INDUSTRIAL Y MINERIA LOS ESTEROS LTDA": {
+     "kg": 29660.25,
+     "mov": 11
+    },
+    "INMOBILIARIA Y CONSTRUCTORA NACIONAL S.A": {
+     "kg": 28040.0,
+     "mov": 4
+    },
+    "RECICLAJES ECOTRANS LTDA": {
+     "kg": 23080.0,
+     "mov": 9
+    },
+    "IMAL SPA": {
+     "kg": 21640.0,
+     "mov": 11
+    },
+    "EMPRESA PORTUARIA PUERTO MONTT": {
+     "kg": 21293.2,
+     "mov": 24
+    },
+    "INMOBILIARIA RECONQUISTA S.A": {
+     "kg": 20164.0,
+     "mov": 11
+    },
+    "AMBIPAR SERVICIOS DE VALORIZACIÓN LTDA": {
+     "kg": 20063.0,
+     "mov": 24
+    },
+    "IDEAL S.A": {
+     "kg": 19362.2,
+     "mov": 41
+    },
+    "SOCIEDAD CONCESIONARIA AUTOPISTA SAN ANTONIO-SANTIAGO S.A": {
+     "kg": 19340.0,
+     "mov": 12
+    },
+    "ALL4LABELS SANTIAGO SPA": {
+     "kg": 18800.0,
+     "mov": 12
+    },
+    "SOCIEDAD ANONIMA VIÑA SANTA RITA S.A": {
+     "kg": 18263.0,
+     "mov": 28
+    },
+    "PESQUERA TRANS ANTARTIC LTDA": {
+     "kg": 17686.26,
+     "mov": 23
+    },
+    "PESQUERA DEL MAR ANTARTICO S.A": {
+     "kg": 16896.0,
+     "mov": 18
+    },
+    "CIRCCULAR SPA": {
+     "kg": 14920.0,
+     "mov": 30
+    },
+    "SODIMAC S.A.": {
+     "kg": 14880.0,
+     "mov": 9
+    },
+    "AGENCIAS UNIVERSALES S.A": {
+     "kg": 14186.0,
+     "mov": 22
+    }
+   }
+  }
+ },
+ "zona_de_planta": {
+  "BO Chillán": "ZONA SUR",
+  "BO Chiloé": "ZONA SUR",
+  "BO Iquique": "ZONA NORTE",
+  "BO San Bernardo": "ZONA CENTRO",
+  "BO Trapen": "ZONA SUR",
+  "BO Valparaíso": "ZONA CENTRO",
+  "Ecofibras Coronel": "ZONA SUR",
+  "Ecofibras Planta Trapen": "ZONA SUR",
+  "Ecofibras San Bernardo": "ZONA CENTRO",
+  "Ecofibras San Joaquin": "ZONA SUR",
+  "GIRI": "ZONA CENTRO",
+  "IRAR Arica": "ZONA NORTE",
+  "Proveedores": "ZONA CENTRO",
+  "Recynor": "ZONA NORTE",
+  "Temuco": "ZONA SUR",
+  "Tradicionales": "ZONA CENTRO"
+ },
+ "fuentes": [
+  {
+   "archivo": "BBDD BO SAN BERNARDO.xlsx",
+   "planta": "BO San Bernardo",
+   "zona": "ZONA CENTRO",
+   "hojas": [
+    {
+     "hoja": "BBDD",
+     "flujo": "Retiro BO",
+     "registros": 5025,
+     "excluidos": 1972
+    }
+   ],
+   "registros": 5025,
+   "excluidos": 1972,
+   "estado": "ok",
+   "avisos": []
+  },
+  {
+   "archivo": "BBDD BO VALPARAÍSO.xlsx",
+   "planta": "BO Valparaíso",
+   "zona": "ZONA CENTRO",
+   "hojas": [
+    {
+     "hoja": "BBDD",
+     "flujo": "Retiro BO",
+     "registros": 7,
+     "excluidos": 2
+    }
+   ],
+   "registros": 7,
+   "excluidos": 2,
+   "estado": "ok",
+   "avisos": []
+  },
+  {
+   "archivo": "BBDD ECOFIBRAS SAN BERNARDO.xlsx",
+   "planta": "Ecofibras San Bernardo",
+   "zona": "ZONA CENTRO",
+   "hojas": [
+    {
+     "hoja": "INGRESOS",
+     "flujo": "Ingreso",
+     "registros": 2603,
+     "excluidos": 6
+    },
+    {
+     "hoja": "SALIDAS",
+     "flujo": "Salida",
+     "registros": 323,
+     "excluidos": 0
+    }
+   ],
+   "registros": 2926,
+   "excluidos": 6,
+   "estado": "ok",
+   "avisos": [
+    "INGRESOS: filtro GENERADOR != 'REMBRE SPA': 221 filas excluidas"
+   ]
+  },
+  {
+   "archivo": "BBDD PROVEEDORES.xlsx",
+   "planta": "Proveedores",
+   "zona": "ZONA CENTRO",
+   "hojas": [
+    {
+     "hoja": "BBDD PROVEEDORES",
+     "flujo": "Retiro BO",
+     "registros": 756,
+     "excluidos": 0
+    }
+   ],
+   "registros": 756,
+   "excluidos": 0,
+   "estado": "ok",
+   "avisos": []
+  },
+  {
+   "archivo": "BBDD TRADICIONALES.xlsx",
+   "planta": "Tradicionales",
+   "zona": "ZONA CENTRO",
+   "hojas": [
+    {
+     "hoja": "Analizado",
+     "flujo": "Retiro BO",
+     "registros": 2968,
+     "excluidos": 0
+    }
+   ],
+   "registros": 2968,
+   "excluidos": 0,
+   "estado": "ok",
+   "avisos": [
+    "filtro estado == 'C': 347 filas excluidas"
+   ]
+  },
+  {
+   "archivo": "BBDD BO IQUIQUE.xlsx",
+   "planta": "BO Iquique",
+   "zona": "ZONA NORTE",
+   "hojas": [
+    {
+     "hoja": "BBDD",
+     "flujo": "Retiro BO",
+     "registros": 37,
+     "excluidos": 0
+    }
+   ],
+   "registros": 37,
+   "excluidos": 0,
+   "estado": "ok",
+   "avisos": []
+  },
+  {
+   "archivo": "BBDD IRAR ARICA.xlsx",
+   "planta": "IRAR Arica",
+   "zona": "ZONA NORTE",
+   "hojas": [
+    {
+     "hoja": "INGRESOS",
+     "flujo": "Ingreso",
+     "registros": 1,
+     "excluidos": 0
+    },
+    {
+     "hoja": "SALIDAS",
+     "flujo": "Salida",
+     "registros": 0,
+     "excluidos": 0
+    }
+   ],
+   "registros": 1,
+   "excluidos": 0,
+   "estado": "ok",
+   "avisos": []
+  },
+  {
+   "archivo": "BBDD RECYNOR.xlsx",
+   "planta": "Recynor",
+   "zona": "ZONA NORTE",
+   "hojas": [
+    {
+     "hoja": "SALIDAS",
+     "flujo": "Salida",
+     "registros": 2,
+     "excluidos": 0
+    },
+    {
+     "hoja": "INGRESOS",
+     "flujo": "Ingreso",
+     "registros": 275,
+     "excluidos": 0
+    }
+   ],
+   "registros": 277,
+   "excluidos": 0,
+   "estado": "ok",
+   "avisos": []
+  },
+  {
+   "archivo": "BBDD BO CHILLÁN.xlsx",
+   "planta": "BO Chillán",
+   "zona": "ZONA SUR",
+   "hojas": [
+    {
+     "hoja": "TRASLADOS BO",
+     "flujo": "Retiro BO",
+     "registros": 59,
+     "excluidos": 6
+    }
+   ],
+   "registros": 59,
+   "excluidos": 6,
+   "estado": "ok",
+   "avisos": []
+  },
+  {
+   "archivo": "BBDD BO CHILOÉ.xlsx",
+   "planta": "BO Chiloé",
+   "zona": "ZONA SUR",
+   "hojas": [
+    {
+     "hoja": "BBDD",
+     "flujo": "Retiro BO",
+     "registros": 29,
+     "excluidos": 0
+    }
+   ],
+   "registros": 29,
+   "excluidos": 0,
+   "estado": "ok",
+   "avisos": []
+  },
+  {
+   "archivo": "BBDD BO TRAPEN.xlsx",
+   "planta": "BO Trapen",
+   "zona": "ZONA SUR",
+   "hojas": [
+    {
+     "hoja": "MOVIMIENTOS BO",
+     "flujo": "Retiro BO",
+     "registros": 73,
+     "excluidos": 0
+    }
+   ],
+   "registros": 73,
+   "excluidos": 0,
+   "estado": "ok",
+   "avisos": []
+  },
+  {
+   "archivo": "BBDD ECOFIBRAS CORONEL.xlsx",
+   "planta": "Ecofibras Coronel",
+   "zona": "ZONA SUR",
+   "hojas": [
+    {
+     "hoja": "INGRESOS",
+     "flujo": "Ingreso",
+     "registros": 3610,
+     "excluidos": 0
+    },
+    {
+     "hoja": "SALIDAS",
+     "flujo": "Salida",
+     "registros": 31,
+     "excluidos": 6
+    }
+   ],
+   "registros": 3641,
+   "excluidos": 6,
+   "estado": "ok",
+   "avisos": [
+    "INGRESOS: 6 traslado(s) con destino la propia planta, reclasificados como Ingreso"
+   ]
+  },
+  {
+   "archivo": "BBDD ECOFIBRAS PLANTA TRAPEN .xlsx",
+   "planta": "Ecofibras Planta Trapen",
+   "zona": "ZONA SUR",
+   "hojas": [
+    {
+     "hoja": "INGRESOS",
+     "flujo": "Ingreso",
+     "registros": 332,
+     "excluidos": 0
+    },
+    {
+     "hoja": "SALIDAS",
+     "flujo": "Salida",
+     "registros": 1,
+     "excluidos": 3
+    }
+   ],
+   "registros": 333,
+   "excluidos": 3,
+   "estado": "ok",
+   "avisos": []
+  },
+  {
+   "archivo": "BBDD ECOFIBRAS SAN JOAQUIN.xlsx",
+   "planta": "Ecofibras San Joaquin",
+   "zona": "ZONA SUR",
+   "hojas": [
+    {
+     "hoja": "INGRESOS",
+     "flujo": "Ingreso",
+     "registros": 2483,
+     "excluidos": 0
+    },
+    {
+     "hoja": "SALIDAS",
+     "flujo": "Salida",
+     "registros": 74,
+     "excluidos": 11
+    }
+   ],
+   "registros": 2557,
+   "excluidos": 11,
+   "estado": "ok",
+   "avisos": []
+  },
+  {
+   "archivo": "BBDD IRAR LOS ÁNGELES.xlsx",
+   "planta": "IRAR Los Ángeles",
+   "zona": "ZONA SUR",
+   "hojas": [
+    {
+     "hoja": "INGRESOS",
+     "flujo": "Ingreso",
+     "registros": 0,
+     "excluidos": 0
+    },
+    {
+     "hoja": "SALIDAS",
+     "flujo": "Salida",
+     "registros": 0,
+     "excluidos": 0
+    }
+   ],
+   "registros": 0,
+   "excluidos": 0,
+   "estado": "vacía",
+   "avisos": []
+  },
+  {
+   "archivo": "BBDD TEMUCO.xlsx",
+   "planta": "Temuco",
+   "zona": "ZONA SUR",
+   "hojas": [
+    {
+     "hoja": "BBDD",
+     "flujo": "Retiro BO",
+     "registros": 53,
+     "excluidos": 0
+    }
+   ],
+   "registros": 53,
+   "excluidos": 0,
+   "estado": "ok",
+   "avisos": []
+  },
+  {
+   "archivo": "OPERACIONES GIRI (INGRESOS Y EGRESOS).xlsx",
+   "planta": "GIRI",
+   "zona": "ZONA CENTRO",
+   "hojas": [
+    {
+     "hoja": "INGRESOS NO REP",
+     "flujo": "Ingreso",
+     "registros": 2930,
+     "excluidos": 0
+    },
+    {
+     "hoja": "SALIDA NO REP",
+     "flujo": "Salida",
+     "registros": 606,
+     "excluidos": 0
+    }
+   ],
+   "registros": 3536,
+   "excluidos": 0,
+   "estado": "ok",
+   "avisos": []
+  }
+ ],
+ "primer_dato": "2025-09-05",
+ "ultima_dato": "2026-07-29",
+ "interempresa": {
+  "movimientos": 2006,
+  "kg": 867896.3,
+  "detalle": [
+   {
+    "origen": "BO San Bernardo",
+    "destino": "GIRI",
+    "mov": 1620,
+    "kg": 629092.3
+   },
+   {
+    "origen": "Ecofibras Planta Trapen",
+    "destino": "ECOFIBRAS SAN BERNARDO",
+    "mov": 3,
+    "kg": 78980.0
+   },
+   {
+    "origen": "Ecofibras San Joaquin",
+    "destino": "ECOFIBRAS SAN BERNARDO",
+    "mov": 11,
+    "kg": 70112.0
+   },
+   {
+    "origen": "Ecofibras Coronel",
+    "destino": "ECOFIBRAS SAN BERNARDO",
+    "mov": 6,
+    "kg": 37467.0
+   },
+   {
+    "origen": "BO San Bernardo",
+    "destino": "ECOFIBRAS SAN BERNARDO",
+    "mov": 352,
+    "kg": 26813.0
+   },
+   {
+    "origen": "Ecofibras San Bernardo",
+    "destino": "GIRI",
+    "mov": 6,
+    "kg": 20300.0
+   },
+   {
+    "origen": "BO Valparaíso",
+    "destino": "GIRI",
+    "mov": 2,
+    "kg": 5070.0
+   },
+   {
+    "origen": "BO Chillán",
+    "destino": "IRAR LOS ANGELES",
+    "mov": 6,
+    "kg": 62.0
+   }
+  ]
+ }
 }
